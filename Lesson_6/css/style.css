@@ -109,7 +109,7 @@ input[type="checkbox"]:checked + label:after {
 	text-decoration: line-through;
 }
 
-input[type="submit"] {
+input[type="submit"], input[type="submit"]:focus {
 	width: 600px;
 	font-size: 24px;
 	padding: 20px;
