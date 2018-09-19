@@ -1,0 +1,142 @@
+*, *:after, *:before{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+font-family: Lucida Sans Unicode;
+src: url('../fonts/lucida-sans-unicode.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: Lucida Grande;
+src: url('../fonts/lucida-grande.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	color: white;
+}
+
+body{
+	margin: 0;
+	padding: 10px;
+	background-color: #3399cc;
+	text-align: center; 
+}
+
+.content {
+	width:100%;
+	max-width: 686px;
+	margin: 20px auto;
+}
+
+h1 {
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+h1, p {
+	text-align: left;
+}
+
+.ba-cities {
+	list-style: none;
+	text-align: center;
+	font-size: 0;
+	border: 2px white solid;
+	margin-bottom: 20px;
+}
+
+
+.ba-cities li {
+	display: inline-block;
+	font-size: 16px;
+	border: inherit;
+	width: 25%;
+	padding: 20px;
+}
+
+
+.ba-cities li:first-child {
+	background-color: #3399cc;
+	width:50%;
+}
+
+.ba-cities li:nth-child(2) {
+	background-color: #33cccc;
+}
+
+.ba-cities li:nth-child(3) {
+	background-color: #969;
+}
+
+.ba-cities li:nth-child(4) {
+	background-color: #c24747;
+}
+
+.ba-cities li:nth-child(5) {
+	background-color: #e2674a;
+}
+
+.ba-cities li:nth-child(6) {
+	background-color: #ffcc66;
+}
+
+.ba-cities li:nth-child(7) {
+	background-color: #9c9;
+}
+
+.ba-cities li:nth-child(8) {
+	background-color: #699;
+}
+
+.ba-cities li:nth-child(9) {
+	background-color: #c69;
+	width: 50%;
+}
+
+.ba-cities li:nth-child(10) {
+	background-color: #396;
+}
+
+.ba-cities li:nth-child(11)  {
+	width: 100%;
+	background-color: #669;
+}
+
+
+.ba-cities li span:first-child {
+	display:block;
+	padding-bottom: 10px;
+}
+
+.ba-cities li span:last-child {
+	font-size: 18px;
+	opacity: 0.5;
+	display: block;
+}
+
+
+.ba-cities li span .wi {
+	margin-left: 5px;
+	font-size: 24px;
+}
+
+
+.ba-cities:hover {
+	background-color: white;
+	opacity: 0.5;
+}
+
+.ba-cities li:hover {
+	opacity: initial;
+}
