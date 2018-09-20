@@ -132,15 +132,6 @@ h1, p {
 }
 
 
-/*.ba-cities:hover {
-	background-color: white;
-	opacity: 0.5;
-}
-
-.ba-cities li:hover {
-	opacity: initial;
-}*/
-
 .ba-cities:hover li:not(:hover) {
 	opacity: 0.5;
 }
