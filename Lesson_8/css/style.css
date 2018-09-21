@@ -64,11 +64,17 @@ main {
 	margin-right: 0;
 }
 
-.column li {
+.column ul li {
 	list-style: none;
 	background-color:  rgba(118,117,128,0.05);
 	margin-bottom: 1%;
 	font-size: 1vw;
 }
+
+.avatar {
+	border-radius: 10px;
+	width: 50px;
+}
+
 
 
