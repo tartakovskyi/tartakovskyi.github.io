@@ -11,16 +11,64 @@ html, body {
 	min-height: 100%;
 	font-size: 100%;
 	font-family: Arial, sans-serif;
-	color: white;
+	background-color: #f1f1f1;
+	color: #c2c2c2
 }
 
 body{
 	margin: 0;
 	padding: 10px;
-	background-color: #3399cc;
 	text-align: center; 
 }
 
 .content {
 	padding: 40px 10% 0 10%;
 }
+
+#searchbar {
+	width: 100%;
+}
+
+#searchbar input {
+	width: 90%;
+	font-size: 9vw;
+	border: none;
+}
+
+#searchbar button {
+	display: inline-block;
+	background-color: inherit;
+	width: 9%;
+	border: none;
+}
+
+#searchbar button img {
+	width: 100%;
+	height: auto;
+}
+
+main {
+	width: 100%;
+	font-size:0;
+	margin-top: 3%;
+}
+
+.column {
+	width: 32%;
+	display:inline-block;
+	font-size: 16px;
+	margin-right: 2%;
+}
+
+.column:last-child {
+	margin-right: 0;
+}
+
+.column li {
+	list-style: none;
+	background-color:  rgba(118,117,128,0.05);
+	margin-bottom: 1%;
+	font-size: 1vw;
+}
+
+
