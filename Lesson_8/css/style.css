@@ -60,6 +60,10 @@ a:hover, #searchbar input:focus {
 	border: none;
 }
 
+#searchbar [type="search"]::-webkit-input-placeholder  {
+	color:#c2c2c2;
+}
+
 main {
 	width: 100%;
 	font-size:0;
