@@ -141,6 +141,94 @@ line-height: 2;
 }
 
 
+
+/* #PORTFOLIO */
+
+.portfolio {
+	padding: 50px 0 90px;
+	display: block;
+}
+
+.portfolio_menu {
+	list-style: none;
+	display: block;
+	margin-bottom: 50px;
+}
+
+.portfolio_menu li {
+	display: inline-block;
+	margin-right: 17px;
+}
+
+.portfolio_menu li:last-child {
+	margin-right: 0;
+}
+
+.portfolio_menu li button {
+	border:none;
+	border-radius: 2px;
+	background-color: #eaeaea;
+	padding: 8px 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.portfolio_menu li button:hover {
+	background-color: #48bf72;  
+	color: #fff;
+}
+
+.portfolio_column {
+	display: inline-block;
+	font-size: 0;
+}
+.portfolio_column:nth-child(2) {
+	width: 450px;
+	margin-right: 40px;
+}
+.portfolio_column:last-child {
+	width: 650px;
+}
+
+.portfolio_column div {
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+
+.portfolio_column div:first-child {
+	margin-bottom: 40px;
+}
+
+
+.portfolio_column:nth-child(2) div:first-child {
+	background-image: url('../img/item1.jpg');
+}
+
+
+.portfolio_column div:hover .hover_bg {
+	display:block;
+}
+	
+
+.hover_bg {
+	position: absolute;
+	z-index: 1;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	background-color: #48bf72;
+	opacity: 0.1;
+	display: none;
+}
+
+
+
+
+
+
 /* #CONTACTS */
 .contacts input,
 .contacts textarea {
