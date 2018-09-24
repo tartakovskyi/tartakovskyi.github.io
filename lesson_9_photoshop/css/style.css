@@ -190,39 +190,38 @@ line-height: 2;
 	width: 650px;
 }
 
-.portfolio_column div {
+.portfolio_column>div {
 	border-radius: 10px;
 	overflow: hidden;
 	position: relative;
-	z-index: 2;
 }
 
-.portfolio_column div:first-child {
+.portfolio_column>div:first-child {
 	margin-bottom: 40px;
 }
 
 
-.portfolio_column:nth-child(2) div:first-child {
-	background-image: url('../img/item1.jpg');
-}
-
-
-.portfolio_column div:hover .hover_bg {
-	display:block;
-}
-	
 
 .hover_bg {
 	position: absolute;
-	z-index: 1;
+/* 	z-index: 1; */
 	top:0;
 	right: 0;
 	bottom: 0;
 	left:0;
 	background-color: #48bf72;
-	opacity: 0.1;
+	opacity: 0.5;
 	display: none;
+	font-size: 100%;
+/* 	width: 100%;
+height:100%; */
 }
+
+.portfolio_img:hover .hover_bg {
+	display:block;
+}
+	
+
 
 
 
