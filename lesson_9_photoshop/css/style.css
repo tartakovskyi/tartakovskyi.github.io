@@ -20,6 +20,7 @@ html, body {
 	min-height: 100%;
 	font-size: 100%;
 	font-family: 'Lato', sans-serif;
+	color: #fff;
 
 }
 
@@ -28,6 +29,14 @@ body{
 	text-align: center; 
 } 
 
+h2 {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 22px;
+}
 
 
 .container {
@@ -43,7 +52,6 @@ body{
 	background: #fff url("../img/computer.jpg") no-repeat 0.0;
 	background-size: cover;
 	position: relative;
-	color: #fff;
 }
 
 .main_header::after {
@@ -68,6 +76,7 @@ line-height: 2;
 
 .header_menu ul {
 	list-style: none;
+	margin-top: 35px;
 }
 
 
@@ -111,7 +120,6 @@ line-height: 2;
 
 .main_header h2 {
 	font-family: "Slim John";
-	font-size: 30px;
 	text-align: center;
 	margin-bottom: 35px;
 }
@@ -123,16 +131,17 @@ line-height: 2;
 	padding: 10px 25px;
 	margin: 0 auto;
 	cursor: pointer;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
-.main_header button {
+.main_header .button {
 	border-color: #48bf72;
 	color: #48bf72;
-	text-transform: uppercase;
 	display: block;
 }
 
-.main_header button:hover {
+.main_header .button:hover {
 	background-color: #48bf72;
 	color: #fff;
 }
@@ -220,22 +229,73 @@ line-height: 2;
 }
 
 .portfolio_column>div>p {
-	color: #fff;
-	font-size: 30px;
-	font-weight: 700;
 	top: 40%;
-	z-index:2;
+	z-index: 2;
+	font-size: 16px;
+	line-height: 1.5
 }
 
 .portfolio_column>div>p>span {
-	font-size: 16px;
-	font-weight: 400;
-	vertical-align: middle;
+	font-size: 30px;
+	font-weight: 700;
 }
 
 .portfolio_column>div:hover::after,
 .portfolio_column>div:hover>p {
 	display:block;
+}
+
+
+
+/* #ABOUT */
+.about {
+	background: #fff url("../img/men-computer.jpg") no-repeat 0.0;
+	background-size: cover;
+	position: relative;
+	height: 500px;
+}
+
+.about::after {
+	content:"";
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	background-color: rgba(60, 73, 85, .7)
+}
+
+.about .about_content {
+	width: 430px;
+	margin: 90px 130px 0 0;
+	float: right;
+	text-align: left;
+}
+
+.about .about_content h2 {
+	padding-bottom: 10px;
+}
+
+.about .about_content h3 {
+	padding-bottom: 40px;
+}
+
+.about .about_content p {
+	line-height: 1.5;
+	padding-bottom: 40px;
+}
+
+.about .about_content .button {
+	border-color: #3c4955;
+	color: #3c4955;
+	display: inline-block;
+}
+
+.about .about_content .button:hover {
+	background-color: #3c4955;
+	color: #fff;
 }
 
 
