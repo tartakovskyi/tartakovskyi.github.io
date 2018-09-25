@@ -66,10 +66,6 @@ h3 {
 	background-color: rgba(60, 73, 85, .7)
 }
 
-.logo {
-	text-align: left;
-}
-
 .logo a {display:block;}
 
 .header_menu {
@@ -109,6 +105,7 @@ line-height: 2;
 
 .upper_roll {
 	margin-bottom: 150px;
+	text-align: left;
 }
 
 .main_header h1, .main_header h1 {
