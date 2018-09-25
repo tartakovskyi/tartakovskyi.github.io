@@ -66,6 +66,9 @@ h3 {
 	background-color: rgba(60, 73, 85, .7)
 }
 
+.logo {
+	text-align: left;
+}
 
 .logo a {display:block;}
 
