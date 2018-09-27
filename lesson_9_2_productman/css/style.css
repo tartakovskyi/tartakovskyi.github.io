@@ -21,6 +21,12 @@ body{
 	text-align: center; 
 } 
 
+
+h1, h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+}
+
 a {
 	text-decoration: none;
 	color:#303030;
@@ -30,13 +36,17 @@ a:hover {
 	color: #e10011;
 }
 
+
 .container {
 	max-width: 1200px;
 	margin: 50px auto;
+	text-align: left;
 }
 
+/* #HEADER */
+
 .upper-roll {
-		text-align: left;
+	margin: 25px 0 105px;
 }
 
 .logo {
@@ -51,7 +61,6 @@ a:hover {
 	float: right;
 	list-style: none;
 	font-size: 0;
-	margin: 25px 0 105px;
 }
 
 .main_menu li {
@@ -64,20 +73,73 @@ a:hover {
 	margin-right: 0;
 }
 
+.black_white {
+	margin-bottom: 100px;
+}
+
 .black_white .header_content {
-	width: 718px;
-	padding-right: 104px;
-	float: right;
+	width: 696px;
+	padding-right: 90px;
+	text-align: right;
+	font-size: 24px;
+	display: inline-block;
 }
 
-.black_white .header_content::after {
-	content: url('../img/headset.png');
-	position: relative;
+
+.black_white .header_content h1 {
+	font-size: 150px;
+	line-height: 1;
+	margin: 20px 0 55px;
+}
+
+.black_white .header_content p {
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+.black_white .header_content .red {
+	color: #e10011;
+	font-weight: 600;
+}
+
+.black_white .header_content .red:hover {
+	color: #fff;
+}
+
+.black_white .header_img {
+	display: inline-block;
+} 
+
+.black_white .slider_nav {
 	display: block;
-	float: right;
+	text-align: center;
+	margin-top: 70px;
+}
+
+.black_white .slider_nav li {
+	display: inline-block;
+	text-align: center;
+	list-style: none;
+	margin-right: 10px;
+}
+
+.black_white .slider_nav li:last-child {
+	margin-right: 0;
+}
+
+.black_white .slider_nav li a:hover {
+	color: #e10011;
 }
 
 
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Raleway', sans-serif; */
+/* #FEATURED PRODUCTS */
 
+.featured_products {
+	padding: 114px 72px 72px;
+	border: none;
+	background-color: #fff;
+}
+
+.featured_products h2 {
+	font-size: 48px;
+}
