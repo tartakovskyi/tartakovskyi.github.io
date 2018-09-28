@@ -39,8 +39,8 @@ body{
 	list-style: none;
 	border: none;
 	font-size: 100%;
+	position: relative;
 }
-
 
 .checkerboard li:nth-child(2),
 .checkerboard li:nth-child(4),
@@ -76,3 +76,99 @@ body{
 .checkerboard li:nth-child(63) {
 	background-color: #e1cdb2;
 }
+
+.checkerboard li:first-child::after,
+.checkerboard li:nth-child(3)::after,
+.checkerboard li:nth-child(5)::after,
+.checkerboard li:nth-child(7)::after,
+.checkerboard li:nth-child(10)::after,
+.checkerboard li:nth-child(12)::after,
+.checkerboard li:nth-child(14)::after,
+.checkerboard li:nth-child(16)::after,
+.checkerboard li:nth-child(17)::after,
+.checkerboard li:nth-child(19)::after,
+.checkerboard li:nth-child(21)::after,
+.checkerboard li:nth-child(23)::after,
+.checkerboard li:nth-child(42)::after,
+.checkerboard li:nth-child(44)::after,
+.checkerboard li:nth-child(46)::after,
+.checkerboard li:nth-child(48)::after,
+.checkerboard li:nth-child(49)::after,
+.checkerboard li:nth-child(51)::after,
+.checkerboard li:nth-child(53)::after,
+.checkerboard li:nth-child(55)::after,
+.checkerboard li:nth-child(58)::after,
+.checkerboard li:nth-child(60)::after,
+.checkerboard li:nth-child(62)::after,
+.checkerboard li:nth-child(64)::after  {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	background-size: cover;
+	width: 10vh;
+	height: 10vh;
+	margin: auto;
+}
+
+.checkerboard li:first-child::after,
+.checkerboard li:nth-child(3)::after,
+.checkerboard li:nth-child(5)::after,
+.checkerboard li:nth-child(7)::after,
+.checkerboard li:nth-child(10)::after,
+.checkerboard li:nth-child(12)::after,
+.checkerboard li:nth-child(14)::after,
+.checkerboard li:nth-child(16)::after,
+.checkerboard li:nth-child(17)::after,
+.checkerboard li:nth-child(19)::after,
+.checkerboard li:nth-child(21)::after,
+.checkerboard li:nth-child(23)::after {
+	background-image: url(../img/white.png);	
+}
+
+.checkerboard li:nth-child(42)::after,
+.checkerboard li:nth-child(44)::after,
+.checkerboard li:nth-child(46)::after,
+.checkerboard li:nth-child(48)::after,
+.checkerboard li:nth-child(49)::after,
+.checkerboard li:nth-child(51)::after,
+.checkerboard li:nth-child(53)::after,
+.checkerboard li:nth-child(55)::after,
+.checkerboard li:nth-child(58)::after,
+.checkerboard li:nth-child(60)::after,
+.checkerboard li:nth-child(62)::after,
+.checkerboard li:nth-child(64)::after {
+	background-image: url(../img/red.png);
+}
+
+.checkerboard li:first-child:hover::after,
+.checkerboard li:nth-child(3):hover::after,
+.checkerboard li:nth-child(5):hover::after,
+.checkerboard li:nth-child(7):hover::after,
+.checkerboard li:nth-child(10):hover::after,
+.checkerboard li:nth-child(12):hover::after,
+.checkerboard li:nth-child(14):hover::after,
+.checkerboard li:nth-child(16):hover::after,
+.checkerboard li:nth-child(17):hover::after,
+.checkerboard li:nth-child(19):hover::after,
+.checkerboard li:nth-child(21):hover::after,
+.checkerboard li:nth-child(23):hover::after,
+.checkerboard li:nth-child(42):hover::after,
+.checkerboard li:nth-child(44):hover::after,
+.checkerboard li:nth-child(46):hover::after,
+.checkerboard li:nth-child(48):hover::after,
+.checkerboard li:nth-child(49):hover::after,
+.checkerboard li:nth-child(51):hover::after,
+.checkerboard li:nth-child(53):hover::after,
+.checkerboard li:nth-child(55):hover::after,
+.checkerboard li:nth-child(58):hover::after,
+.checkerboard li:nth-child(60):hover::after,
+.checkerboard li:nth-child(62):hover::after,
+.checkerboard li:nth-child(64):hover::after {
+	opacity: .75;
+}
+
+
