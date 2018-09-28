@@ -190,10 +190,6 @@ li {list-style: none;}
 .featured_products ul li a::after,
 .featured_products ul li a h3 {
 	position: absolute;
-	top:0;
-	right: 0;
-	bottom: 0;
-	left:0;
 	display: none;
 }
 
@@ -201,15 +197,28 @@ li {list-style: none;}
     content:"";
 	background-color: #e10011;
 	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left:0;
 }
 
 .featured_products ul li a h3 {
 	bottom: 55px;
 	z-index: 2;
+	font-size: 30px;
 	color: #fff;
+	padding: 0 37px;}
 
+.featured_products ul li a h3:after {
+	content: "";
+	width: 92px;
+	height: 5px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -17px;
+	left: 37px;
 }
-
 
 .featured_products ul li a:hover::after,
 .featured_products ul li a:hover>h3 {
