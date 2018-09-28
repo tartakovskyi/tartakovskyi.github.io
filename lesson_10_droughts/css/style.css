@@ -21,6 +21,58 @@ body{
 	width: 100vh;
 	background-color: #e1cdb2;
 	margin: 0 auto;
+	padding: 3vh;
+}
+
+.checkerboard {
+	display: block;
+	border: 1vh solid #1a1511;
+	height: 100%;
+	font-size: 0;
+}
+
+.checkerboard li {
+	background-color: #1a1511;
+	width: 11.5vh;
+	height: 11.5vh;
+	display: inline-block;
+	list-style: none;
+	border: none;
+	font-size: 100%;
 }
 
 
+.checkerboard li:nth-child(2),
+.checkerboard li:nth-child(4),
+.checkerboard li:nth-child(6),
+.checkerboard li:nth-child(8),
+.checkerboard li:nth-child(9),
+.checkerboard li:nth-child(11),
+.checkerboard li:nth-child(13),
+.checkerboard li:nth-child(15),
+.checkerboard li:nth-child(18),
+.checkerboard li:nth-child(20),
+.checkerboard li:nth-child(22),
+.checkerboard li:nth-child(24),
+.checkerboard li:nth-child(25),
+.checkerboard li:nth-child(27),
+.checkerboard li:nth-child(29),
+.checkerboard li:nth-child(31),
+.checkerboard li:nth-child(34),
+.checkerboard li:nth-child(36),
+.checkerboard li:nth-child(38),
+.checkerboard li:nth-child(40),
+.checkerboard li:nth-child(41),
+.checkerboard li:nth-child(43),
+.checkerboard li:nth-child(45),
+.checkerboard li:nth-child(47),
+.checkerboard li:nth-child(50),
+.checkerboard li:nth-child(52),
+.checkerboard li:nth-child(54),
+.checkerboard li:nth-child(56),
+.checkerboard li:nth-child(57),
+.checkerboard li:nth-child(59),
+.checkerboard li:nth-child(61),
+.checkerboard li:nth-child(63) {
+	background-color: #e1cdb2;
+}
