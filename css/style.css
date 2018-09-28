@@ -19,29 +19,51 @@ body{
 
 ul {
 	display: block;
-	padding: 5vh;
+	padding: 5vw;
 	margin: auto;
 }
 
 ul li {
 	display: inline-block;
-	width: 10vw;
+	background-color: #3b90e5;
+	border: .3vw solid #3b90e5;
+	list-style: none;
+	padding: 0;
+	margin: 2vw;
+}
+
+ul li:hover {
+	background-color: #fe6e1e;
+	border-color: #fe6e1e;
 }
 
 ul li a {
 	display: block;
+	text-decoration: none;
+	color: #fff;
+	width: 15vw;
 }
 
 ul li a .screenshot {
 	width: 100%;
-	height: auto;
+
+}
+
+ul li a .screenshot img {
+	width: 100%;
+}
+
+ul li a .lesson_name {
+	padding: 2vh 0;
 }
 
 ul li h4 {
-	font-size: 3vh;
+	font-size: 6vh;
 	font-weight: 600;
 }
 
 ul li span {
-	font-size: 1vh;
+	font-size: 4vh;
 }
+
+
