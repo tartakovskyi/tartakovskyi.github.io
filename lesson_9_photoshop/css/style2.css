@@ -1,0 +1,289 @@
+/* MAP
+*****#COMMON
+*****#HEADER
+*****#PORTFOLIO
+*****#CONTACTS
+
+
+.contacts input,
+.contacts textarea {
+display: block;
+}*/
+
+/* #COMMON */
+*{
+ transition: all .3s ease;
+}
+
+@font-face {
+    font-family: "Big John";
+    src: url("../fonts/BigJohn.otf");
+}
+
+@font-face {
+    font-family: "Slim Joe";
+    src: url("../fonts/Slim+Joe.otf");
+}
+
+body {
+    font-size: 100%;
+    font-family: Lato, sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.button {
+    font-family: "Slim Joe";
+    background: none;
+    border: 2px solid;
+    border-radius: 2px;
+    text-align: center;
+    padding: 10px 25px;
+    display: block;
+    margin: 0 auto;    
+    cursor: pointer;
+}
+
+.cf {
+    clear: both;
+}
+
+.cf::before,
+.cf::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.green_color {
+    color: #48bf72;
+}
+
+/* #HEADER */
+
+.upper_row {
+    margin-bottom: 150px;
+}
+
+.main_header {
+    padding-top: 35px;
+    padding-bottom: 180px;
+    background: #fff url("../img/header-img.jpg") no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+    color: #fff;    
+}
+
+.main_header:after{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(60,73,85,.8);
+}
+
+.logo a{
+    display: block;
+}
+
+.header_menu {
+    float: right;
+    line-height: 4;
+}
+
+.header_menu ul {
+    list-style: none;
+}
+
+.logo,
+.header_menu,
+.header_menu ul li {
+    display: inline-block;
+}
+
+.header_menu ul li:not(:last-child):after{
+    content: "/";
+    display: inline-block;
+    margin: 0 55px;
+}
+
+.header_menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    padding-bottom: .5em;
+}
+
+.header_menu ul li a:hover{
+    color: #48bf72;
+    border-color: #48bf72;
+}
+
+.main_header h1,
+.main_header h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.main_header h1 {
+    font-family: "Big John";
+    font-size: 46px;    
+}
+
+.main_header h2 {
+    font-family: "Slim Joe";
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.main_header .button {
+    text-transform: uppercase;
+    border-color: #48bf72;
+    color: #48bf72;
+}
+
+.main_header .button:hover, 
+ {
+    background-color: #48bf72;
+    color: #fff;
+}
+
+/* #PORTFOLIO */
+
+.portfolio {
+    padding: 50px 0 90px;
+
+}
+.portfolio__list {
+    list-style: none;
+    text-align: center;
+}
+
+.portfolio__item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.portfolio__item:last-child {
+    margin-right: 0;
+}
+
+.portfolio__link {
+    display: block;
+    font-weight: bold;
+    background-color: #3c4955;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.portfolio__link--active,
+.portfolio__link:hover {
+    background-color: #48bf72;
+    color: #fff;
+}
+
+.grid {
+    margin: 50px 0 0;
+}
+
+.grid__list {
+    font-size: 0;
+}
+
+.grid__list:first-child {
+    float: left;
+}
+
+.grid__list:last-child {
+    float: right;
+}
+
+.grid__item {
+    margin-bottom: 40px;
+    display: block;
+}
+
+.grid__item:last-child {
+    margin-bottom: 0;
+}
+
+.grid__link {
+    display: block;
+    font-size: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.grid__link::after, .grid__caption {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s ease;
+
+}
+.grid__link::after {
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(72,191,114,0.8);
+}
+
+
+.grid__caption {
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    font-size: 30px;
+    margin: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 2;
+}
+
+.grid__caption > * {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.grid__link:hover::after, .grid__link:hover .grid__caption {
+    opacity: 1;
+
+}
+
+
+
+/* #CONTACTS */
+.triangle {
+    width: 50px;
+    height: 50px;
+    /* background: #000; */
+}
+
+.triangle:before{
+    content: "";
+    display: inline-block;
+    border: 20px solid transparent;
+    border-left-color: black;
+}
