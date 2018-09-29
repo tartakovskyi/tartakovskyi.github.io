@@ -79,7 +79,7 @@ ul {
 .main_header {
     padding-top: 35px;
     padding-bottom: 180px;
-    background: #fff url("../img/header-img.jpg") no-repeat 0 0;
+    background: #fff url("../img/computer.jpg") no-repeat 0 0;
     background-size: cover;
     position: relative;
     color: #fff;    
@@ -190,6 +190,7 @@ ul {
     display: block;
     font-weight: bold;
     background-color: #3c4955;
+    color: #fff;
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 3px;

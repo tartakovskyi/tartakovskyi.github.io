@@ -25,6 +25,7 @@ body{
 h1, h2 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 900;
+	font-size: 48px;
 }
 
 a {
@@ -38,6 +39,11 @@ a:hover {
 
 li {list-style: none;}	
 
+p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	width: 585px;
+}
 
 .container {
 	max-width: 1200px;
@@ -142,7 +148,6 @@ li {list-style: none;}
 }
 
 .featured_products h2 {
-	font-size: 48px;
 	line-height: .8;
 	margin-bottom: 20px;
 }
@@ -153,9 +158,6 @@ li {list-style: none;}
 }
 
 .featured_products p {
-	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
-	width: 585px;
 	margin: 0 auto 72px;
 }
 
@@ -226,3 +228,46 @@ li {list-style: none;}
 }
 
 
+/* #NEWS */
+.news {
+	padding: 100px 0 0 0;
+	text-align: center;
+}
+
+.news__head {
+	margin-bottom: 27px;
+	text-transform: uppercase;
+}
+
+.news__text {
+	margin: 0 auto 48px;
+}
+
+.news__form {
+	font-size: 0;
+}
+
+.news__input {
+	height: 70px;
+	display: inline-block;
+	font-size: 18px;
+	border: 0;
+}
+.news__email_address {
+	width: 495px;
+	font-weight: 600;
+	font-style: italic;
+	border-radius: 35px 0 0 35px;
+	padding-left: 35px;
+	font-family: 'FontAwesome', 'Raleway', sans-serif;
+}
+
+.news__subscribe {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-family: 'FontAwesome', 'Roboto', sans-serif;
+	background-color: #e10011;
+	color: #fff;
+	padding-left: 56px;
+	padding-right: 45px;
+}
