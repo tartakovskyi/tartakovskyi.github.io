@@ -266,8 +266,18 @@ p {
 	text-transform: uppercase;
 	font-weight: 900;
 	font-family: 'FontAwesome', 'Roboto', sans-serif;
+	border-radius: 0 35px 35px 0;
 	background-color: #e10011;
 	color: #fff;
 	padding-left: 56px;
 	padding-right: 45px;
+}
+
+.news__subscribe:hover {
+	cursor: pointer;
+	background-color: #dc2533
+}
+
+.news__email_address:focus {
+	border: 0;
 }
