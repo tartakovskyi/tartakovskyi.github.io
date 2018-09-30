@@ -281,3 +281,11 @@ p {
 .news__email_address:focus {
 	border: 0;
 }
+
+
+/* #FOOTER */
+
+footer {
+	padding-top: 112px;
+	text-align: center;
+}
