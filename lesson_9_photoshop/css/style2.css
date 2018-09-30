@@ -3,7 +3,7 @@
 *****#HEADER
 *****#PORTFOLIO
 *****#CONTACTS
-
+*****#ABOUT
 
 .contacts input,
 .contacts textarea {
@@ -11,8 +11,10 @@ display: block;
 }*/
 
 /* #COMMON */
-*{
+* {
  transition: all .3s ease;
+ box-sizing: border-box;
+ outline: transparent;
 }
 
 @font-face {
@@ -25,6 +27,11 @@ display: block;
     src: url("../fonts/Slim+Joe.otf");
 }
 
+::-webkit-input-placeholder {color:rgba(60,73,85,.3)}
+::-moz-placeholder          {color:rgba(60,73,85,.3)}
+:-moz-placeholder           {color:rgba(60,73,85,.3)}/* Firefox 18- */
+:-ms-input-placeholder      {color:rgba(60,73,85,.3)}
+
 body {
     font-size: 100%;
     font-family: Lato, sans-serif;
@@ -34,6 +41,10 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -49,10 +60,14 @@ ul {
     border: 2px solid;
     border-radius: 2px;
     text-align: center;
-    padding: 10px 25px;
-    display: block;
-    margin: 0 auto;    
+    padding: 10px 25px;    
     cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    color: #fff;
 }
 
 .cf {
@@ -66,17 +81,13 @@ ul {
     clear: both;
 }
 
-.green_color {
-    color: #48bf72;
-}
-
 /* #HEADER */
 
 .upper_row {
     margin-bottom: 150px;
 }
 
-.main_header {
+.main-header {
     padding-top: 35px;
     padding-bottom: 180px;
     background: #fff url("../img/computer.jpg") no-repeat 0 0;
@@ -85,7 +96,8 @@ ul {
     color: #fff;    
 }
 
-.main_header:after{
+.main-header::after,
+.about::after {
     content: "";
     display: block;
     position: absolute;
@@ -137,33 +149,34 @@ ul {
     border-color: #48bf72;
 }
 
-.main_header h1,
-.main_header h2 {
+.main-header__content {
     text-align: center;
+}
+
+.main-header h1,
+.main-header h2 {
     margin-top: 0;
 }
 
-.main_header h1 {
+.main-header h1 {
     font-family: "Big John";
     font-size: 46px;    
 }
 
-.main_header h2 {
+.main-header h2 {
     font-family: "Slim Joe";
     font-size: 30px;
     margin-bottom: 35px;
 }
 
-.main_header .button {
-    text-transform: uppercase;
-    border-color: #48bf72;
+.button--green {
+     border-color: #48bf72;
     color: #48bf72;
 }
 
-.main_header .button:hover, 
+.button--green:hover
  {
     background-color: #48bf72;
-    color: #fff;
 }
 
 /* #PORTFOLIO */
@@ -273,18 +286,162 @@ ul {
 
 }
 
+/* #ABOUT */
+.about {
+    background: #fff url(../img/men-computer.jpg) no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    padding: 90px 0;
+    position: relative;
+}
+
+.author {
+    color: #fff;
+    max-width: 50%;
+    float: right;
+}
+
+
+.author h2 {
+    margin: 0 0 15px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.author__description,
+.author__text {
+    margin: 0 0 30px;
+    line-height: 1.4;
+}
+
+.author__description {
+
+}
+
+.author__text {
+    padding-right: 25%;
+}
+
+.button--gray {
+    color: #3c4955;
+    border-color: #3c4955;
+}
+
+.button--gray:hover {
+    background-color: #3c4955;
+}
+
 
 
 /* #CONTACTS */
-.triangle {
-    width: 50px;
-    height: 50px;
-    /* background: #000; */
+.contacts {
+    padding: 50px 0;
+    max-width: 690px;
+    margin: auto;
 }
 
-.triangle:before{
-    content: "";
-    display: inline-block;
-    border: 20px solid transparent;
-    border-left-color: black;
+.contacts__heading h2 {
+    text-transform: uppercase;
+    color: #48bf72;
+    font-family: 'Big John'
+    font-size: 26px;
+    text-align: center;
 }
+
+.contacts__form {
+    padding: 50px 0;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+.user-input {
+    min-width: 330px;
+    width: 330px;
+ }
+
+.user-input:first-child {
+    float: left;
+}
+
+.user-input:last-child {
+    float: right;
+}
+
+.contacts__label {
+    width: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #3c4955;
+    display: block; 
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+    height: 50px;
+    position: relative;
+
+}
+.contacts__label[for="email"] {
+    background-image: url(../img/mail.svg);
+}
+
+.contacts__label[for="name"] {
+    background-image: url(../img/user.svg);
+}
+
+
+.user-input>*, 
+.user-textarea>* {
+    float: left;
+    border: 2px solid #3c4955;
+} 
+
+.user-textarea>* {
+    height: 225px;
+}
+
+
+.contacts__input,
+.contacts__textarea {
+    width: calc(100% - 50px);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-left: 23px;
+    font-weight: 700;
+    background-color: #f1f1f1;
+    color: #3c4955;
+}
+
+.contacts__input {
+    height: 50px;
+}
+
+.contacts__label[for="message"] {
+    background-image: url(../img/crayon.svg);
+    background-position: center 10px;
+}
+
+.contacts__textarea {
+    padding: 15px 0 23px 15px;
+    overflow: scroll;
+}
+
+
+.contacts__label:after {
+    content: "";
+    display: block;
+    border: 8px solid transparent;
+    border-left-color: #3c4955;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+}
+
+.contacts__label[for="message"]:after {
+    top: 23px;
+}
+
+
