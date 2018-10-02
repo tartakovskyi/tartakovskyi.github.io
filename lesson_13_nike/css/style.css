@@ -1,40 +1,138 @@
  *, *:after, *:before{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+ 	padding: 0;
+ 	margin: 0;
+ 	box-sizing: border-box;
+ }
+
+ @font-face {
+ 	font-family: "Museo Sans Rounded 100";
+ 	src: url('../fonts/MuseoSansRounded-100.otf');
+ 	font-weight: normal;
+ 	font-style: normal;
+ }
+
+ html, body {
+ 	width: 100%;
+ 	height: 100vh;
+ 	min-height: 100%;
+ 	font-size: 14px;
+ 	font-family:"Museo Sans Rounded 100", sans-serif;
+ 	color: #49505a;
+ 	background-color: #f0f0f0;
+
+ }
+
+ body{
+ 	margin: 0;
+ }
+
+ h1 {
+ 	margin: 0;
+ }
+
+ .container {
+ 	width: 800px;
+ 	height: 600px;
+ 	margin: 0 auto;
+ 	padding: 110px 51px 101px 52px;
+ 	background-image: url(../img/main-bg.jpg);
+ }
+
+ .product {
+ 	width: 100%;
+ 	height: 100%;
+ 	padding: 36px 20px;
+ 	background-color: #111a28;
+ 	border-radius: 9px;
+ }
+
+ .product__left-col {
+ 	width: calc(100% - 280px);
+ 	height: 100%;
+ 	float: left;
+ 	background-color: red;
+ }
+
+ .product__img-link {
+ 	display: block;
+ 	width: 100%;
+ 	height: 100%;
+ 	text-align: center;
+ }
+
+ .product__image {
+ 	vertical-align: middle;
+ 	margin: auto;
+ }
+
+ .product__info {
+ 	width: 280px;
+ 	float: right;
+ 	text-align: left;
+ }
+
+ .product__name {
+ 	font: 24px;
+ 	color: #e1e1e1;
+ 	margin-bottom: 18px;
+ }
+
+ .product__description {
+ 	display: inline-block;
+ 	margin-bottom: 27px;
+ }
+
+ .rating {
+ 	display: block;
+ 	font-size: 0;
+  	margin-bottom: 27px;	
+ }
+
+ .star {
+ 	list-style: none;
+ 	display: inline-block;
+ 	font-size: 12px;
+ 	color: #9da1a6;
+ }
+
+.star:nth-child(-n+3) {
+	color: #f7bf16;
 }
 
-
-html, body {
-	width: 100%;
-	height: 100vh;
-	min-height: 100%;
-	font-size: 100%;
-	font-family: 'Roboto', sans-serif;
-	color: #303030;
-	background-color: #f0f0f0;
-
+.star:hover {
+	text-shadow: 1px 1px 2px #fff;
 }
 
-body{
-	margin: 0;
+.product__options-list {
+	display: block;
+  	margin-bottom: 27px;
+}
+
+.product__option-li {
+	display: inline-block;
+}
+
+.product__option, .button {
+	border: 1px solid #49505a;
+	color: #49505a;	
+}
+
+.product__option {
+	padding: 10px;
+	background-color: transparent;
+	cursor: pointer;
 } 
 
-.container {
-	width: 800px;
-	height: 600px;
-	margin: 0 auto;
-	padding: 110px 51px 101px 52px;
-	background-image: url(../img/main-bg.jpg);
+.button {
+	display: inline-block;
+	padding: 14px 56px;
+	background-color: #202835;
 }
 
-.product {
-	width: 100%;
-	height: 100%;
-	padding: 36px 20px;
-	background-color: #111a28;
-	border-radius: 9px;
+.button:hover {
+	background-color: #9da1a6;
+	cursor: pointer;
 }
 
-.product_image-link
+
 
