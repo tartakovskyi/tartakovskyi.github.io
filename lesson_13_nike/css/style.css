@@ -47,7 +47,7 @@
 /*  #LEFT COLUMN */
 
  .product__left-col {
- 	width: calc(100% - 280px);
+ 	width: 367px;
  	float: left;
 	position: relative;
  }
@@ -121,7 +121,8 @@
 /*  #RIGHT COLUMN */
 
  .product__info {
- 	width: 280px;
+ 	width: 290px;
+ 	padding-left: 10px;
  	float: right;
  	text-align: left;
  }
