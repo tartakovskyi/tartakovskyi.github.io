@@ -45,6 +45,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 .container {
@@ -55,7 +56,9 @@ a {
 }
 
 .button {
-    font-family: "Slim Joe";
+/*     font-family: "Slim Joe"; */
+    font-weight: 700;
+    font-style: 14px;
     background: none;
     border: 2px solid;
     border-radius: 2px;
@@ -170,7 +173,7 @@ a {
 }
 
 .button--green {
-     border-color: #48bf72;
+    border-color: #48bf72;
     color: #48bf72;
 }
 
@@ -444,4 +447,96 @@ a {
     top: 23px;
 }
 
+.button--green_back {
+    background-color: #48bf72;
+    color: #fff;
+    width: 100%;
+    letter-spacing: .3rem;
+    padding: 15px; 
+}
 
+.button--green_back:hover {
+    background-color: #3c4955; 
+}
+
+
+
+/* #FOOTER */
+
+.footer {
+    padding: 73px 0;
+    background-color: #3c4955;
+    color: #fff;
+}
+
+.footer__left, .footer__right {
+    width: 50%;
+}
+
+.footer__left {
+    text-align: left;
+    float: left;
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 55px;
+}
+
+.footer__right {
+    text-align: right;
+    float: right;    
+}
+
+.copyright {
+    vertical-align: middle;
+    margin: 0;
+}
+
+.copyright__link {
+    font-weight: 700;
+}
+
+.copyright__link:hover {
+    text-decoration: underline; 
+}
+
+.footer__social, .footer__social-link {
+    display: block;
+    font-size: 0;
+}
+
+.footer__social-item {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.footer__social-item:last-child {
+    margin-right: 0;    
+}
+
+.footer__social-link {
+    width: 50px;
+    overflow: hidden;
+}
+
+.footer__icon {
+    height: 27px;
+    background-color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer__icon-top, .footer__icon-bottom {
+    width: 1px;
+    border: 25px solid transparent;
+}
+
+.footer__icon-top {
+    border-top: 0;
+    border-bottom: 14px solid red;
+}
+
+
+.footer__icon-bottom {
+    border-top: 14px solid red;
+    border-bottom: 0;
+}
