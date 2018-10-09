@@ -589,3 +589,7 @@ a {
     border-top-color: #fff; 
 }
 
+.fab {
+    vertical-align: middle;
+}
+
