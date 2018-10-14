@@ -13,7 +13,9 @@
 
  body{
  	margin: 0;
- 	font-size: 100%;
+ 	font-family: 'Open Sans', sans-serif;
+ 	color: #60606e;
+ 	font-size: 14px;
  }
 
 .cf,
@@ -28,9 +30,78 @@
 	display: block;
 }
 
+.section {
+	padding-top: 150px;
+}
+
+.heading>* {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	text-transform: uppercase;
+	margin: 0;
+	text-align: center;
+	position: relative;
+}
+
+.heading--section,
+.sub-heading {
+	margin-bottom: 25px;
+}
+
+.heading--section>* {
+	font-size: 30px;
+	display: inline-block;
+}
+
+.heading--section>*::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 65px;
+	height: 20px;
+	background-color: #7beec7;
+	bottom: 0;
+	left: -3px;
+	z-index: -1;
+}
+
+.breadcrumbs {
+	display: block;
+	text-align: center;
+	list-style: none;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+}
+
+.breadcrumbs li::after {
+	content: "/";
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.breadcrumbs li:last-child::after {
+	display: none;
+}
+
+.breadcrumbs a {
+	font-weight: 800;
+	color: currentcolor;
+	text-transform: uppercase;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.breadcrumbs--heading {
+	padding-top: 15px;
+}
+
 .main-header {
 	height: 100vh;
 	position: relative;
+	padding-top: 45px;
 }
 
 .main-header::before,
@@ -64,20 +135,24 @@
 	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	color: currentcolor;
 }
 
 .nav-button {
 	float: right;
+	cursor: pointer;
 }
 
 .nav-button span {
 	display: block;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid currentcolor;
 	margin-bottom: 3px;
 }
 
 .nav-button span:first-child {
-	width: 3px;
+	width: 31px;
 
 }
 
@@ -86,11 +161,71 @@
 
 }
 
+.nav-button span:last-child {
+	margin-bottom: 0;
+	width: 23px;
+}
+
 .main-header .container {
 	position: relative;
 	z-index: 3;
 }
 
-.nav-button span:last-child {
-	margin-bottom: 0;
+.vertical-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+}
+
+
+.sub-heading>* {
+	font-weight: 800;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.text {
+	line-height: 2;
+}
+
+.benefits .heading--section,
+.text-benefits {
+	text-align: center;
+}
+
+.text-benefits {
+	max-width: 66%;
+	margin: 0 auto;
+}
+
+.benefits-grid {
+	margin-top: 100px;
+}
+
+.benefit-item__heading>* {
+	display: inline-block;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.benefit-icon {
+	width: 40px;
+	height: 40px;
+	background-color: #7beec7;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.icon-phone {
+	fill:  #fff;
+	min-width: 60%;
+} 
+
+.benefit-grid:not(:last-child) {
+	margin-bottom: 15px;
 }
