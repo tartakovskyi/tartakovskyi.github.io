@@ -105,7 +105,27 @@ body{
 
 [class^="col-"] a {
 	display: block;
+	position: relative;
 	height: 100%;
+
+}
+
+[class^="col-"] a::after {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000;
+	opacity: 0;
+	z-index: 2;
+}
+
+[class^="col-"] a:hover::after {
+	opacity: .2;
 }
 
 [class^="col-"] a img {
