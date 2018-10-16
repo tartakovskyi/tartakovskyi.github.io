@@ -13,5 +13,108 @@ html, body {
 
 body{
  	margin: 0;
+ 	padding: 61px 0 69px;
  	font-size: 100%;
+ 	font-family: Arial, sans-serif;
+ 	background-image: linear-gradient(to top right, #ff512f, #dd2476);
  }
+
+.reg {
+	width: 460px;
+	padding: 30px 30px 60px;
+	background-color: #fff;
+	font-size: 0;
+	margin: auto;
+}
+
+.reg, .reg input {
+	border: none 1px;
+	border-radius: 3px;
+}
+
+.reg * {
+	font-size: 14px;
+}
+
+.reg .heading {
+	margin-bottom: 7px;
+}
+
+.reg .heading h1 {
+	font-size: 24px;
+	font-weight: 700;
+	display: inline-block;
+
+
+}
+
+.reg .heading h1::before {
+	content: url('../img/sign-up-icon.svg');
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.reg p {
+	font-size: 13px;
+	line-height: 1.5;
+	color: #7a7b7f;
+	margin-bottom: 32px;
+}
+
+
+.reg p:last-child {
+	margin-bottom: 0;
+}
+
+.reg p a {
+	color: #ea355a;
+	text-decoration: none;
+	font-size: inherit;
+}
+
+.reg p a:hover {
+	text-decoration: underline;
+}
+
+.reg p a:active {
+	color: #bd1962;
+}
+
+.reg .note {
+	font-size: 12px;
+}
+
+.reg input {
+	display: inline-block;
+	width: 100%;
+	border-color: #f0f0f0;
+	background-color: #f0f0f0;
+	margin-bottom: 16px;
+	padding: 11px 15px 12px;
+}
+
+.reg input[name$="name"] {
+	width: calc(50% - 7px);
+}
+
+.reg input[name="first-name"] {
+	margin-right: 14px;
+}
+
+.reg input[type="submit"] {
+	background-color: #ea355a;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: solid 3px;
+	border-bottom-color: #bd1962;
+	cursor: pointer;
+	padding: 16px 16px 14px;
+	margin-bottom: 20px;
+}
+
+.reg input[type="submit"]:hover {
+	background-color: #bd1962;
+}
+
