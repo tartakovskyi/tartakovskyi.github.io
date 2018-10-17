@@ -21,7 +21,7 @@ body{
 
 .reg {
 	width: 460px;
-	padding: 30px 30px 60px;
+	padding: 30px 30px 59px;
 	background-color: #fff;
 	font-size: 0;
 	margin: auto;
@@ -91,7 +91,9 @@ body{
 	border-color: #f0f0f0;
 	background-color: #f0f0f0;
 	margin-bottom: 16px;
-	padding: 11px 15px 12px;
+	/* padding: 11px 15px 12px; */
+	height: 40px;
+	padding-left: 12px;
 }
 
 .reg input[name$="name"] {
@@ -102,7 +104,12 @@ body{
 	margin-right: 14px;
 }
 
+.reg input[type="password"] {
+	margin-bottom: 15px;
+}
+
 .reg input[type="submit"] {
+	height: auto;
 	background-color: #ea355a;
 	color: #fff;
 	font-size: 18px;
@@ -118,3 +125,13 @@ body{
 	background-color: #bd1962;
 }
 
+.thanks {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.thanks p {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+}
