@@ -33,7 +33,8 @@ body{
 }
 
 .container {
-	width: 1139px;
+	width: 90%;
+	max-width: 1139px;
 	margin: 0 auto;
 	padding: 50px 0 0;
 	display: -webkit-flex;
@@ -43,15 +44,19 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .product {
 	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.4);
 }
 
 .product .product__link {
 	width: 361px;
 	height: 441px;
+	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -60,8 +65,10 @@ body{
 	color: currentcolor;
 }
 
+
 .product--gold .product__link {
 	height: 500px;
+	padding: 35px;
 }
 
 .product__price {
@@ -80,11 +87,12 @@ body{
 	font-family: "Miso";
 	font-weight: 400;
 	font-size: 56px;
+	margin-bottom: 19px;
 }
 
 .product__description {
 	font-weight: 300;
 	font-size: 20px;
 	display: inline-block;
-	line-height: 1.5;
+	line-height: 1.4;
 }
