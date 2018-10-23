@@ -1,0 +1,61 @@
+@import url('reset.css');
+@import url('grid.css');
+
+*, *::after, *::before{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	min-height: 100vh;
+}
+
+body{
+	margin: 0;
+	font-size: 100%;
+	font-family: 'Raleway', sans-serif;
+	color: #262626;
+}
+
+.main-header {
+	min-height: 100vh;
+	background: #f9f8fb url('../img/header-bg.jpg')no-repeat;
+	background-size: cover;
+}
+
+.main-header .row:first-child [class^="col-"] {
+	height: 147px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.logo {
+	display: inline-block;
+}
+.main-menu {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.main-menu a {
+	display: inline-block;
+	text-transform: uppercase;
+	color: currentcolor;
+	text-decoration: none;
+	font-weight: 700;
+	border-top: solid 3px transparent;
+	padding-top: 9px;
+	margin-top: -12px;
+
+}
+
+.main-menu a:hover,
+.main-menu a:active {
+	border-color: #ff6033;
+}
+
+
