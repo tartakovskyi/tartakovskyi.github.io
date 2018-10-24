@@ -31,16 +31,20 @@ body{
 /* #HEADER */
 
 .main-header {
-	min-height: 100vh;
 	background: #f9f8fb url('../img/header-bg.jpg') 70% 50% no-repeat;
 	background-size: contain; 
 	position: relative;
+}
+
+.fullscreen {
+	min-height: 100vh;
 }
 
 .fixed-menu {
 	position: fixed;
 	width: 100vw;
 	background-color: rgba(249, 248, 251, .6);
+	z-index: 4;
 }
 .fixed-menu [class^="col-"] {
 	height: 147px;
@@ -127,10 +131,8 @@ body{
 
 .section-about {
 	background-color: #00b1b1;
-	min-height: 100vh;
 	color: #fff;
 }
-
 
 .section-about__bg-img {
 	height: 100vh;
@@ -142,7 +144,6 @@ body{
 .section-about__content {
 	padding-top: 25vh;
 	padding-left: calc(100% / 12);
-
 }
 
 .section-title {
@@ -161,3 +162,48 @@ body{
 }
 
 
+/* #SERVICES */
+
+.section-services {
+	background-color: #70bfff;
+}
+
+.section-services__title {
+	position: relative;
+}
+
+.section-services__title h2 {
+	position: absolute;
+	z-index: 2;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+}
+
+.section-services__title::before {
+	content: url('../img/services-bg.png');
+	width: calc(100% / 12 * 8);
+	display: block;
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+
+
+/* .section-services__bg-img-wrap {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	z-index: 0;
+}
+
+.section-services__bg-img {
+	background-image: url('../img/services-bg.png');
+	background-size: contain;
+	background-position: 0 50%;
+} */
