@@ -1,3 +1,10 @@
+/*  MAP
+*****#COMMON
+*****#HEADER
+*****#ABOUT */
+
+/* #COMMON */
+
 @import url('reset.css');
 @import url('grid.css');
 
@@ -14,18 +21,29 @@ html, body {
 
 body{
 	margin: 0;
-	font-size: 100%;
+	font-size: 17px;
+	font-weight: 300;
 	font-family: 'Raleway', sans-serif;
 	color: #262626;
 }
 
+
+/* #HEADER */
+
 .main-header {
 	min-height: 100vh;
-	background: #f9f8fb url('../img/header-bg.jpg')no-repeat;
-	background-size: cover;
+	background: #f9f8fb url('../img/header-bg.jpg') 70% 50% no-repeat;
+	background-size: contain; 
 	position: relative;
 }
 
+/* .main-header .container {
+	background-image: url(../img/header-bg1.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 100vh auto;
+}
+ */
 .main-header .row:first-child [class^="col-"] {
 	height: 147px;
 	display: flex;
@@ -61,7 +79,7 @@ body{
 }
 
 .main-header__body {
-	padding-top: 215px;
+	padding-top: 30%;
 }
 
 .main-header__body h1 {
@@ -71,9 +89,7 @@ body{
 }
 
 .main-header__body p {
-	font-weight: 300;
-	font-size: 17px;
-	line-height: 1.5;
+	line-height: 1.6;
 	margin-bottom: 35px;
 }
 
@@ -109,6 +125,41 @@ body{
 	z-index: 1;
 }
 
+/* #ABOUT */
 
+.section-about {
+	background-color: #00b1b1;
+	min-height: 100vh;
+	color: #fff;
+}
+
+
+.section-about__bg-img {
+	height: 100vh;
+	width: 100%;
+	background:  url('../img/about-bg.png') 50% 50% no-repeat;
+	background-size: contain;
+}
+
+.section-about__content {
+	padding-top: 25vh;
+	padding-left: calc(100% / 12);
+
+}
+
+.section-title {
+	font-size: 90px;
+	font-weight: 900;
+	margin-bottom: 30px;
+}
+
+.text {
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+.text:last-child {
+	margin-bottom: 0;
+}
 
 
