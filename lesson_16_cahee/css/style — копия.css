@@ -37,12 +37,14 @@ body{
 	position: relative;
 }
 
-.fixed-menu {
-	position: fixed;
-	width: 100vw;
-	background-color: rgba(249, 248, 251, .6);
+/* .main-header .container {
+	background-image: url(../img/header-bg1.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 100vh auto;
 }
-.fixed-menu [class^="col-"] {
+ */
+.main-header .row:first-child [class^="col-"] {
 	height: 147px;
 	display: flex;
 	flex-direction: column;
@@ -77,7 +79,7 @@ body{
 }
 
 .main-header__body {
-	padding-top: calc(147px + 30%);
+	padding-top: 30%;
 }
 
 .main-header__body h1 {
