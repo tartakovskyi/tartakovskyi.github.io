@@ -81,7 +81,7 @@ body{
 }
 
 .main-header__body {
-	padding-top: calc(147px + 30%);
+	padding-top: calc(147px + 30vh);
 }
 
 .main-header__body h1 {
