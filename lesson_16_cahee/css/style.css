@@ -1,7 +1,8 @@
 /*  MAP
 *****#COMMON
 *****#HEADER
-*****#ABOUT */
+*****#ABOUT
+*****#SERVICES */
 
 /* #COMMON */
 
@@ -56,6 +57,10 @@ body{
 .logo {
 	display: inline-block;
 	width: 127px;
+}
+
+.logo:hover svg path {
+	fill: #ff6033;
 }
 
 .main-menu {
@@ -171,7 +176,6 @@ body{
 }
 
 .section-services__title {
-	
 	display: flex;
 	margin-bottom: 0;
 	flex-direction: column;
@@ -180,7 +184,6 @@ body{
 	background-position: right center;
 	background-repeat: no-repeat;
 	background-size: contain;
-
 }
 
 .section-services__title h2 {
@@ -197,6 +200,10 @@ body{
 
 .section-services__left .col-2 {
 	margin-right: 15px;
+}
+
+.nopadding {
+	padding: 0;
 }
 
 .services-list {
@@ -240,10 +247,6 @@ body{
 	align-items: stretch;
 }
 
-.services-list [class^="col-"] {
-	padding: 0;
-}
-
 .services-list .col-9 {
 	border-right: solid 1px #9d9d9d;
 	display: -webkit-inline-flex;
@@ -261,18 +264,22 @@ body{
 	background-size: cover;
 }
 
-.service-icon img {
-	width: 100%;
+.service-icon svg {
+	width: 100%
 }
 
-.services-list li a .cls-1 {
-        fill: #262626;
-        fill-rule: evenodd;
-      }
+.service-icon svg path {
+	fill-rule: evenodd;
+	fill: #262626;
+}
 
-.services-list li:hover a .cls-1 !important {
+.services-list a:hover svg path {
 	fill: #fff;
-
 }
+
+.service-name {
+	text-align: center;
+}
+
 
 
