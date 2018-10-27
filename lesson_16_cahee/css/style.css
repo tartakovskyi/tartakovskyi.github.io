@@ -87,7 +87,7 @@ body{
 }
 
 .main-header__body {
-	padding-top: calc(147px + 30vh);
+	padding-top: 37vh;
 }
 
 .main-header__body h1 {
@@ -131,6 +131,15 @@ body{
 	bottom: 70px;
 	transform: translateY(-50%);
 	z-index: 1;
+}
+
+.scroll path {
+	fill: #000000;
+	stroke: none;
+}
+
+.scroll:hover path {
+	fill: #ff6033;
 }
 
 /* #ABOUT */
