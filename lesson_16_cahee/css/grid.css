@@ -19,10 +19,25 @@
 	margin: 0 -15px;
 }
 
+.row--flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: stretch;
+	align-items: stretch;
+}
+
+.row--margin {
+	margin-bottom: 30px;
+}
+
 
 [class^="col-"] {
  	float: left;
  	padding: 0 15px;
+ 	min-height: 1px;
  }
 
 .col-2 {
