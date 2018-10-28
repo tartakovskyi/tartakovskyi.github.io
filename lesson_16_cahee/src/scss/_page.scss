@@ -1,58 +1,169 @@
-.sect {
-	max-width: 1200px;
-	margin: auto;
-	border: 3px solid #000;
+/*  MAP
+*****#COMMON
+*****#HEADER
+*****#ABOUT
+*****#SERVICES */
+
+/* #COMMON */
+
+*, *::after, *::before{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	min-height: 100vh;
+}
+
+body{
+	margin: 0;
+	font-size: $text_md;
+	font-weight: 300;
+	font-family: $main_font;
+	color: $main_color;
+}
+
+a, button {
+	cursor: pointer;
+}
+
+.fullscreen {
+	min-height: 100vh;
+}
+
+/* #HEADER */
+
+.main-header {
+	background: $header-bg-color url($img_path + 'header-bg.jpg') 70% 50% no-repeat;
+	background-size: contain; 
+	position: relative;
+
+	&__body {
+		padding-top: 37vh;
+
+		& h1 {
+			font-weight: 900;
+			font-size: 60px;
+			margin-bottom: 35px;
+		}
+
+		& p {
+			line-height: 1.6;
+			margin-bottom: 35px;
+		}
+
+		& .button {
+			@include button($red-color);
+		}
+	}
+}
+
+.fixed-menu {
+	position: fixed;
+	width: 100vw;
+	background-color: rgba(249, 248, 251, .6);
+	z-index: 4;
+
+	& [class^="col-"] {
+		height: 147px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.logo {
+	display: inline-block;
+	width: 127px;
+
+	&:hover {
+		svg {
+			path {
+				fill: $red-color;
+			}
+		}
+	}
+}
+
+.main-menu {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100px;
-	text-transform: uppercase;
-}
+	justify-content: space-between;
 
-.section_1 {
-	@extend .sect;
-	.btn {
-		@include button(#ff6033);
+	& a {
+		display: inline-block;
+		text-transform: uppercase;
+		color: currentcolor;
+		text-decoration: none;
+		font-weight: 700;
+		border-top: solid 3px transparent;
+		padding-top: 9px;
+		margin-top: -12px;
+
+		&:hover,
+		&:active {
+			border-color: #ff6033;
+		}
 	}
 }
 
-.section_2 {
-	@extend .sect;
-	.btn {
-		@include button(#eb2c3f)
+
+.scroll {
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 70px;
+	transform: translateY(-50%);
+	z-index: 1;
+
+	& path {
+		fill: #000000;
+		stroke: none;
+	}
+
+	&:hover path {
+		fill: $red-color;
 	}
 }
 
-.section_3 {
-	@extend .sect;
-	.btn {
-		@include button(#ff8b10)
-	}
+
+
+
+
+/* 
+
+#ABOUT
+
+.section-about {
+	background-color: #00b1b1;
+	color: #fff;
 }
 
-.section_4 {
-	@extend .sect;
-	.btn {
-		@include button(#5585a2)
-	}
+.section-about__bg-img {
+	height: 100vh;
+	width: 100%;
+	background:  url('../img/about-bg.png') 50% 50% no-repeat;
+	background-size: contain;
 }
 
-.section_5 {
-	@extend .sect;
-	.btn {
-		@include button(#96b92c)
-	}
+.section-about__content {
+	padding-top: 25vh;
+	padding-left: calc(100% / 12);
 }
 
-.section_6 {
-	@extend .sect;
-	.btn {
-		@include button(#f72b3b)
-	}
+.section-title {
+	font-size: 90px;
+	font-weight: 700;
+	margin-bottom: 30px;
 }
 
-@each $section, $color in $sections {
-	.#{$section} {
-		background-color: $color;
-	}
+.text {
+	line-height: 1.6;
+	margin-bottom: 20px;
 }
+
+.text:last-child {
+	margin-bottom: 0;
+}
+ */

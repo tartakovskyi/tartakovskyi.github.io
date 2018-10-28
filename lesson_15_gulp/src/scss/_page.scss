@@ -82,10 +82,13 @@ body {
 
 	&__our-works {
 		padding: 0;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	&__contacts {
-		padding-bottom: 0;
+		display: flex;
+
 	}
 }
 
@@ -270,4 +273,47 @@ svg  {
 
 .border-div__inner-icon:hover * .tooltip {
 	opacity: 1;
+}
+
+@for $i from 1 through 6 {
+	.our-works__item[data-key="item_#{$i}"] {
+		background: url($img_path + 'item_#{$i}.png') no-repeat center;
+	}
+}
+
+.our-works__item {
+	flex-basis: 28%;
+	background-size: cover;
+	padding-top: 12.3%;
+	margin-bottom: 15px;
+	position: relative;
+
+	&:nth-child(3n+2) {
+		flex-basis: 42%;
+	}
+
+	&:nth-child(-n+3) {
+		margin-bottom: 0;
+	}
+
+	&-link {
+		display: block;
+		text-decoration: none;
+		color: $secondary-color;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	&-title {
+		position: absolute;
+		font-size: $heading_size_h2;
+		left: 35px;
+		bottom: 35px;
+	}
+
+	&-img {
+		max-width: 100%;
+	}
 }

@@ -1,13 +1,19 @@
-$sections: (
-    section_1: #f9f8fb,
-    section_2: #00b1b1,
-    section_3: #70bfff,
-    section_4: #ffe92f,
-    section_5: #ffffff,
-    section_6: #b07cf7,
-    ); 
+$dark-color: #262626;
+$white-color: #fff;
+$red-color: #ff6033;
+$header-bg-color: #f9f8fb;
+
+$main_color: $dark-color;
+$secondary_color: $white-color;
+
+$main_font: 'Railway', sans-serif;
+
+$heading_size_h1: 60px;
+$heading_size_h2: 90px;
+$heading_size_h3: 20px;
+
+$text_lg: 20px;
+$text_md: 17px;
 
 
-
-
-
+$img_path: '../img/';
