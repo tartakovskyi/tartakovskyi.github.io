@@ -1,0 +1,58 @@
+.sect {
+	max-width: 1200px;
+	margin: auto;
+	border: 3px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100px;
+	text-transform: uppercase;
+}
+
+.section_1 {
+	@extend .sect;
+	.btn {
+		@include button(#ff6033);
+	}
+}
+
+.section_2 {
+	@extend .sect;
+	.btn {
+		@include button(#eb2c3f)
+	}
+}
+
+.section_3 {
+	@extend .sect;
+	.btn {
+		@include button(#ff8b10)
+	}
+}
+
+.section_4 {
+	@extend .sect;
+	.btn {
+		@include button(#5585a2)
+	}
+}
+
+.section_5 {
+	@extend .sect;
+	.btn {
+		@include button(#96b92c)
+	}
+}
+
+.section_6 {
+	@extend .sect;
+	.btn {
+		@include button(#f72b3b)
+	}
+}
+
+@each $section, $color in $sections {
+	.#{$section} {
+		background-color: $color;
+	}
+}
