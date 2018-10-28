@@ -5,11 +5,12 @@
 	font-size: $text_lg;
 	font-weight: 300;
 	background-color: $button-bg;
-	color: #fff;
+	color: $color;
 	text-transform: uppercase;
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+	border: none;
 	box-shadow: 0 2px 4px rgba(0,0,0,.5);
 	&:hover {
 		background-color: lighten($button-bg, 10%);
