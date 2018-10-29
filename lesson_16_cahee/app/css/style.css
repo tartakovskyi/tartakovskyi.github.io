@@ -240,18 +240,18 @@ a, button {
 .section {
   padding: 100px 0 120px; }
 
-.gallery {
+.section-gallery {
   text-align: center;
   background-color: #ffe92f; }
-  .gallery__grid {
+  .section-gallery__grid {
     margin-bottom: 50px; }
-  .gallery__item {
+  .section-gallery__item {
     display: block;
     position: relative;
     -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
     font-size: 0; }
-    .gallery__item:hover::after {
+    .section-gallery__item:hover::after {
       content: "";
       position: absolute;
       top: 0;
@@ -261,9 +261,9 @@ a, button {
       display: block;
       background-color: rgba(0, 0, 0, 0.3);
       z-index: 2; }
-    .gallery__item img {
+    .section-gallery__item img {
       width: 100%; }
-  .gallery_column {
+  .section-gallery_column {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -281,7 +281,7 @@ a, button {
     -ms-flex-pack: justify;
     justify-content: space-between;
     height: 100%; }
-  .gallery .button {
+  .section-gallery .button {
     height: 55px;
     min-width: 200px;
     padding: 0 30px;
@@ -296,5 +296,40 @@ a, button {
     border: none;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
-    .gallery .button:hover {
+    .section-gallery .button:hover {
       background-color: #749db6; }
+
+/* #SUBSCRIBE */
+.section-subscribe {
+  background: #fff url("../img/subscribe-bg.jpg") center no-repeat;
+  background-size: cover;
+  padding: 145px 0 160px; }
+  .section-subscribe__heading * {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px; }
+  .section-subscribe .text {
+    margin-bottom: 35px; }
+  .section-subscribe__form [type="email"] {
+    height: 55px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 1px solid #262626; }
+  .section-subscribe__form .button {
+    height: 55px;
+    min-width: 200px;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #96b92c;
+    color: #fff;
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border: none;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+    .section-subscribe__form .button:hover {
+      background-color: #b0d345; }

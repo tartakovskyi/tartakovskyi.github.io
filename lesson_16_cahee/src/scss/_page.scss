@@ -276,7 +276,7 @@ a, button {
 	padding: 100px 0 120px;
 }
 
-.gallery {
+.section-gallery {
 	text-align: center;
 	background-color: #ffe92f;
 
@@ -324,6 +324,42 @@ a, button {
 	& .button {
 		@include button(#5585a2);
 	} 
-
-
 }
+
+
+/* #SUBSCRIBE */
+
+.section-subscribe {
+	background: #fff url($img_path+'subscribe-bg.jpg') center no-repeat;
+	background-size: cover;
+	padding: 145px 0 160px;
+
+	&__heading {
+		& * {
+			font-size: 40px;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+	}
+
+	& .text {
+		margin-bottom: 35px;
+	}
+
+	&__form {
+
+		& [type="email"] {
+			height: 55px;
+			width: 100%;
+			padding-left: 10px;
+			font-size: $text_sm;
+			border: 1px solid $dark-color;
+		}
+
+		& .button {
+			@include button (#96b92c);
+		}
+	}	
+}
+
+
