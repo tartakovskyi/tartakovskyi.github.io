@@ -153,6 +153,14 @@ a, button {
 	font-size: $heading_size_h2;
 	font-weight: 700;
 	margin-bottom: 30px;
+
+	&--center {
+		text-align: center;
+
+		& * {
+			display: inline-block;
+		}
+	}
 }
 
 .text {
@@ -163,6 +171,8 @@ a, button {
 	}
 
 	&--center {
+		text-align: center;
+
 		&:last-child {
 			margin-bottom: 45px;
 		}
@@ -354,4 +364,57 @@ a, button {
 	}	
 }
 
+/* #BLOG */
 
+.section-blog {
+	background-color: #b07cf7;
+	color: $white-color;
+
+	&__grid {
+		@extend .section-gallery__grid;
+	}
+
+	&__post-link {
+		display: block;
+		position: relative;
+		text-decoration: none;
+		color: currentcolor;
+	}
+
+	&__post-image {
+		width: 100%;
+	}
+
+	&__post-date {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 8px;
+		width: 60px;
+		height: 60px;
+		background-color: $dark-color-rgba;
+		border-radius: 5px;
+		text-transform: uppercase;
+		text-align: center;
+		left: 30px;
+		top: 30px;
+	}
+
+	&__post-day,
+	&__post-month {
+		display: inline-block;
+		line-height: 1;
+	}
+
+	&__post-day {
+		font-size: 32px;
+		font-weight: 700;
+	}
+
+	&__post-month {
+		font-size: 21px;
+		font-weight: 900;
+	}
+}

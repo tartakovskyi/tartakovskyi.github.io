@@ -137,13 +137,19 @@ a, button {
   font-size: 90px;
   font-weight: 700;
   margin-bottom: 30px; }
+  .section-title--center {
+    text-align: center; }
+    .section-title--center * {
+      display: inline-block; }
 
 .text {
   line-height: 1.6; }
   .text:not(:last-child) {
     margin-bottom: 20px; }
-  .text--center:last-child {
-    margin-bottom: 45px; }
+  .text--center {
+    text-align: center; }
+    .text--center:last-child {
+      margin-bottom: 45px; }
 
 /* #SERVICES */
 .section-services {
@@ -241,7 +247,7 @@ a, button {
 .section-gallery {
   text-align: center;
   background-color: #ffe92f; }
-  .section-gallery__grid {
+  .section-gallery__grid, .section-blog__grid {
     margin-bottom: 50px; }
   .section-gallery__item {
     display: block;
@@ -331,3 +337,48 @@ a, button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
     .section-subscribe__form .button:hover {
       background-color: #b0d345; }
+
+/* #BLOG */
+.section-blog {
+  background-color: #b07cf7;
+  color: #fff; }
+  .section-blog__post-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: currentcolor; }
+  .section-blog__post-image {
+    width: 100%; }
+  .section-blog__post-date {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(38, 38, 38, 0.5);
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    left: 30px;
+    top: 30px; }
+  .section-blog__post-day, .section-blog__post-month {
+    display: inline-block;
+    line-height: 1; }
+  .section-blog__post-day {
+    font-size: 32px;
+    font-weight: 700; }
+  .section-blog__post-month {
+    font-size: 21px;
+    font-weight: 900; }
