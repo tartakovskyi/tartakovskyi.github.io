@@ -204,8 +204,6 @@ a, button {
         color: #fff; }
         .services-list li a:hover .col-9 {
           border-right-color: #fff; }
-        .services-list li a:hover svg path {
-          fill: #fff; }
     .services-list li [class^="col-"] {
       padding: 0; }
   .services-list .row {
