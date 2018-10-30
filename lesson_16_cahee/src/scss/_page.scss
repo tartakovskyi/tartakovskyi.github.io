@@ -125,7 +125,7 @@ a, button {
 	z-index: 1;
 
 	& path {
-		fill: #000000;
+		fill: #2d2d2d;
 		stroke: none;
 	}
 
@@ -139,6 +139,7 @@ a, button {
 .section-about {
 	background-color: #00b1b1;
 	color: $white-color;
+	position: relative;
 
 	&__bg-img {
 		height: 100vh;
