@@ -379,21 +379,36 @@ a, button {
 		position: relative;
 		text-decoration: none;
 		color: currentcolor;
+		height: calc(100vw / 3.87);
+		max-height: 310px;
+		overflow: hidden;
 	}
 
 	&__post-image {
 		width: 100%;
 	}
 
+/* 	&__post-date {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px;
+	width: 60px;
+	height: 60px;
+	background-color: $dark-color-rgba;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-align: center;
+	left: 30px;
+	top: 30px;
+	} */
+
 	&__post-date {
 		position: absolute;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
+		text-align: center;
 		padding: 8px;
-		width: 60px;
-		height: 60px;
 		background-color: $dark-color-rgba;
 		border-radius: 5px;
 		text-transform: uppercase;
@@ -404,7 +419,7 @@ a, button {
 
 	&__post-day,
 	&__post-month {
-		display: inline-block;
+		display: block;
 		line-height: 1;
 	}
 
@@ -417,4 +432,28 @@ a, button {
 		font-size: 21px;
 		font-weight: 900;
 	}
+
+	&__post-info {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 150px;
+		z-index: 2;
+		background-color: linear-gradient (to top, $dark-color-rgba, rgba(0,0,0,0)) ;
+		padding-top: 50px;
+
+
+	}
+}
+
+
+.gradient {
+  background-image: url("gradient.png");
+  position: absolute;
+  left: 165px;
+  top: 5014px;
+  width: 370px;
+  height: 151px;
+  z-index: 65;
 }
