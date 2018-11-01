@@ -2,7 +2,10 @@
 *****#COMMON
 *****#HEADER
 *****#ABOUT
-*****#SERVICES */
+*****#SERVICES
+*****#GALLERY
+*****#SUBSCRIBE
+*****#BLOG */
 /* #COMMON */
 @import url("reset.css");
 @import url("grid.css");
@@ -398,7 +401,8 @@ a, button {
     z-index: 2;
     background: -webkit-gradient(linear, left bottom, left top, from(#262626), to(transparent));
     background: linear-gradient(to top, #262626, transparent);
-    padding: 50px 20px 20px; }
+    padding: 50px 20px 20px;
+    text-align: left; }
     .section-blog__post-info h3 {
       font-size: 20px;
       font-weight: 700;

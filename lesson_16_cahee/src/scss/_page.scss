@@ -2,7 +2,10 @@
 *****#COMMON
 *****#HEADER
 *****#ABOUT
-*****#SERVICES */
+*****#SERVICES
+*****#GALLERY
+*****#SUBSCRIBE
+*****#BLOG */
 
 /* #COMMON */
 
@@ -441,6 +444,7 @@ a, button {
 		z-index: 2;
 		background: linear-gradient(to top, $dark-color, transparent) ;
 		padding: 50px 20px 20px;
+		text-align: left;
 
 		& h3 {
 			font-size: $text_lg;
