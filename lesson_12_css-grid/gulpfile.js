@@ -4,17 +4,20 @@ const   gulp = require('gulp'),
 autoprefixer = require('gulp-autoprefixer'),
 notify = require('gulp-notify'),
 sass = require('gulp-sass'),
+sourcemaps = require('gulp-sourcemaps'),
 clean = require('gulp-clean'),
 browserSync = require('browser-sync').create();
 
 
 gulp.task('sass', () => {
  return gulp.src('src/scss/**/*.scss')
+ .pipe(sourcemaps.init())
  .pipe(sass().on('error', notify.onError("SASS-Error: <%= error.message %>")))
  .pipe(autoprefixer({
    browsers: ['last 2 versions'],
    cascade: false
  }))
+ .pipe(sourcemaps.write())
  .pipe(gulp.dest('app/css'))
  .pipe(browserSync.stream());
 });
@@ -33,8 +36,8 @@ gulp.task('img', () => {
 
 gulp.task('watch', () => {
  gulp.watch('src/scss/**/*.scss', ['sass']),
- gulp.watch('src/index.html',['html'])
- gulp.watch('src/img/**/*.*',['img'])
+ gulp.watch('src/index.html',['html']),
+ gulp.watch('src/img/*.*',['img'])
 });
 
 gulp.task('connect', function() {

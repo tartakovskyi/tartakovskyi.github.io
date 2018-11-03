@@ -265,10 +265,12 @@ a, button {
 .section {
   padding: 100px 0 120px; }
 
+.section-gallery, .section-blog, .section-contact {
+  text-align: center; }
+
 .section-gallery {
-  text-align: center;
   background-color: #ffe92f; }
-  .section-gallery__grid, .section-blog__grid {
+  .section-gallery__grid, .section-blog__grid, .section-contact____grid {
     margin-bottom: 50px; }
   .section-gallery__item {
     display: block;
@@ -325,6 +327,12 @@ a, button {
       background-color: #749db6; }
 
 /* #SUBSCRIBE */
+.section-subscribe__form [type="email"], .section-contact__form input,
+.section-contact__form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px; }
+
 .section-subscribe {
   background: #fff url("../img/subscribe-bg.jpg") center no-repeat;
   background-size: cover;
@@ -337,9 +345,6 @@ a, button {
     margin-bottom: 35px; }
   .section-subscribe__form [type="email"] {
     height: 55px;
-    width: 100%;
-    padding-left: 10px;
-    font-size: 15px;
     border: 1px solid #262626; }
   .section-subscribe__form .button {
     height: 55px;
@@ -361,7 +366,6 @@ a, button {
 
 /* #BLOG */
 .section-blog {
-  text-align: center;
   background-color: #b07cf7;
   color: #fff; }
   .section-blog__post-link {
@@ -445,3 +449,47 @@ a, button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
     .section-blog .button:hover {
       background-color: #f95c68; }
+
+/* #CONTACT */
+.section-contact {
+  background: #75b5d1 url("../img/contacts-bg.jpg") center no-repeat;
+  background-size: cover; }
+  .section-contact__form-wrapper {
+    padding-right: calc((100% + 30px) / 6 - 30px); }
+  .section-contact__form input,
+  .section-contact__form textarea {
+    background-color: rgba(0, 196, 196, 0.5);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-left: solid 	transparent 5px; }
+    .section-contact__form input::-webkit-input-placeholder,
+    .section-contact__form textarea::-webkit-input-placeholder {
+      color: #fff;
+      font-weight: 300; }
+    .section-contact__form input::-moz-placeholder,
+    .section-contact__form textarea::-moz-placeholder {
+      color: #fff;
+      font-weight: 300; }
+    .section-contact__form input:-ms-input-placeholder,
+    .section-contact__form textarea:-ms-input-placeholder {
+      color: #fff;
+      font-weight: 300; }
+    .section-contact__form input:focus,
+    .section-contact__form textarea:focus {
+      border-left: solid 	#355b82 5px;
+      background-color: #00c4c4; }
+  .section-contact__form input {
+    min-height: 50px;
+    margin-bottom: 15px; }
+  .section-contact__form textarea {
+    padding-top: 17px; }
+
+.bg {
+  background-color: #00c4c4;
+  position: absolute;
+  left: 165px;
+  top: 5691px;
+  width: 500px;
+  height: 50px;
+  z-index: 24; }
