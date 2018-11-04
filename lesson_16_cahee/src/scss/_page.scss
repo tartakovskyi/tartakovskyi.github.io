@@ -5,11 +5,11 @@
 *****#SERVICES
 *****#GALLERY
 *****#SUBSCRIBE
-*****#BLOG */
+*****#BLOG
+*****#CONTACT
+*****#FOOTER  */
 
 /* #COMMON */
-
-
 *, *::after, *::before{
 	padding: 0;
 	margin: 0;
@@ -18,23 +18,29 @@
 
 * {
 	transition: all .3s ease;
+	outline: none;
 }
 
 html, body {
 	width: 100%;
 	min-height: 100vh;
+
+}
+
+body{
+	margin: 0;
 	font-size: $text_md;
 	font-weight: 300;
 	font-family: $main_font;
 	color: $main_color;
 }
 
-body{
-	margin: 0;
-}
-
 a, button {
 	cursor: pointer;
+}
+
+a * {
+	transition: none;
 }
 
 .fullscreen {
@@ -43,6 +49,11 @@ a, button {
 
 .nopadding {
 	padding: 0;
+}
+
+.bold-red {
+	font-weight: 700;
+	color: $red-color;
 }
 
 .cf {
@@ -101,10 +112,10 @@ a, button {
 	display: inline-block;
 	width: 127px;
 	color: $dark-color;
-
+/* 
 	& * {
 		transition: none;
-	}
+	} */
 
 	&:hover {
 		color: $red-color;
@@ -145,6 +156,10 @@ a, button {
 	&:hover {
 		color: $red-color;
 	}
+
+/* 	& * {
+	transition: none;
+} */
 }
 
 /* #ABOUT */
@@ -249,9 +264,9 @@ a, button {
 			color: inherit;
 			text-decoration: none;
 
-			& * {
-				transition: none;
-			}
+/* 			& * {
+	transition: none;
+} */
 
 			&:hover {
 				background-color: $red-color;
@@ -543,6 +558,10 @@ a, button {
 		text-align: left;
 	}
 
+	&__contact:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
 	&__contact-name {
 		font-size: $text_md;
 		font-weight: 700;
@@ -551,11 +570,47 @@ a, button {
 
 	&__contact-value {
 		font-size: 20px;
+		line-height: 1.5;
 	}
-
 }
 
 
+/* #FOOTER */
+.main-footer {
+	background-color: $dark-color;
+	color: $gray-color;
+	padding: 30px 0;
+	min-height: 90px;
+
+	&__inner {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+
+	&__copyright-left,
+	&__copyright-right {
+		display: inline-block;
+	}
+
+	&__copyright-left {
+		font-size: 16px;
+	}
+
+	&__copyright-right {
+		font-size: $text_sm;
+	}
+
+	&__logo {
+		display: inline-block;
+		color: inherit;
+
+		&:hover {
+			@extend .logo:hover;
+		}
+	}
+}
 
 
 
