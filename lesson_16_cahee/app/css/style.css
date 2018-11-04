@@ -1,3 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.row {
+  clear: both; }
+  .row::before, .row::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .row--in {
+    margin: 0 -15px; }
+  .row--flex {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+  .row--margin {
+    margin-bottom: 30px; }
+
+/* [class^="col-"] {
+	float: left;
+	padding: 0 15px;
+	min-height: 1px;
+} */
+.col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  padding: 0 15px;
+  min-height: 1px; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+/* .col-2 {
+	width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+	width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+	width: calc(100% / 12 * 4);
+}
+.col-5 {
+	width: calc(100% / 12 * 5);
+}
+.col-6 {
+	width: calc(100% / 12 * 6);
+}
+.col-7 {
+	width: calc(100% / 12 * 7);
+}
+.col-8 {
+	width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+	width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+	width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+	width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+	width: calc(100% / 12 * 12);
+} */
 /*  MAP
 *****#COMMON
 *****#HEADER
@@ -7,8 +162,6 @@
 *****#SUBSCRIBE
 *****#BLOG */
 /* #COMMON */
-@import url("reset.css");
-@import url("grid.css");
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -21,14 +174,14 @@
 
 html, body {
   width: 100%;
-  min-height: 100vh; }
-
-body {
-  margin: 0;
+  min-height: 100vh;
   font-size: 17px;
   font-weight: 300;
   font-family: "Railway", sans-serif;
   color: #262626; }
+
+body {
+  margin: 0; }
 
 a, button {
   cursor: pointer; }
@@ -484,12 +637,12 @@ a, button {
     margin-bottom: 15px; }
   .section-contact__form textarea {
     padding-top: 17px; }
-
-.bg {
-  background-color: #00c4c4;
-  position: absolute;
-  left: 165px;
-  top: 5691px;
-  width: 500px;
-  height: 50px;
-  z-index: 24; }
+  .section-contact__cont-wrapper {
+    padding-left: calc((100% + 30px) / 6 - 30px);
+    text-align: left; }
+  .section-contact__contact-name {
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .section-contact__contact-value {
+    font-size: 20px; }
