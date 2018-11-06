@@ -335,9 +335,13 @@ a * {
 
 	&__img-wrap {
 		position: relative;
-		padding-bottom: 72.8%;
+		padding-bottom: 70.3%;
 		font-size: 0;
 		overflow: hidden;
+
+		&--big {
+			padding-bottom: 71.4%;
+		}
 
 		& .cover-pic {
 			position: absolute;
@@ -349,16 +353,8 @@ a * {
 		}
 	}
 
-	&_column {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		flex-direction: column;
-		align-items: stretch;
-		justify-content: space-between;
-		height: 100%;
+	& .col-6 &__item {
+		margin-bottom: 0;
 	}
 
 	& .button {
