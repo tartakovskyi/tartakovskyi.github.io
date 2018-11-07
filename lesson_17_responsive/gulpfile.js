@@ -5,18 +5,23 @@ autoprefixer = require('gulp-autoprefixer'),
 notify = require('gulp-notify'),
 sass = require('gulp-sass'),
 clean = require('gulp-clean'),
-browserSync = require('browser-sync').create();
+browserSync = require('browser-sync').create(),
+sourcemaps = require ('gulp-sourcemaps');
 
 
 gulp.task('sass', () => {
- return gulp.src('src/scss/**/*.scss')
- .pipe(sass().on('error', notify.onError("SASS-Error: <%= error.message %>")))
- .pipe(autoprefixer({
-   browsers: ['last 2 versions'],
-   cascade: false
- }))
- .pipe(gulp.dest('app/css'))
- .pipe(browserSync.stream());
+  return setTimeout(() => {
+    return gulp.src('src/scss/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass({outputStyle: 'compressed'}).on('error', notify.onError("SASS-Error: <%= error.message %>")))
+    .pipe(autoprefixer({
+     browsers: ['last 2 versions'],
+     cascade: false
+   }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('app/css'))
+    .pipe(browserSync.stream());
+  }, 500);
 });
 
 gulp.task('html', () => {
