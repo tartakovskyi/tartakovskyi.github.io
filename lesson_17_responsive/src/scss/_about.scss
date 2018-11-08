@@ -64,21 +64,75 @@
 	&__img-wrap {
 		position: absolute;
 		top: 0;
+		left: 15px;
 		padding-top: 116%;
 		width: 100%;
 		z-index: 1;
+		transform: translateY(-55%);
 	}
 
 	&__img {
 		position: absolute;
 		top: 0;
-		left: 15px;
 		height: 100%;
 		width: 100%;
 		object-fit: cover;
-		transform: translateY(-55%);
+
 	}
 }
 
+.arrow_1 {
+    $size: 25px;
+    $border: 3px solid currentcolor;
 
+    display: inline-block;
+    width: $size;
+    border-top: $border;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: $size / 2.5;
+        border-top: $border;
+        right: 0;
+        top: -3px;
+        transform-origin: top right;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+        width: 12px;
+    }
+}
+
+.arrow_2 {
+    $size: 25px;
+    $border: 3px solid currentcolor;
+
+    display: inline-block;
+    width: $size;
+    border-top: $border;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: $size / 2.5;
+        height: $size / 2.5;
+        transform-origin: top right;
+        border-top: $border;
+        border-right: $border;
+        transform: rotate(45deg);
+    }
+}
 
