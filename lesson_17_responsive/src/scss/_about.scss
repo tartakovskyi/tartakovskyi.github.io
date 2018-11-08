@@ -14,16 +14,13 @@
 		position: absolute;
 		background-color: $blue-color;
 		opacity: .95;
-		z-index: 2;
 		@include after-bg;
 
 	}
 
 	&__content {
-		position: absolute;
-		z-index: 3;
+	position: relative;
 	}
-
 
 	&-title {
 		position: absolute;
@@ -42,7 +39,7 @@
 
 	&__text-content {
 		padding: 0 5% 0 10% ;
-		z-index: 3;
+		z-index: 2;
 		position: relative;
 	}
 
@@ -60,9 +57,16 @@
 		line-height: 1.875;
 	}
 
-	&__img-wrap {
+	.img-wrap-wrap {
 		position: relative;
+	}
+
+	&__img-wrap {
+		position: absolute;
+		top: 0;
 		padding-top: 116%;
+		width: 100%;
+		z-index: 1;
 	}
 
 	&__img {
