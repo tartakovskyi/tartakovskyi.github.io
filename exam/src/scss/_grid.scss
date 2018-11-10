@@ -15,10 +15,6 @@
 		clear: both;
 	}
 
-	&--faic {
-		display: flex;
-		align-items: center;
-	}
 }
 
 %col- {
@@ -33,6 +29,3 @@
 		width: 100%*$i/12;
 	}
 }
-
-
-

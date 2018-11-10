@@ -4,9 +4,9 @@ const   gulp = require('gulp'),
 autoprefixer = require('gulp-autoprefixer'),
 notify = require('gulp-notify'),
 sass = require('gulp-sass'),
+sourcemaps = require('gulp-sourcemaps'),
 clean = require('gulp-clean'),
-browserSync = require('browser-sync').create(),
-sourcemaps = require ('gulp-sourcemaps');
+browserSync = require('browser-sync').create();
 
 
 gulp.task('sass', () => {
@@ -36,10 +36,17 @@ gulp.task('img', () => {
  .pipe(browserSync.stream());
 });
 
+gulp.task('fonts', () => {
+ return gulp.src('src/fonts/**/*.*')
+ .pipe(gulp.dest('app/fonts'))
+ .pipe(browserSync.stream());
+});
+
 gulp.task('watch', () => {
  gulp.watch('src/scss/**/*.scss', ['sass']),
- gulp.watch('src/index.html',['html'])
- gulp.watch('src/img/**/*.*',['img'])
+ gulp.watch('src/index.html',['html']),
+ gulp.watch('src/img/**/*.*',['img']),
+ gulp.watch('src/fonts/**/*.*',['fonts'])
 });
 
 gulp.task('connect', function() {
@@ -59,7 +66,7 @@ gulp.task('clean', function () {
   }));
 });
 
-gulp.task('developing', ['watch', 'html', 'img', 'sass', 'connect']);
+gulp.task('developing', ['watch', 'html', 'img', 'fonts', 'sass', 'connect']);
 
 gulp.task('default', ['clean'], () => {
   gulp.start('developing');
