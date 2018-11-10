@@ -1,0 +1,42 @@
+.sec-services {
+	margin-bottom: 180px;
+
+	&__content {
+		position: relative;
+	}
+
+	&__title {
+			@extend %sec-title;
+			right: 0;
+		}
+
+}
+
+.service {
+	&__title {
+		@extend %descr-bottom;
+
+		& * {
+			font-size: 24px;
+			font-weight: 300;
+		}
+
+		&::before {
+
+		}
+
+
+
+	}
+
+
+	&__description {
+		font-size: 14px;
+		font-weight: 200;
+		line-height: 2;
+		@extend %descr-bottom;
+	}
+
+
+}
+
