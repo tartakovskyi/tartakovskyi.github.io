@@ -1,14 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
-
-@font-face {
-	font-family: "Aleo";
-	src: url("../fonts/aleo-regular-webfont.ttf") format("TrueType"),
-	url("../fonts/aleo/aleo-regular-webfont.eot") format("eot"),
-	url("../fonts/aleo/aleo-regular-webfont.woff") format("woff"),
-	url("../fonts/aleo/aleo-regular-webfont.woff2") format("woff2"),
-	url("../fonts/aleo/aleo-regular-webfont.svg") format("svg");
-}
-
 $white-color: #fff;
 $light-color: #e8e8e8;
 $light-blue-color: #5474fd;
@@ -27,11 +16,9 @@ $font-size: 16px;
 $img-path: '../img/';
 
 $color: black;
+$main-bg-color: $dark-grey-color;
 
 
-
-
-// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 // <i class="fab fa-facebook-f"></i>
 // <i class="fab fa-twitter"></i>
 // <i class="fab fa-linkedin-in"></i>

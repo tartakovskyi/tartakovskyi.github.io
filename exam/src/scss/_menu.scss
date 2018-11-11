@@ -1,0 +1,44 @@
+.sec-menu {
+	background-color: $light-blue-color;
+
+	&__bar {
+		height: 80px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		display: block;
+		font-family: $secondary-font;
+		font-weight: 700;
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+}
+
+.main-menu {
+	display: block;
+	font-size: 0;
+
+	&__item {
+		display: inline-block;
+		margin-right: 40px;
+		font-size: 14px;
+		font-family: $main-font;
+		text-transform: uppercase;
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+
+	&__link {
+		display: block;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+

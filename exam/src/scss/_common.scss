@@ -1,16 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+@font-face {
+	font-family: "Aleo";
+	src: url("../fonts/aleo/aleo-regular-webfont.ttf") format("TrueType"),
+	url("../fonts/aleo/aleo-regular-webfont.eot") format("eot"),
+	url("../fonts/aleo/aleo-regular-webfont.woff") format("woff"),
+	url("../fonts/aleo/aleo-regular-webfont.woff2") format("woff2"),
+	url("../fonts/aleo/aleo-regular-webfont.svg") format("svg");
+}
+
 *, *::after, *::before{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
-	html, body {
-		width: 100%;
-		min-height: 100vh;
-	}
+html, body {
+	width: 100%;
+	min-height: 100vh;
 
-	body{
-		margin: 0;
-		font-family: $main-font;
-		font-size: $font-size;
+}
+
+body{
+	border: solid 15px $white-color;
+	font-family: $main-font;
+	font-size: $font-size;
+	background-color: $main-bg-color;
+	color: $white-color;
+}
+
+$sections: header, choose, house, rocks, testimonials;
+
+@each $section in $sections {
+	.sec-#{$section} {
+		background-image: url($img-path + $section + '-bg.jpg');
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
 	}
+}
+
+a, button {
+	cursor: pointer;
+}
+
+a, a:active {
+	text-decoration: none;
+	color: currentColor;
+}

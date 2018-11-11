@@ -1,0 +1,35 @@
+.sec-how {
+	padding: 100px 0 120px;
+	&__list {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__icon {
+		width: 60px;
+		height: 60px;
+		color: $dark-blue-color;
+
+		&:nth-child(2) {
+			color: #ff6363;
+		}
+
+
+		&:last-child {
+			color: $light-blue-color;
+		}
+	}
+
+	&__item-title {
+		display: inline-block;
+		font-size: 36px;
+	}
+}
+
+
