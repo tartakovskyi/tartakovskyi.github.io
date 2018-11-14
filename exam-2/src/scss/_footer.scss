@@ -1,0 +1,41 @@
+.sec-footer {
+	padding: 120px 0 50px;
+
+	&__content {
+		margin: 0 auto;
+		width: 170px;
+		font-family: $secondary-font;
+	}
+
+	&__logo {
+		display: block;	
+		font-weight: 700;
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		margin-right: -3px;
+		margin-bottom: 15px;
+
+		&:hover {
+			color: $light-blue-color;
+		}
+	}
+
+	&__slogan {
+		display: block;
+		font-weight: 400;
+		letter-spacing: .7px;
+		margin-right: -1px;
+		margin-bottom: 30px;
+	}
+}
+
+.socials {
+	display: flex;
+	justify-content: space-between;
+	&__link {
+		&:hover {
+			color: $light-blue-color;
+		}
+	}
+}

@@ -92,17 +92,19 @@
 	bottom: 10%;
 	transform: translateX(-50%);
 
-	&:hover {
-		color: $light-blue-color;
-	}
+	
 
-	& span {
+	& a {
 		display: inline-block;
 		position: relative;
 
-		&::after {
-			content: url($img-path + 'scroll.svg');
-			width: 13px;
+		&:hover {
+			color: $light-blue-color;
+		}
+
+		& svg {
+			width: 15px;
+			height: 9px;
 			position: absolute;
 			bottom: -30px;
 			left: 50%;

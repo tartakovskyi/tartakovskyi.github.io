@@ -1,0 +1,75 @@
+.sec-testimonials {
+	padding: 120px 0 200px;
+
+	&__title {
+		margin-bottom: 100px;
+		text-align: center;
+
+		& * {
+			display: inline-block;
+			font-size: 36px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		align-items: stretch;
+		font-size: 0;
+
+		&>* {
+			display: inline-block;
+		}
+	}
+
+	&__img-wrap {
+		width: 40%;
+		max-width: 445px;
+	}
+
+	&__img {
+		min-height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	&__text-content {
+		width: 60%;
+		max-width: 665px;
+		font-family: $secondary-font;
+		line-height: 26px;
+		background-color: $light-grey-color;
+		padding: 50px 50px 50px 60px;
+
+	}
+
+	&__name {
+		margin-bottom: 32px;
+		& * {
+			display: inline-block;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__text {
+		font-size: $font-size;
+		position: relative;
+		text-indent: 30px;
+		& .fas {
+			transform: translateY(-100%);
+			position: absolute;
+			left: 0;
+			top: 6px;
+			text-indent: 0;
+			color: $light-blue-color;
+		}
+	}
+
+	
+
+	
+
+
+
+
+}
