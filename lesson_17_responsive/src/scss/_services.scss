@@ -1,14 +1,14 @@
 .sec-services {
-	margin-bottom: 180px;
+	padding: 180px 0 220px;
 
 	&__content {
 		position: relative;
 	}
 
 	&__title {
-			@extend %sec-title;
-			right: 0;
-		}
+		@extend %sec-title;
+		right: 0;
+	}
 
 }
 
@@ -16,19 +16,18 @@
 	&__title {
 		@extend %descr-bottom;
 
-		& * {
+		& h3 {
 			font-size: 24px;
 			font-weight: 300;
+
+			&::before { 
+				font-size: 24px;
+				margin-right: 25px;
+				@extend %icon-service;
+
+			}
 		}
-
-		&::before {
-
-		}
-
-
-
 	}
-
 
 	&__description {
 		font-size: 14px;
@@ -36,7 +35,5 @@
 		line-height: 2;
 		@extend %descr-bottom;
 	}
-
-
 }
 
