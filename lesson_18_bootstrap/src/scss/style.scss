@@ -29,7 +29,16 @@
 }
 
 .mb-30 {
-	&>* {
+	& [class*="col-"] {
 		margin-bottom: 30px;
+		& .mb-30 {
+			&:last-child {
+				& [class*="col-"] {
+					margin-bottom: 0;
+				}	
+			}
+		}
 	}
 }
+
+
