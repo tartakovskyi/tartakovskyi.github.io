@@ -8,6 +8,7 @@
 	background: transparent url($img_path + 'about-bg.jpg') 50% 100% no-repeat;
 	position: relative;
 	z-index: 1;
+	margin-bottom: 180px;
 
 	&::after {
 		content: "";

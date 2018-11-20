@@ -23,7 +23,7 @@
 
 	&__content {
 		position: absolute;
-		bottom: 5vh;
+		bottom: 0;
 		z-index: 2;
 	}
 
@@ -94,7 +94,6 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
-		@extend %mb0;
 	}
 
 	&__item {

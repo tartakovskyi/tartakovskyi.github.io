@@ -29,18 +29,6 @@ body{
 	background-color: #020407;
 }
 
-.cf {
-	clear: both;
-	&::after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-	&::before {
-		@extend .cf::after;
-	}
-}
-
 ul>li>a {
 	display: block;
 	text-decoration: none;
