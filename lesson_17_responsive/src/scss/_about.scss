@@ -15,14 +15,13 @@
 		background-color: $blue-color;
 		opacity: .95;
 		@include after-bg;
-
 	}
 
 	&__content {
 		position: relative;
 	}
 
-	&-title {
+	&__title {
 		@extend %sec-title;
 		left: 0;
 	}
@@ -45,10 +44,6 @@
 		@extend %descr-bottom;
 		font-weight: 300;
 		line-height: 1.875;
-	}
-
-	.img-wrap-wrap {
-		position: relative;
 	}
 
 	&__img-wrap {
