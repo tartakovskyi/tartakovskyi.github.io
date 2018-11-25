@@ -1,19 +1,15 @@
-const login = prompt('Укажите свой логин');
+const wrapper = document.createElement('div');
 
-if (login == null||undefined) {
-    document.write('Вход отменён. Для того, чтобы повторить попытку, нажмите F5')
-} else {
-    if (login == 'admin') {
-        const password = prompt('Введите пароль');
-        if (password == null||undefined) {
-            document.write('Вход отменён. Для того, чтобы повторить попытку, нажмите F5');
-        } else {
-            if (password == 'Черный Властелин') {
-                document.write('Добро пожаловать, хозяин!')
-            } else document.write('Пароль неверный, в доступе отказано!')
-        }
-    } else {
-        document.write('Я вас не знаю. Для того, чтобы повторить попытку, нажмите F5');
-    }
-}
+wrapper.classlist.add('test-item');
 
+rootElement.appendChild(wrapper);
+
+const question = document.createElement('span');
+question.classlist.add('test-question');
+question.innerText = '2 + 3';
+
+const form = document.createElement('form');
+form.classlist.add('test-form');
+
+const input = document.createElement('input');
+input.setAttribute{"type", "radio"};

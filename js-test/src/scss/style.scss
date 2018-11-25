@@ -1,49 +1,13 @@
-.blue {
-	min-height: 150px;
-	background-color: blue;	
-}
+.test {
+	&-item {
+		border: 2px solid black;
+		padding: 2px;
+	}
 
-.red {
-	min-height: 350px;
-	background-color: red;
-}
-
-.green {
-	min-height: 170px;
-	background-color: green;
-}
-
-.orange {
-	@extend .blue;
-	background-color: orange;
-}
-
-.aquablue {
-	min-height: 185px;
-	background-color: aqua;
-}
-
-.black {
-	@extend .blue;
-	background-color: black;
-}
-
-.grid {
-	.row {
-	& [class*="col-"] {
-		margin-bottom: 30px;
-		& .row {
-			&:last-child {
-				& [class*="col-"] {
-					margin-bottom: 0;
-				}	
-			}
-		}
+	&-question {
+		font-size: 2em;
+		display: block;
+		background-color: #fefefe;
+		padding: .5em;
 	}
 }
-}
-
-
-
-
-
