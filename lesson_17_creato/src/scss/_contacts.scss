@@ -1,6 +1,7 @@
 .sec-contacts {
 	&__info {
 		background-color: #2866bd;
+		padding: 80px 95px 70px;
 		min-height: 200px;
 	}
 
@@ -10,3 +11,33 @@
 		margin-left: -30px;
 	}
 }
+
+.contacts-list {
+	&__item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	%db {
+		display: block;
+	}
+
+	&__item-name {
+		@extend %db;
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	&__item-value {
+		@extend %db;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 2;
+
+		& a {
+			color: currentColor;
+		}
+
+	}
+}
+

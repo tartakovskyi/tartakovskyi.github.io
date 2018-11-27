@@ -1,15 +1,12 @@
-const wrapper = document.createElement('div');
+const sequenceSum = (begin, end) => {
+  // BEGIN (write your solution here)
+  if (begin > end) {
+    return NaN;
+  } else if (begin === end) {
+    return begin;
+  }
+  return begin + sequenceSum(begin + 1, end);
+  }
+    // END
 
-wrapper.classlist.add('test-item');
-
-rootElement.appendChild(wrapper);
-
-const question = document.createElement('span');
-question.classlist.add('test-question');
-question.innerText = '2 + 3';
-
-const form = document.createElement('form');
-form.classlist.add('test-form');
-
-const input = document.createElement('input');
-input.setAttribute{"type", "radio"};
+    
