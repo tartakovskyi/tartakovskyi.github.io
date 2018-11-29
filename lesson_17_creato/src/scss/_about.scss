@@ -121,3 +121,36 @@
 	}
 }
 
+.arrow-right-small {
+	$size: 14px;
+	$border: 1px solid currentcolor;
+
+	display: inline-block;
+	width: $size;
+	border-top: $border;
+	position: relative;
+
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		border-top: $border;
+		right: 0;
+		top: -1px;
+		transform-origin: top right;
+	}
+
+	&::before {
+		transform: rotate(45deg);
+				width: 6px;
+	}
+
+	&::after {
+		transform: rotate(-45deg);
+				width: 7px;
+	}
+}
+
+
+

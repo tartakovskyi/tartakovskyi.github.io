@@ -251,7 +251,7 @@
 					</div>
 				</section>
 				<section class="sec-contacts">
-					<div class="row">
+					<div class="row align-items-stretch">
 						<div class="col-5">
 							<div class="sec-contacts__info">
 								<ul class="contacts-list">
@@ -275,7 +275,18 @@
 							</div>
 						</div>
 						<div class="col-7">
-							<div class="sec-contacts__feedback"></div>
+							<div class="sec-contacts__feedback">
+								<div class="sec-contacts__feedback-title">
+									<h3>Get In Touch</h3>
+								</div>
+								<form action="post" class="sec-contacts__form" id="feedback">
+									<input type="text" name="name" placeholder="Name">
+									<input type="email"name="email" placeholder="Email address">
+									<textarea name="message" placeholder="Message"></textarea>
+									<input type="submit" value="Send Now">
+									<span class="arrow-right-small"></span>
+								</form>
+							</div>
 						</div>
 					</div>
 				</section>
