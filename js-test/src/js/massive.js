@@ -11,21 +11,32 @@ console.log(map(square, [])); // []*/
 console.log(map(square, arr)); // [1, 4, 9]
 console.log(arr); // [1, 2, 3]*/
 
+/*
+const peopleBirthdays = [1982, 1995, 1972, 2005, 1993, 2010, 1969];
 
+function  {
+	const currentYear = 2018;
+	for(let i = 0; i < peopleBirthdays.length; i++) {
+		peopleAges.push (currentYear - peopleBirthdays[i]);
+	}calculateAge()
+return peopleAges
+}
 
-
+console.log(calculateAge())*/
 
 const peopleBirthdays = [1982, 1995, 1972, 2005, 1993, 2010, 1969];
 
-const currentYear = 2018;
-
-const peopleAges = [];
-
-function calculateAge() {
-	for(let i = 0; i < peopleBirthdays.length; i++) {
-		peopleAges.push (currentYear - peopleBirthdays[i]);
-	}
-//return peopleAges
+const calculateAge = (agesArray, dateOfBirth) => {
+	const currentYear = 2018;
+	agesArray.push (currentYear - dateOfBirth);
 }
 
-console.log(calculateAge())
+const makeNewArr = (firstArray, doFunction) => {	
+	const newArray = [];
+	for(let i = 0; i < firstArray.length; i++) {
+		doFunction(newArray, firstArray[i]);
+	}
+	return newArray
+}
+
+console.log(makeNewArr(peopleBirthdays, calculateAge));
