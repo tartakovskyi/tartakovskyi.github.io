@@ -3,24 +3,14 @@ $paddingTop: 80px;
 .first-screen {
 	position: relative;
 	background-image:
-	linear-gradient(to top, rgba(#000, 1) 0%, rgba(#021833, .9) 100%), 
+	linear-gradient(to top, $dark-color 0%,  rgba($top-gradient-color, .9) 100%), 
 	url($img-path + "header-bg.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
-	background-color: #010307;
 	padding-top: $paddingTop;
 
-	&::after {
-		content: "";
-		position: absolute;
-		bottom: 30px;
-		left: 0;
-		right: 0;
-		min-height: 16vh;
-		background-image: linear-gradient(to top, rgba(#000, 1) 0%, transparent 100%);
-	}
 
 	&__container {
 		position: relative;
@@ -55,35 +45,69 @@ $paddingTop: 80px;
 	}
 
 	&__image {
-		img {
-			max-width: 70%;
 
+		&-link {
+			position: relative;
+			display: inline-block;
+			max-width: 70%;
+			
 			@media screen and (min-width: 1367px) {
-				max-width: 100%;			
+				max-width: 100%;	
+			}
+
+			.fa-play {
+				@include centered;
+				z-index: 1;	
+				color: $pink-color;
+				font-size: rem(24px);
+			}
+
+				&::after {
+					$size: 90px;
+					content: '';
+					display: block;
+					position: absolute;
+					width: $size;
+					height: $size;
+					border: 10px solid $border-color;
+					border-radius: 50%;
+					@include centered;
+					background-color: $white-color;
+				}		
+			}		
+
+
+			img {
+				max-width: 100%;
 			}
 		}
 
-	}
+		&__title {
+			$font-size: rem(48px);
+			margin-bottom: rem(30px);
 
-	&__title {
-		margin-bottom: rem(40px);
+			&>* {
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-size: $font-size;
+				font-weight: 300;
+				margin-bottom: 0;
+			}
 
-		&>* {
-			text-transform: uppercase;
+			&::before {
+				@include decor($font-size) ;
+			}
+		}
+
+		&__text {
+			line-height: 2;
+			font-weight: 200;
+			max-width: 90%;
+			color: $light-color;
 			letter-spacing: 2px;
-			font-size: rem(48px);
-			font-weight: 300;
-			margin-bottom: 0;
 		}
 	}
 
-	&__text {
-		line-height: 2;
-		font-weight: 300;
-		letter-spacing: 2px;
-		max-width: 90%;
-		color: $light-color;
-		margin-bottom: rem(40px);
-	}
-}
+
+
 

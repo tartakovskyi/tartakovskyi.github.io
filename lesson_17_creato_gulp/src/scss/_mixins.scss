@@ -7,6 +7,26 @@
 }
 
 @function rem($target, $context: $base-size) {
-  @if $target == 0 { @return 0 }
-  @return $target / $context + 0rem;
+	@if $target == 0 { @return 0 }
+	@return $target / $context + 0rem;
+}
+
+@mixin centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@mixin decor ($font-size, $line-heights: 1.2) {
+	content: '';
+	display: block;
+	width: 90px;
+	border-top: 1px solid $white-color;
+	position: absolute;
+	transform: translate(-130%, $font-size * $line-heights / 2);
+
+	@media screen and (min-height: 1367px) {
+		transform: translate(-180%, $font-size * $line-heights / 2);
+	}
 }

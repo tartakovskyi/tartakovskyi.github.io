@@ -40,3 +40,5 @@ const makeNewArr = (firstArray, doFunction) => {
 }
 
 console.log(makeNewArr(peopleBirthdays, calculateAge));
+
+console.log('проверка состояния исходного массива: ' + peopleBirthdays);

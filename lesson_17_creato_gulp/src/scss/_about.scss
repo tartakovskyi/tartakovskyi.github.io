@@ -1,0 +1,62 @@
+.about {
+	padding-top: rem(200px);
+
+	&__row {
+		position: relative;
+		z-index: 2;
+	}
+
+
+	&__content {
+		background: url($img-path +'about-bg.jpg') no-repeat;
+		background-size: cover;
+		position: relative;
+		min-height: 470px;
+
+		&::after {
+			position: absolute;
+			content: '';
+			@include overlay;
+			background-color: $about-overlay-color;
+			opacity: .9;
+			z-index: 1;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		max-width: 470px;
+		transform: translate(15px, -25%);
+		box-shadow: 0 0 10px 0 rgba($black-color, .3)
+	}
+
+	&__text-content {
+		padding-left: rem(65px);
+	}
+
+	&__text {
+		$line-height: 2;
+		line-height: $line-height;
+		margin-bottom: rem(30px);
+		font-weight: 300;
+
+		&::before {
+			@include decor($base-size, $line-height);
+			width: 37px;
+		}
+	}
+}
+
+.section-title {
+	position: absolute;
+	top: 0;
+	transform: translateY(-76%);
+
+	& * {
+		font-size: 91px;
+		font-weight: 900;
+		text-transform: uppercase;
+		line-height: 1;
+		opacity: 0.05; 
+	}
+}
