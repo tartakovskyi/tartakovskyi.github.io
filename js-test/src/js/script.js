@@ -1,39 +1,34 @@
-const length = str => str.length;
-const toUpperCase = str => str.toUpperCase();
-
-const bigLettersCount = (str) => {
-  // BEGIN (write your solution here)
-  let bigLetters = 0;
-  for (let i = 0; i < length(str); i++) {
-    if (toUpperCase(str[i]) === str[i]) {bigLetters = bigLetters + 1}
+const toUpperCaseFirst = str => {
+  const strArr = str.split(' ');
+  const newArr = [];
+  for (let i = 0; i < strArr.length; i++) {
+    let n = strArr[i].split('');
+    const a = n[0].toUpperCase();
+    n.splice(0, 1, a);
+    const z = n.join('');
+    newArr.push(z);
   }
-  return bigLetters
-  // END
-};
+  return newArr.join(' ');
+}
 
+/*toUpperCaseFirst('hello, world')*/
 
-const compare = (first, second) => {
-  const firstCount = bigLettersCount(first);
-  const secondCount = bigLettersCount(second);
-
-  // BEGIN (write your solution here)
-  if (first > second) return 1 
-  else if (first < second) return -1
-  else return 0
-  // END
-};
-
-/*console.log(compare('AD', 'AsAsA'));
-console.log(compare('AsAsA', 'AD'))*/
-console.log('ASdsssD')
+console.log(toUpperCaseFirst('hello, world! I love you'));
 
 
 
-/*export const greaterThan = (first, second) =>
-  compare(first, second) === 1;
 
-export const lessThan = (first, second) =>
-  compare(first, second) === -1;
 
-export const isEqual = (first, second) =>
-  compare(first, second) === 0;*/
+/*
+const toUpperCaseFirst = n => {
+  n[0] = toUpperCase(n[0]);
+  const phraseLength = n.length;
+  for (let i = 0; i < phraseLength; i++) {
+    if (n[i] === ' ') {n[i+1] = n[i+1].toUpperCase()}
+  }
+return n;
+}
+
+console.log(toUpperCaseFirst('hello, world'));*/
+
+
