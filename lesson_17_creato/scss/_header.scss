@@ -1,0 +1,115 @@
+.main-header {
+	background-image: linear-gradient(to top, #000, rgba(3,24,51,.9)), url($img_path + "header-bg.jpg");
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	padding-top: 80px;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		min-height: 10vh;
+		background-image: linear-gradient(to top, #020407, transparent);
+	}
+
+	& .container {
+		position: relative;
+		min-height: calc(100vh - 80px);
+	}
+
+	&__content {
+		position: absolute;
+		bottom: 5vh;
+		z-index: 2;
+	}
+
+	&__img-wrap {
+		position: relative;
+		padding-top: 112%;
+		box-shadow: 2px 2px 5px 0 rgba(0,0,0,.1)
+	}
+
+	&__img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+
+	.img-play {
+		z-index: 10;
+		$size: 80px;
+		@include centered;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 10px solid $gray-color;
+		border-radius: 50%;
+		background-color: $white-color;
+		width: $size;
+		height: $size;
+
+		.fa-play {
+		@include centered;
+		color: $pink-color;
+		}
+	}
+
+	&__text-content {
+		margin-left: -15px;
+	}
+
+	&__title {
+		margin: -10px 0 10px;
+
+		& * {
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: 48px;
+		line-height: 1.4;
+		}
+	}
+
+	&__description {
+		@extend %descr-bottom;
+		line-height: 2;
+		font-weight: 200;
+	}
+}
+
+.logo {
+	&__link {
+		display: inline-block;
+		font-size: 0;
+	}
+}
+
+.navigation {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		@extend %mb0;
+	}
+
+	&__item {
+		list-style: none;
+		text-decoration: none;
+	}
+
+	&__link {
+		color: $white-color;
+		font-weight: 600;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $pink-color;
+		}
+	}
+}
+

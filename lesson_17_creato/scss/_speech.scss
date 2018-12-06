@@ -1,0 +1,105 @@
+.sec-speech {
+	padding: 295px 0 50px;
+
+	&__inner {
+		padding: 150px 0;
+		background-color: #ef4836;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__content {
+		@extend .sec-about__content;
+	}
+
+	&__title {
+		@extend %sec-title;
+		left: 0;
+	}
+
+	&__text-content {
+		z-index: 2;
+		position: relative;
+		margin-right: -30px;
+
+		&::after {
+			position: absolute;
+			top: -30px;
+			left: -25px;
+			content: "“";
+			font-size: 150px;
+			font-weight: 900;
+			line-height: 1;
+			color: #da3e2d;
+			z-index: -1;
+		}
+	}
+
+	&__white-line {
+		position: absolute;
+		top: -1px;
+		left: -30px;
+		width: 90px;
+		z-index: 4;
+		transform: translateX(-100%);
+		background-color: #fff;
+	}
+
+	&__description {
+		font-weight: 300;
+		line-height: 1.875;
+		font-style: italic;
+		@extend %descr-bottom;
+	}
+
+	&__author {
+		display: block;
+		font-weight: 700;
+		line-height: 1;
+	}
+
+	&__img-wrap-wrap {
+		position: relative;
+		height: 100%;
+	}
+
+	&__img-wrap {
+		position: absolute;
+		top: 50%;
+		left: -15px;
+		padding-top: 116%;
+		width: 100%;
+		z-index: 1;
+		transform: translateY(-50%);
+	}
+
+	&__img {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+.angles {
+	position: absolute;
+	right: 0;
+	bottom: -50px;
+
+	& svg {
+		cursor: pointer;
+		height: 30px;
+		width: 18px;
+
+		&:hover {
+			color: $dark-color;
+			opacity: .4;
+		}
+
+		&:first-child {
+			margin-right: 10px;
+		}
+	}
+}
