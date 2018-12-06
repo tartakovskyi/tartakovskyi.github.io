@@ -1,0 +1,43 @@
+.main-footer {
+	padding: 45px 0;
+	min-height: 150px;
+
+	&__copyrights {
+
+	}
+
+	&__logo {
+		margin-right: 25px;
+	}
+
+	&__copyrights-text {
+		font-size: 14px;
+		font-weight: 200;
+		letter-spacing: 1px;
+		color: $dark-gray-color;
+	}
+
+	&__socials {
+		margin-left: -30px;
+		width: calc(100% + 30px);
+	}
+
+	&__socials-item {
+		display: inline-block;
+	}
+
+	&__icon {
+		display: block;
+
+		svg {
+			height: 16px;
+			color: $white-color;
+		}
+
+		&:hover {
+			svg {
+				color: $dark-blue-color;
+			}
+		}
+	}
+}

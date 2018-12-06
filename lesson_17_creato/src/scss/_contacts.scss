@@ -1,8 +1,20 @@
 .sec-contacts {
 	&__info {
-		background-color: #2866bd;
+		position: relative;
+		background: #2866bd url('../img/contact-bg.jpg') 50% 0 no-repeat;
+		background-size: cover;
 		padding: 80px 95px 70px;
 		height: 100%;
+
+		&::after {
+			content: "";
+			position: absolute;
+			@include after-bg;
+			/* z-index: -1; */
+			background-color: #2866bd;
+			opacity: .9;
+		}
+
 	}
 
 	&__feedback {
@@ -74,22 +86,22 @@
 			&:-ms-input-placeholder {color:$dark-gray-color;}
 		}
 
-		& [type="submit"] {
-			font-size: 18px;
-			font-weight: 700;
-			line-height: 1;
+		& [type="submit"],
+		& .arrow-right-small {
 			color: $red-color;
-			border: none;
 			cursor: pointer;
-			margin-right: 23px;
 			&:hover {
 				color: $white-color;
 			}
 		}
 
-		.arrow-right-small {
-			color: $red-color;
-		} 
+		& [type="submit"] {
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 1;			
+			border: none;		
+			margin-right: 23px;		
+		}
 
 		& * {
 			background-color: transparent;
@@ -98,6 +110,8 @@
 }
 
 .contacts-list {
+	z-index: 2;
+
 	&__item:not(:last-child) {
 		margin-bottom: 40px;
 	}
