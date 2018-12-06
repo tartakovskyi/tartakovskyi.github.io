@@ -81,12 +81,15 @@
 			color: $red-color;
 			border: none;
 			cursor: pointer;
+			margin-right: 23px;
 			&:hover {
 				color: $white-color;
 			}
 		}
 
-
+		.arrow-right-small {
+			color: $red-color;
+		} 
 
 		& * {
 			background-color: transparent;

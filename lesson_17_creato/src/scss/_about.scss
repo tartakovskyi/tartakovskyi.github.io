@@ -74,6 +74,9 @@
 	width: $size;
 	border-top: $border;
 	position: relative;
+	vertical-align: middle;
+	margin-left: 15px;
+
 
 	&::before,
 	&::after {
@@ -105,6 +108,8 @@
 	width: $size;
 	border-top: $border;
 	position: relative;
+	vertical-align: middle;
+
 
 	&::before {
 		content: "";
@@ -124,11 +129,11 @@
 .arrow-right-small {
 	$size: 14px;
 	$border: 1px solid currentcolor;
-
 	display: inline-block;
 	width: $size;
 	border-top: $border;
 	position: relative;
+	vertical-align: middle;
 
 	&::before,
 	&::after {
