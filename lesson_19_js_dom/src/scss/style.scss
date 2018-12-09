@@ -911,6 +911,7 @@ body {
   border-top: 1px solid #e4e2e2;
   padding-top: 10px;
   margin-top: 10px;
+  position: relative;
 }
 
 .ba-tune__top {
@@ -939,10 +940,14 @@ body {
 }
 
 .ba-tune__like {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   margin-top: 10px;
   width: 20px;
   height: 20px;
-  float: right;
+  /* float: right; */
   fill: #ed5e75;
   cursor: pointer;
 }
