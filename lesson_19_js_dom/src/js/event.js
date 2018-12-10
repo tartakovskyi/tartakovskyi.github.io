@@ -1,9 +1,7 @@
-document.getElementsByClassName("text").addEventListener("keydown", createTextArea);
+document.onkeydown = createTextArea;
 
-const createTextArea = () => {
-    document.write('тест')
+const createTextArea = (e) => {
+	console.log(e.keyCode);
 }
-
-
 
 
