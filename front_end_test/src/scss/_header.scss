@@ -1,0 +1,81 @@
+.sec-header {
+	min-height: 100vh;
+	background-image: url($img_path+'header-bg.jpg');
+	background-size: cover;
+	padding-top: 24px;
+
+	.container-fluid {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+
+	.container {
+		padding-top: 40px;
+	}
+
+	&__logo {
+		display: inline-flex;
+		align-items: center;
+		font-size: 20px;
+		font-weight: 700;
+
+		&-img {
+			margin-right: 10px;
+		}
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	&__support-link {
+		&:hover {
+			color: $white;
+		}
+	}
+
+	&__heading {
+		display: inline-block;
+		text-align: center;
+
+		h1 {
+			font-size: 50px;
+			font-weight: 300;
+			margin-bottom: 20px;
+
+			span {
+				font-weight: 700;
+			}
+
+			&::before {
+				content: url($img_path+'leaf.png');
+				margin-right: 20px;
+			}
+		}
+	}
+
+	&__advantages {
+		font-size: 0;
+		line-height: 1;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $orange;
+		margin-bottom: 50px;
+
+		&-item {
+			font-size: 18px;
+			display: inline-block;
+
+			&:not(:last-child)::after {
+				content: "";
+				border: solid 2px currentcolor;
+				border-radius: 50%;
+				display: inline-block;
+				margin: 0 7px;
+				vertical-align: middle;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
+

@@ -1,0 +1,33 @@
+*, *::after, *::before{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	min-height: 100vh;
+
+}
+
+body{
+	margin: 0;
+	font-family: $main-font;
+	color: $black;
+}
+
+a, a:hover {
+	color: currentColor;
+	text-decoration: none;
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		@extend %m0;
+	}
+}
+
+ul {
+	@extend %m0;
+	list-style: none;
+}
