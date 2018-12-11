@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	outline: none;
 }
 
 html, body {
@@ -16,6 +17,14 @@ body{
 	color: $black;
 }
 
+.container {
+	max-width: 1300px;
+}
+
+.nopadding {
+	padding: 0;
+}
+
 a, a:hover {
 	color: currentColor;
 	text-decoration: none;
@@ -27,7 +36,28 @@ a, a:hover {
 	}
 }
 
+h2 {
+	font-size: 40px;
+	font-weight: 300;
+	display: inline-block;
+}
+
+h3 {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+
 ul {
 	@extend %m0;
 	list-style: none;
+}
+
+.cyan-link {
+	color: $cyan;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
 }

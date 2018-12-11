@@ -1,0 +1,55 @@
+.sec-bonuses {
+	&__item {
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		&::before {
+			margin-right: 35px;
+			height: 21px;
+		}
+
+		&--chemicals {
+			background-color: #056572;
+
+			&::before {
+				content: url($img_path+'chemicals.png');
+			}
+		}
+
+		&--canada {
+			background-color: $orange;
+
+			&::before {
+				content: url($img_path+'canada.png');
+			}
+		}
+
+		&--cancel {
+			background-color: $cyan;
+
+			&::before {
+				content: url($img_path+'cancel.png');
+			}
+		}
+
+		&-text {
+			font-size: 18px;
+			color: $white;
+			line-height: 1;
+		}
+	}
+}
+
+.sec-choose {
+	padding-top: 110px;
+
+	h2 {
+		margin-bottom: 80px;
+	}
+
+	&__article {
+		padding: 0 30px;
+	}
+}

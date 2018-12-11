@@ -4,9 +4,8 @@
 	background-size: cover;
 	padding-top: 24px;
 
-	.container-fluid {
-		padding-left: 45px;
-		padding-right: 45px;
+	.top-bar-wrapper {
+		padding: 0 30px;
 	}
 
 	.container {
@@ -81,5 +80,136 @@
 	&__img {
 		max-width: 100%;
 	}
+
+	&__form {
+		max-width: 500px;
+		background-color: $light-gray;
+		border: 1px solid $gray;
+		text-align: center;
+		padding: 50px 30px 30px;
+		margin-bottom: 100px;
+
+		h3 {
+			color: $cyan;
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+
+		&-text {
+			margin-bottom: 45px;
+		}
+
+		&-content {
+			padding: 0 45px;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__input-wrapper {
+		position: relative;
+
+	}
+
+	&__label {
+		@extend %fz14;
+		@extend %m0;
+		position: absolute;
+		z-index: 1;
+		top: -10px;
+		left: 20px;
+		color: $dark-gray;
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			z-index: -1;
+			top: 10px;
+			left: -10px;
+			height: 1px;
+			width: calc(100% + 20px);
+			background-color: $white;
+		}
+	}
+
+	&__input {
+		width: 100%;
+		height: 50px;
+		background-color: $white;
+		border: 1px solid $dark-gray;
+		border-radius: 1px;
+		padding: 0 10px;
+
+
+		&:not(:last-child) {
+			margin-bottom: 27px;
+		}
+
+		&:last-child {
+			margin-bottom: 20px;
+		}
+
+		&:focus {
+			border-color: $blue;
+			color: $blue;
+			background: $white url($img_path+'input-focus.png') no-repeat 90% 50%;
+
+			& ~ .sec-header__label {
+				color: $blue;
+			}
+		}
+	}
+
+	&__enter {
+		@extend %fz14;
+		display: inline-block;
+		color: $black;
+		text-decoration: underline;
+		align-self: flex-start;
+		margin-bottom: 15px;
+
+	}
+
+	&__form-submit {
+		$height: 50px;
+		width: 200px;
+		height: $height;
+		align-self: flex-end;
+		display: flex;
+		align-items: center;
+		background-color: $cyan;
+		border: 1px solid $cyan;
+		border-radius: $height / 2 - 2px;
+		color: $white;
+		text-align: left;
+		padding-left: 35px;
+		cursor: pointer;
+
+		hr {
+			margin: 0 14px 0 19px;
+			height: 30px;
+			width: 1px;
+			background-color: $white;
+			opacity: .2;
+		}
+
+		&:hover {
+			background-color: rgba($cyan,.9);
+			border-color: rgba($cyan,.9);
+		}
+
+	}
+
+	&__confident {
+		position: relative;
+		@extend %fz14;
+		color: $dark-gray;
+		margin-bottom: 15px;
+		text-align: left;
+	}
 }
+
+
+
 
