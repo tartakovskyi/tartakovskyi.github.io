@@ -51,6 +51,7 @@
 	}
 
 	&__article {
+
 		&:nth-child(odd) {
 			padding: 0 85px 0 35px;
 		}
@@ -79,6 +80,9 @@
 		&-bottom {
 			max-width: 455px;
 			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
 			
 		}
 	}
@@ -94,23 +98,8 @@
 		display: inline-block;
 	}
 
-	&__article-bottom {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
-	}
-
-	&__img-wrapper {
-		width: 15vw;
-		height: 9.855vw;
-		max-width: 204px;
-		max-height: 134px;
-	}
-
 	&__img {
-		object-fit: contain;
-		object-position: center;
+		max-height: 134px;
 	}
 
 	&__button {
