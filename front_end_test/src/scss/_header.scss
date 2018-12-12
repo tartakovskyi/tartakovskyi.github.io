@@ -172,19 +172,13 @@
 	}
 
 	&__form-submit {
-		$height: 50px;
 		width: 200px;
-		height: $height;
 		align-self: flex-end;
-		display: flex;
-		align-items: center;
 		background-color: $cyan;
-		border: 1px solid $cyan;
-		border-radius: $height / 2 - 2px;
+		border-color: $cyan;
 		color: $white;
-		text-align: left;
+		justify-content: flex-start;
 		padding-left: 35px;
-		cursor: pointer;
 
 		hr {
 			margin: 0 14px 0 19px;

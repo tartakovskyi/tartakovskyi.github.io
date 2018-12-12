@@ -53,6 +53,12 @@ ul {
 	list-style: none;
 }
 
+.shortstory {
+	font-size: 18px;
+	line-height: 1.8;
+	opacity: .5;
+}
+
 .cyan-link {
 	color: $cyan;
 	text-decoration: underline;
@@ -61,3 +67,19 @@ ul {
 		text-decoration: none;
 	}
 }
+
+.btn {
+	$height: 50px;
+	height: $height;
+	display: flex;
+	align-items: center;
+	border-radius: $height / 2 - 1px;
+	border: 1px solid;
+	cursor: pointer;
+
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+

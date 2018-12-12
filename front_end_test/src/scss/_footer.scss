@@ -1,0 +1,22 @@
+.sec-footer {
+	background-color: $dark-cyan;
+	padding: 65px 0;
+	color: $white;
+
+	&__text {
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+
+	&__button {
+		width: 295px;
+		justify-content: center;
+		color: $dark-cyan;
+		border-color: $white;
+		background-color: $white;
+
+		&:hover {
+			background-color: rgba($white, .8);
+		}
+	}
+}
