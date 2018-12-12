@@ -5,9 +5,25 @@
 		justify-content: center;
 		align-items: center;
 		top: 0;
+
 		&::before {
 			margin-right: 35px;
 			height: 21px;
+
+			@media screen and (min-width: 1200px) and (max-width: 1300px) {
+				margin-right: 20px;
+			}
+
+			@media screen and (max-width: 575px) {
+				margin-right: 20px;
+			}
+
+			@media screen and (max-width: 575px) {
+				margin-right: 10px;
+			}
+
+			
+
 		}
 
 		&--chemicals {
@@ -38,6 +54,10 @@
 			font-size: 18px;
 			color: $white;
 			line-height: 1;
+
+			@media screen and (max-width: 575px) {
+				font-size: 16px;
+			}
 		}
 	}
 }
@@ -45,19 +65,41 @@
 .sec-choose {
 	padding-top: 110px;
 
+	@media screen and (max-width: 1199px) {
+		padding-top: 80px;
+	}
+	@media screen and (max-width: 575px) {
+		padding-top: 50px;
+	}
+
 	h2 {
 		position: relative;
 		@extend %mb80;
+		text-align: center;
+	}
+
+	.col-md-8:not(:last-child) .sec-choose__article {
+		@media screen and (max-width: 991px) {
+			margin-bottom: 60px;
+		}
 	}
 
 	&__article {
 
 		&:nth-child(odd) {
 			padding: 0 85px 0 35px;
+
+			@media screen and (max-width: 1199px) {
+				padding: 0;
+			}
 		}
 		
 		&:nth-child(even) {
 			padding: 0 35px 0 85px;
+
+			@media screen and (max-width: 1199px) {
+				padding: 0;
+			}
 		}
 
 		h3 {
@@ -74,6 +116,12 @@
 				top: -30px;
 				left: 1px;
 				color: $orange;
+
+				@media screen and (max-width: 575px) {
+					font-size: 16px;
+					top: -22px;
+				}
+
 			}
 		}
 
@@ -83,6 +131,10 @@
 			justify-content: space-between;
 			align-items: center;
 			flex-wrap: wrap;
+
+			@media screen and (max-width: 420px) {
+				justify-content: center;
+			}
 			
 		}
 	}
@@ -100,6 +152,12 @@
 
 	&__img {
 		max-height: 134px;
+
+		@media screen and (max-width: 420px) {
+			min-width: 90%;
+			max-height: 100%;
+			margin-bottom: 10px;
+		}
 	}
 
 	&__button {
@@ -118,6 +176,13 @@
 .sec-what-we {
 	padding: 135px 0 110px;
 
+	@media screen and (max-width: 1199px) {
+		padding: 80px 0;
+	}
+	@media screen and (max-width: 575px) {
+		padding: 50px 0;
+	}
+
 	h2 {
 		@extend %mb80;
 	}
@@ -128,6 +193,13 @@
 		flex-direction: column;
 		align-items: center;
 
+		@media screen and (max-width: 1199px) {
+			margin-bottom: 30px;
+		}
+		@media screen and (max-width: 575px) {
+			margin-bottom: 15px;
+		}
+
 		h3 {
 			@extend %h3;
 		}
@@ -135,6 +207,13 @@
 		&-icon {
 			height: 55px;
 			margin-bottom: 50px;
+
+			@media screen and (max-width: 1199px) {
+				margin-bottom: 20px;
+			}
+			@media screen and (max-width: 575px) {
+				margin-bottom: 10px;
+			}
 		}
 
 		&-text {
