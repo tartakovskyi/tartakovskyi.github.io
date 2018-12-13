@@ -6,10 +6,15 @@
 
 	.top-bar-wrapper {
 		padding: 0 30px;
+		z-index: 5;
 
 		@media screen and (max-width: 767px) {
 				padding: 0;	
 			}
+	}
+
+	.dark-bg {
+		background-color: red;
 	}
 
 	.container {
