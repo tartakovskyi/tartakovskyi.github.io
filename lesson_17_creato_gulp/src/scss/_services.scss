@@ -1,6 +1,12 @@
 .services {
+	position: relative;
+
+	&__content {
+		position: relative;
+	}
 
 	.grid-item {
+
 
 		&__title {
 			margin-bottom: 30px;
@@ -13,6 +19,11 @@
 				font-weight: 300;
 				letter-spacing: 2px;
 			}
+
+		}
+
+		&__icon {
+			margin-right: 1rem;
 		}
 
 		&__text {
@@ -22,10 +33,5 @@
 			letter-spacing: 1px;
 			margin-bottom: 30px;
 		}
-
-		&__icon {
-			margin-right: 1rem;
-		}
-
 	}
 }

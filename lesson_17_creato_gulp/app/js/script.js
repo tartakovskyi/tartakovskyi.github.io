@@ -1,0 +1,11 @@
+"use strict";
+
+;
+
+(function ($) {
+  $(document).ready(function () {
+    $('.photograf').hide();
+    set;
+  });
+})(jQuery);
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjcmlwdC5qcyJdLCJuYW1lcyI6WyIkIiwiZG9jdW1lbnQiLCJyZWFkeSIsImhpZGUiLCJzZXQiLCJqUXVlcnkiXSwibWFwcGluZ3MiOiI7O0FBQUE7O0FBQUMsQ0FBQyxVQUFDQSxDQUFELEVBQU87QUFDUkEsRUFBQUEsQ0FBQyxDQUFDQyxRQUFELENBQUQsQ0FBWUMsS0FBWixDQUFrQixZQUFNO0FBQ3ZCRixJQUFBQSxDQUFDLENBQUMsWUFBRCxDQUFELENBQWdCRyxJQUFoQjtBQUVBQyxJQUFBQSxHQUFHO0FBRUgsR0FMRDtBQU1BLENBUEEsRUFPRUMsTUFQRiIsInNvdXJjZXNDb250ZW50IjpbIjsoKCQpID0+IHtcclxuXHQkKGRvY3VtZW50KS5yZWFkeSgoKSA9PiB7XHJcblx0XHQkKCcucGhvdG9ncmFmJykuaGlkZSgpO1xyXG5cclxuXHRcdHNldFxyXG5cclxuXHR9KTtcclxufSkoalF1ZXJ5KTsiXSwiZmlsZSI6InNjcmlwdC5qcyJ9
