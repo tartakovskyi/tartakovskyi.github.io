@@ -12,6 +12,10 @@
 			}
 	}
 
+	.dark-bg {
+		background-color: red;
+	}
+
 	.container {
 		padding-top: 40px;
 	}
@@ -116,6 +120,7 @@
 			color: $cyan;
 			display: inline-block;
 			margin-bottom: 10px;
+			font-weight: 600;
 		}
 
 		&-text {
@@ -248,8 +253,8 @@
 	&__confident {
 		position: relative;
 		@extend %fz14;
+		@extend %m0;
 		color: $dark-gray;
-		margin-bottom: 15px;
 		text-align: left;
 	}
 }
