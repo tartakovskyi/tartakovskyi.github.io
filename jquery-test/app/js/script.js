@@ -1,0 +1,2 @@
+"use strict";$("h3").css({color:"green","font-weight":"bold"});
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjcmlwdC5qcyJdLCJuYW1lcyI6WyIkIiwiY3NzIiwiY29sb3IiLCJmb250LXdlaWdodCJdLCJtYXBwaW5ncyI6ImFBQUFBLEVBQUUsTUFBTUMsSUFBSSxDQUFDQyxNQUFTLFFBQVNDLGNBQWMiLCJmaWxlIjoic2NyaXB0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiJChcImgzXCIpLmNzcyh7XCJjb2xvclwiOiBcImdyZWVuXCIsIFwiZm9udC13ZWlnaHRcIjpcImJvbGRcIn0pXHJcblxyXG5cclxuXHJcbiJdfQ==
