@@ -1,4 +1,3 @@
-$("h3").css({"color": "green", "font-weight":"bold"})
-
-
-
+$('li').each(function(index){
+  $(this).append(index)
+});
