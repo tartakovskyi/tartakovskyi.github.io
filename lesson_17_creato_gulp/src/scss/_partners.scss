@@ -1,12 +1,15 @@
 .partners {
 
-	&__list {
+	&__list{
 		min-height: 285px;
 		align-items: center;
-		opacity: .5
 	}
 
-	&__link {
+	&__link{
 		text-align: center;
+	}
+
+	&__logo {
+		opacity: .5;
 	}
 }

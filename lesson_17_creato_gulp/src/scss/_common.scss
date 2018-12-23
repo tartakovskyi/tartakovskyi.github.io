@@ -3,7 +3,6 @@ body {
 	font-size: $base-size;
 	color: $white-color;
 	background-color: $dark-color;
-	min-height: 30000px;
 }
 
 a {
@@ -167,4 +166,38 @@ section {
 			display: block;
 		}
 	}
+}
+
+
+.navbar-toggler {
+	&[aria-expanded="true"]{
+		.fa-bars {
+			display: none;
+		}
+		.fa-times {
+			display: block;
+		}	
+	}	
+
+	&[aria-expanded="false"]	{
+		.fa-bars {
+			display: block;
+		}
+		.fa-times {
+			display: none;
+		}
+	}
+
+	.navbar-toggler-icon {
+		font-size: 2rem;
+		color: $white-color;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
+.f100 {
+	flex: 100%;
 }

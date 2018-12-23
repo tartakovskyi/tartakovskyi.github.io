@@ -1,3 +1,1 @@
-$('li').each(function(index){
-  $(this).append(index)
-});
+$('h2').replaceWith($(this).text());
