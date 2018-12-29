@@ -49,6 +49,12 @@
 	}
 }
 
+@mixin min1367 {
+	@media all and (min-width: 1367px) {
+		@content;
+	}
+}
+
 
 @mixin min992 {
 	@media all and (min-width: 992px) {

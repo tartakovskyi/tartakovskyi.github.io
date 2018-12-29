@@ -4,10 +4,13 @@
 		display: flex;
 		justify-content: space-between;
 		flex: 100%;
-		color: $gray;
-		background-color: $black;
 		min-height: 45px;
 		font-size: 13px;
+		color: $gray;
+
+		&-wrapper {
+		background-color: $black;
+		}
 
 		&-right {
 			display: flex;
@@ -20,16 +23,27 @@
 		background: none;
 		border: none;
 		color: currentColor;
+
+		&-wrapper {
+			margin: 0;
+			display: flex;
+			align-items: center;
+		}
 	}
 
 	&__reg-links {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		flex: 100%;
 		max-width: 140px;
 
 		a {
 			display: block;
+
+			&:hover {
+				color: $white;
+			}
 		}
 
 	}
@@ -39,10 +53,41 @@
 		background-color: $cyan;
 		border: none;
 		color: $white;
+		width: 150px;
+
+		span {
+			position: relative;
+
+			&::before,
+			&::after {
+				position: absolute;
+				display: block;
+			}
+
+			&::before {				
+				left: -20px;
+				transform: translateX(-100%);			
+				content: url('../img/shopping-cart-solid.svg');
+				height: 20px;
+				width: 22px;
+				
+			}
+
+			&::after {
+				transform: translateX(100%);
+				top: 0;
+				right: -8px;
+				content: url('../img/angle-down.svg');
+				height: 5px;
+				width: 8px;
+			}
+		}
 	}
 
 
 }
+
+
 
 
 
