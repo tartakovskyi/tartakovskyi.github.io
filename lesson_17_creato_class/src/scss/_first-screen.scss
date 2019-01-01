@@ -1,47 +1,42 @@
 .first-screen {
-	$paddingTop: 80px;
 	position: relative;
 	background-image:
 	linear-gradient(to top, $dark-color 0%, rgba($top-gradient-color, .9) 100%), 
 	url($img-path + "header-bg.jpg");
-
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
 	z-index: 2;
+	padding-top: 15px;
 
-	padding-top: 40px;
+	@include min768 {
+		padding-top: 40px;	
+	}
 
-	$paddingTop: 80px;
-
-	
+	$paddingTop: 80px;	
 	@include min992 {
 		padding-top: $paddingTop;
-	}
+	}	
 
 	&__container {
 		position: relative;
 		z-index: 2;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		@include min992 {
-			min-height: calc(100vh - #{$paddingTop});
-		}
+		justify-content: space-between;	
 		
+		min-height: calc(100vh - #{$paddingTop});
 	}
 
-	&__image {
-		
+	&__image {		
 
 		&-link {
 			position: relative;
-			display: inline-block;
-			max-width: 70%;			
+			display: block;
 
-			@media screen and (min-width: 1367px) {
-				max-width: 100%;
+			@include min768 {
+				display: inline-block;				
 			}
 
 			.fa-play {
@@ -66,13 +61,19 @@
 
 		img {
 			max-width: 100%;
-		}		
-		
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
 	}
 
 	&__title {
-		$font-size: rem(48px);
-		margin-bottom: rem(30px);
+		$font-size: rem(36px);
+		margin-bottom: rem(16px);
+
+		@include min768 {
+			margin-bottom: rem(30px);			
+		}
 
 		& > * {
 			text-transform: uppercase;
@@ -80,6 +81,17 @@
 			letter-spacing: 2px;
 			font-weight: 300;
 			margin-bottom: 0;
+			text-align: center;
+
+			@include min768 {
+				$font-size: rem(48px);
+				font-size: $font-size;
+				text-align: right;
+			}
+
+			@include min992 {
+				text-align: left;	
+			}
 		}
 
 		&::before {
@@ -90,11 +102,18 @@
 
 	&__text {
 		font-weight: 200;
-		max-width: 90%;
 		line-height: 2;
 		color: $light-color;
 		letter-spacing: 1px;
-		margin-bottom: rem(30px);
+		margin-bottom: rem(16px);
+
+		@include min768 {
+			margin-bottom: rem(30px);			
+		}
+
+		@include min992 {
+			max-width: 90%;	
+		}
 	}
 
 	.navigation {
@@ -102,6 +121,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
+		padding-right: 0;
+		padding-left: 0;
+
+		@include max767 {
+			padding-top: 0;	
+			padding-bottom: 0;	
+		}		
 
 		&__list {
 			display: flex;
@@ -110,9 +136,8 @@
 			flex: 100%;
 
 			@include min992 {
-			align-items: flex-end;
-		}
-
+				align-items: center;
+			}
 
 			&.open {
 				display: flex;
@@ -145,8 +170,9 @@
 
 	.navbar-collapse {
 		position: absolute;
+		top: 0;
 		transform: translateY(25%);
-		
+
 		@include min992 {
 			position: initial;
 			transform: translateY(0);
@@ -154,14 +180,13 @@
 
 		& > * {
 			opacity: 0;
-
-
 			@include min992 {
 				opacity: 1;
 			}
 		}
 
 		&.show {
+
 			& > * {
 				opacity: 1;
 			}
@@ -170,12 +195,21 @@
 }
 
 
-// .fixed {
-// 	position: fixed;
-// 	width: 100%;
-// 	left: 0;
-// 	top: 0;
-// 	z-index: 1500000;
-// }
 
+.navigation {
+  @include z-index(navbar); // 1
+}
 
+.navbar-toggler {
+
+	@include max767 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&-icon {
+		@include max767 {
+			// width: 0;
+		}		
+	}
+}

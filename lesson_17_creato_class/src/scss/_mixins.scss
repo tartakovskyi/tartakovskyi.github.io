@@ -21,8 +21,9 @@
 
 
 @mixin decor($font-size, $line-height: 1.2){
+	display: none;
 	content: '';
-	display: block;
+	z-index: 1;
 	width: 90px;
 	border-top: 1px solid $white-color;
 	position: absolute;
@@ -31,8 +32,11 @@
 	@media screen and (min-height: 1367px){
 		transform: translate(-180%, $font-size * $line-height / 2);
 	}
-}
 
+	@include min992 {
+		display: block;
+	}
+}
 
 @mixin placeholder {
 	&::-webkit-input-placeholder {
@@ -55,9 +59,20 @@
 	}
 }
 
+@mixin max1366 {
+	@media all and (max-width: 1366px) {
+		@content;
+	}
+}
 
 @mixin min992 {
 	@media all and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin max991 {
+	@media all and (max-width: 991px) {
 		@content;
 	}
 }
@@ -68,25 +83,33 @@
 	}
 }
 
+@mixin max767 {
+	@media all and (max-width: 767px) {
+		@content;
+	}
+}
+
 @mixin min576 {
 	@media all and (min-width: 576px) {
 		@content;
 	}
 }
 
-$z-index: (
-	navbar: 1,
-	content: 2
-	);
+@mixin max575 {
+	@media all and (max-width: 575px) {
+		@content;
+	}
+}
 
-@function zIndexFunc($key) {
-	@return map-get($z-index, $key);
+$z-index: (
+	content: 2,
+	navbar: 150000
+);
+
+@function z-index-func($key) {
+  @return map-get($z-index, $key);
 }
 
 @mixin z-index($key) {
-	z-index: zIndexFunc($key);
+  z-index: z-index-func($key);
 }
-
-/* .navigation {
-  @include z-index(navbar); // 1
-} */
