@@ -27,3 +27,13 @@ const arr = servicesTexts.map(el => {
 servicesTexts.forEach((el, idx) => {
 	el.innerText = arr[idx];
 });
+
+
+// Height of text blocks in the Services section
+let $servicesTextHeight = 0;
+
+$('.grid-item__text').each(function() {	
+	if ($(this).height() > $servicesTextHeight) {$servicesTextHeight = $(this).height()}
+});
+
+$('.grid-item__text').height($servicesTextHeight);

@@ -12,7 +12,6 @@
 
 	.grid-item {
 		
-
 		&__title {
 			display: flex;
 			margin-bottom: rem(16px);
@@ -46,7 +45,7 @@
 			font-weight: 200;
 			letter-spacing: 1px;
 			margin-bottom: rem(16px);
-			min-height: 100px;
+			/* min-height: 100px; */
 
 			@include min576 {
 				margin-bottom: rem(30px);
