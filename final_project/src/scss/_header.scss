@@ -90,8 +90,7 @@
 
 	&__content {
 		width: 100%;
-		$menu_height: $black-nav-height + $main_menu_height;
-		height: calc(100vh - $menu_height);
+		height: calc(100vh - 90px - 45px);
 
 		& h1 {
 			width: 100%;
@@ -146,6 +145,10 @@
 						padding-left: 0;
 						padding-right: 0;
 					}
+
+					&:hover {
+						color: $cyan;
+					}
 				}
 
 				.dropdown-toggle {
@@ -154,28 +157,15 @@
 						position: absolute;
 						bottom: 0;
 						left: 0;
+
+						&:hover {
+							@extend .nav-link:hover;	
+						}
 					}
 				}
 			}
 		}
 	}
 }
-
-
-.mens________________womens________________the_b {
-	font-size: 13px;
-	font-family: "Montserrat";
-	color: rgb(0, 200, 200);
-	text-transform: uppercase;
-	line-height: 1.538;
-	text-align: right;
-	position: absolute;
-	left: 1013.937px;
-	top: 86.503px;
-	z-index: 184;
-}
-
-
-
 
 
