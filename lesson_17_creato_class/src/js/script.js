@@ -30,10 +30,15 @@ servicesTexts.forEach((el, idx) => {
 
 
 // Height of text blocks in the Services section
-let $servicesTextHeight = 0;
+const ComputeElemHeight = (el) => {
+	let $elHeight = 0;
 
-$('.grid-item__text').each(function() {	
-	if ($(this).height() > $servicesTextHeight) {$servicesTextHeight = $(this).height()}
+$(el).each(function() {	
+	if ($(this).height() > $elHeight) {$elHeight = $(this).height()}
 });
 
-$('.grid-item__text').height($servicesTextHeight);
+$(el).height($elHeight);
+}
+
+ComputeElemHeight ('.grid-item__title');
+ComputeElemHeight ('.grid-item__text');
