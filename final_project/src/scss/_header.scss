@@ -10,7 +10,7 @@
 		flex: 100%;
 		min-height: $black_nav_height;
 		font-size: 13px;
-		color: $dark_gray;
+		color: $gray;
 
 		&-wrapper {
 			background-color: $black;
@@ -96,7 +96,7 @@
 			width: 100%;
 			font-size: 450px;
 			font-weight: 700;
-			color: $gray;
+			color: $dark_gray;
 			line-height: 1;
 			text-transform: uppercase;
 			text-align: justify;
@@ -163,6 +163,33 @@
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+.offers {
+	border-top: solid 1px $light_gray;
+	border-top: solid 1px $light_gray;
+	padding: 55px 0 60px;
+
+	& .nav-tabs {
+		border: none;
+	}
+
+	& .nav-item {
+		
+		& .nav-link {
+			border: none;
+			text-transform: uppercase;
+			font-size: 13px;
+			font-weight: 500;
+			color: $gray;
+
+			&:hover,
+			&.active {
+				border: none;
+				color: $cyan;
 			}
 		}
 	}

@@ -3,12 +3,16 @@
 	outline-color: transparent;
 }
 
-.body {
+body {
 	font-family: $main_font;
 }
 
 .container {
 	max-width: 1200px;
+}
+
+.main {
+	padding: 60px 0 120px;
 }
 
 a, button, select {
@@ -27,13 +31,13 @@ h1, h2, h3, h4, h5, h6 {
 	height: 60px;
 	display: flex;
 	align-items: center;
-	border: 2px solid $dark_gray;
+	border: 2px solid $gray;
 	padding: 0 30px;
 	font-size: 16px;
 	text-transform: uppercase;
 	line-height: 1;
 	letter-spacing: 4px;
-	color: $dark_gray;
+	color: $gray;
 
 	&:hover {
 		background-color: #00c8c8;
