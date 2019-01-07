@@ -90,21 +90,26 @@
 
 	&__content {
 		width: 100%;
-		height: calc(100vh - 90px - 45px);
+		height: calc(100vh - (90px + 45px));
+		display: flex;
+		align-items: center;
 
 		& h1 {
-			width: 100%;
+			width: 93%;
 			font-size: 450px;
 			font-weight: 700;
 			color: $dark_gray;
 			line-height: 1;
 			text-transform: uppercase;
-			text-align: justify;
+			display: flex;
+			justify-content: space-between;
+			align-self: center;
 		}
 
 		& .btn {
 			align-self: flex-end;
 			margin-right: 10%;
+			font-weight: 500;
 		}
 
 	}
@@ -138,6 +143,7 @@
 				.nav-link {
 					text-transform: uppercase;
 					font-size: 13px;
+					font-weight: 500;
 					color: $dark_black;
 					padding: .75rem 0;
 
@@ -164,7 +170,73 @@
 					}
 				}
 			}
+
+			.dropdown-menu {
+				padding: 30px;
+				margin: 0;
+				box-shadow: 0px 17px 24px 0px rgba(0, 0, 0, 0.14);
+
+				.dropdown-block-title {
+					display: block;
+					font-size: 12px;
+					font-weight: 500;
+					text-transform: uppercase;
+					color: $dark_gray;
+					margin-bottom: 20px;
+				}
+
+				.dropdown-item {
+					padding: 10px 0;
+					font-size: 14px;
+					font-weight: 300;
+					color: $gray;
+					text-transform: capitalize;
+
+					&:hover {
+						background-color: transparent;
+						color: $cyan;
+					}
+				}
+			}
 		}
+	}
+
+	&-search {
+		position: relative;
+
+		&__input {
+			font-size: 13px;
+			color: $black;
+			height: 30px;
+			border-radius: 0;
+			padding: 5px 10px;
+
+			@include placeholder {
+				color: $gray;
+			}
+
+			&:focus {
+				border-color: $cyan;
+				box-shadow: 0 0 0 0.2rem rgba($cyan, .25)
+			}
+		}
+
+		&__loupe {
+			position: absolute;
+			right: 10px;
+			color: $gray;
+			padding: 0;
+			background: none;
+			border: none;
+			line-height: 1;			
+
+			& svg {
+				height: 15px;
+				width: 15px;
+			}
+		}
+		
+
 	}
 }
 
@@ -191,6 +263,31 @@
 				border: none;
 				color: $cyan;
 			}
+		}
+	}
+
+	&-grid {
+	}
+
+	&-item {
+		display: block;
+		position: relative;
+		padding-top: 119%;
+		background-color: $light_gray;
+		font-size: 0;
+
+		&--big {
+			padding-top: 80.9%;
+		}
+
+		&__img {
+			position: absolute;
+			bottom: 0;
+			height: 100%;
+			max-width: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+
 		}
 	}
 }

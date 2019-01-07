@@ -1,6 +1,7 @@
 *,
-*:focus {
-	outline-color: transparent;
+*:focus
+*:active {
+	outline: 0 transparent;
 }
 
 body {
@@ -49,4 +50,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .mw1810 {
 	max-width: 1810px;
+}
+
+.ptb15 {
+	padding: 15px 0;
 }

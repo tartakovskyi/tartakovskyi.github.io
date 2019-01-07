@@ -50,13 +50,13 @@
 									<li class="nav-item dropdown">
 										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">mens</a>
 										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-											<span class="dropdown-block-title">casuals</span>
-											<a class="dropdown-item" href="#">jackets</a>
-											<a class="dropdown-item" href="#">hoodies & sweethirts</a>
-											<a class="dropdown-item" href="#">polo shirts</a>
-											<a class="dropdown-item" href="#">sportswear</a>
-											<a class="dropdown-item" href="#">trousers & chinos</a>
-											<a class="dropdown-item" href="#">t. shirts</a>
+												<span class="dropdown-block-title">casuals</span>
+												<a class="dropdown-item" href="#">jackets</a>
+												<a class="dropdown-item" href="#">hoodies & sweethirts</a>
+												<a class="dropdown-item" href="#">polo shirts</a>
+												<a class="dropdown-item" href="#">sportswear</a>
+												<a class="dropdown-item" href="#">trousers & chinos</a>
+												<a class="dropdown-item" href="#">t. shirts</a>
 										</div>
 									</li>
 									<li class="nav-item dropdown">
@@ -83,9 +83,13 @@
 										</div>
 									</li>
 								</ul>
-								<form class="form-inline my-2 my-lg-0">
-									<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-									<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+								<form class="form-inline main-menu-search">
+									<input class="form-control main-menu-search__input" type="search" placeholder="Search..." aria-label="Search">
+									<button class="main-menu-search__loupe" type="submit">
+										<svg xmlns="http://www.w3.org/2000/svg"> 
+											<use xlink:href="/img/icons.svg#search"></use>
+										</svg>
+									</button>
 								</form>
 							</div>
 						</nav>
@@ -98,7 +102,7 @@
 			<div class="container-fluid mw1810">
 				<div class="row">
 					<div class="col d-flex flex-column align-center">
-						<h1>A V E</h1>
+						<h1><span>A</span> <span>V</span> <span>E</span></h1>
 						<button class="btn">shop men's collection</button>
 					</div>
 				</div>
@@ -108,7 +112,7 @@
 	</header>
 	<main class="main">
 		<section class="offers">
-			<div class="container">
+			<div class="container-fluid mw1810">
 				<div class="row">
 					<div class="col">
 						<ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -128,11 +132,52 @@
 								<a class="nav-link" id="coming-soon-tab" data-toggle="tab" href="#coming-soon" role="tab" aria-controls="coming-soon" aria-selected="false">coming soon</a>
 							</li>
 						</ul>
-						<div class="tab-content" id="myTabContent">
+						<div class="tab-content offers-grid" id="myTabContent">
 							<div class="tab-pane fade show active" id="popular" role="tabpanel" aria-labelledby="popular-tab">
 								<div class="row">
-									<div class="col-6"></div>
-									<div class="col-6"></div>
+									<div class="col-6">
+										<div class="row ptb15">
+											<div class="col-6">
+												<a href="#" class="offers-item">
+													<img src="/img/prod-1.jpg" alt="" class="offers-item__img">
+												</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="offers-item">
+													<img src="/img/prod-2.jpg" alt="" class="offers-item__img">
+												</a>
+											</div>
+										</div>
+										<div class="row ptb15">
+											<div class="col">
+												<a href="#" class="offers-item offers-item--big">
+													<img src="/img/prod-3.jpg" alt="" class="offers-item__img">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="row ptb15">
+											<div class="col">
+												<a href="#" class="offers-item offers-item--big">
+													<img src="/img/prod-4.jpg" alt="" class="offers-item__img">
+												</a>
+											</div>
+										</div>
+										<div class="row ptb15">
+											<div class="col-6">
+												<a href="#" class="offers-item">
+													<img src="/img/prod-5.jpg" alt="" class="offers-item__img">
+												</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="offers-item">
+													<img src="/img/prod-6.jpg" alt="" class="offers-item__img">
+												</a>
+											</div>
+										</div>	
+									</div>
+
 								</div>
 							</div>
 							<div class="tab-pane fade" id="new-arrivals" role="tabpanel" aria-labelledby="new-arrivals-tab">..2</div>
@@ -151,9 +196,10 @@
 
 
 	<script src="js/jquery-3.3.1.min.js"></script>
-<!-- 	<script src="js/popper.min.js"></script> -->
+<!-- 	<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-	<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+	
 </body>
 </html>
