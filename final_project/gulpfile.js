@@ -34,12 +34,12 @@ gulp.task('html', () => {
 
 gulp.task('js', () => {
  return gulp.src('src/js/**/*.js')
- .pipe(sourcemaps.init())
+/* .pipe(sourcemaps.init())
  .pipe(babel({
             presets: ['@babel/env']
         }).on('error', notify.onError("JS-babel-Error: <%= error.message %>")))
  .pipe(uglify().on('error', notify.onError("JS-uglify-Error: <%= error.message %>")))
- .pipe(sourcemaps.write())
+ .pipe(sourcemaps.write())*/
  .pipe(gulp.dest('app/js'))
  .pipe(browserSync.stream());
 });

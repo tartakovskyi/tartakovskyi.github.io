@@ -317,15 +317,8 @@
 			color: $white;
 		}
 
-		&:hover {
-			box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
-		}
-
-		&:hover &__info-icon {
-			display: block;
-		}
-
 		&__brief {
+			display: none;
 			z-index: 2;
 			bottom: 0;
 			transform: translateY(100%);
@@ -334,6 +327,8 @@
 			padding: 20px 20px 15px;
 			border-top: 1px solid $gray;
 			box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
+			flex-direction: column;
+			align-items: center;
 			text-align: center;
 
 			&-title {
@@ -356,14 +351,49 @@
 				font-size: 15px;
 				color: $gray;
 			}
-
-
 		}
 
-		&:hover &__info-icon,
-		&:hover &__brief {
+		&__buy {
+			display: flex;
+			justify-content: space-between;
+			padding: 0;
+			width: 33%;
+			margin-bottom: 0;
+
+			&-btn {
+				display: block;
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				background-color: $gray_2;
+				border: none;
+				box-shadow: none;
+
+				&:hover {
+					background-color: $cyan;
+				}
+			}
+
+			&-icon {
+				width: 15px;
+				height: 15px;
+				color: $white;
+			}
+		}
+
+		&:hover {
+			box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
+		}
+
+		&:hover &__info-icon {
 			display: block;
 		}
+
+		&:hover &__brief {
+			display: flex;
+		}
+
+
 	}
 }
 
