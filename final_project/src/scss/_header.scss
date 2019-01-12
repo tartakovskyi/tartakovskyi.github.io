@@ -96,7 +96,7 @@
 
 		& h1 {
 			width: 93%;
-			font-size: 450px;
+			font-size: 100px;
 			font-weight: 700;
 			color: $dark_gray;
 			line-height: 1;
@@ -104,6 +104,22 @@
 			display: flex;
 			justify-content: space-between;
 			align-self: center;
+
+			@include min576 {
+				font-size: 200px;
+			}
+
+			@include min768 {
+				font-size: 250px;
+			}
+
+			@include min992 {
+				font-size: 330px;
+			}
+
+			@include min1200 {
+				font-size: 450px;
+			}
 		}
 
 		& .btn {
@@ -359,6 +375,7 @@
 			padding: 0;
 			width: 33%;
 			margin-bottom: 0;
+			max-width: 170px;
 
 			&-btn {
 				display: block;
