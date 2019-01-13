@@ -257,12 +257,11 @@
 }
 
 .offers {
-	border-top: solid 1px $light_gray;
-	border-top: solid 1px $light_gray;
-	padding: 55px 0 60px;
+	padding: 45px 0 60px;
 
 	& .nav-tabs {
 		border: none;
+		margin-bottom: 30px;
 	}
 
 	& .nav-item {
@@ -409,9 +408,74 @@
 		&:hover &__brief {
 			display: flex;
 		}
-
-
 	}
 }
+
+.hr {
+	&__line {
+		color: $gray_2;
+		margin: 0;
+	}
+}
+
+.lookbook-block {
+	padding: 60px 0;
+
+	&__item {
+		display: block;
+		background-color: $light_gray;
+		background-position: 5% 100%;
+		background-repeat: no-repeat;
+		background-size: auto 92%;
+		height: 100%;
+		padding: 100px 55px 140px;
+		text-align: right;
+
+		&:hover {
+			@extend .offers-item:hover;
+			text-decoration: none;
+		}
+
+		&--men {
+			background-image: url('/img/lookbook-men.png');
+		}
+
+		&--women {
+			background-image: url('/img/lookbook-women.png');
+		}
+
+		&--your {
+			background-image: url('/img/lookbook-your.png');
+		}
+
+		&-title {
+			text-transform: uppercase;
+			font-size: 48px;
+			font-weight: 500;
+			color: $dark_gray;
+			line-height: 1.5;
+			letter-spacing: 3px;
+			margin-bottom: 20px;
+
+			& span {
+				display: block;
+				font-weight: 700;
+			}
+		}
+
+		&-descr {
+			font-family: $secondary_font;
+			font-size: 15px;
+			color: $gray_2;
+			margin-bottom: 30px;
+		}
+
+		& .btn {
+			margin: 0 0 0 auto;
+		}
+	}
+}
+
+
 
 

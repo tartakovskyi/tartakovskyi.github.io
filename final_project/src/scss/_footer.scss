@@ -1,0 +1,49 @@
+.footer {
+	background-color: $light_gray;
+	padding: 60px 0 55px;
+
+	&__nav {
+
+		&-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		&-item:not(:last-child) {
+			margin-bottom: 15px;
+		}
+
+		&-contact {
+			font-size: 14px;
+			color: $gray_2;
+			line-height: 1;
+
+			a:hover {
+				color: $cyan;
+				text-decoration: none;
+			}
+		}
+
+		&-link {
+			@extend .footer__nav-contact;
+
+			&:hover {
+				color: $cyan;
+				text-decoration: none;
+			}
+		}
+
+
+	}
+
+	&__col-title {
+		display: block;
+		font-size: 13px;
+		font-weight: 500;
+		text-transform: uppercase;
+		color: $dark_gray;
+		margin-bottom: 30px;
+	}
+}
+

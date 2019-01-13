@@ -12,6 +12,10 @@ body {
 	max-width: 1200px;
 }
 
+.nopadding {
+	padding: 0;
+}
+
 .main {
 	padding: 60px 0 120px;
 }
@@ -54,4 +58,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .ptb15 {
 	padding: 15px 0;
+
+	&:last-child {
+		padding-bottom: 0;
+	}
 }
