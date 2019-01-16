@@ -1,6 +1,6 @@
 .header {
 	min-height: 100vh;
-	background: $light_gray url('/img/main-header.jpg') 50% $black_nav_height no-repeat;
+	background: $light_gray 50% $black_nav_height no-repeat;
 	background-size: contain;
 	position: relative;
 
@@ -89,13 +89,14 @@
 	}
 
 	&__content {
+		position: relative;
 		width: 100%;
-		height: calc(100vh - (90px + 45px));
-		display: flex;
+		height: calc(100vh - 45px);
+		/* display: flex; */
 		align-items: center;
 
 		& h1 {
-			width: 93%;
+			width: 100%;
 			font-size: 100px;
 			font-weight: 700;
 			color: $dark_gray;
@@ -124,14 +125,41 @@
 
 		& .btn {
 			align-self: flex-end;
-			margin-right: 10%;
 			font-weight: 500;
 		}
 
 	}
+
+	& .carousel {
+		height: 100%;
+	}
+	& .carousel-inner {
+		height: 100%;
+	}
+	& .carousel-item {
+		height: 100%;
+
+		&__img {
+			height: 100%;
+			position: absolute;
+			left: 35%;
+			transform: translateX(-50%);
+		}
+
+		&__heading {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+		}
+	}
 }
 
 .main-menu {
+	position: absolute;
+	z-index: 11;
+	width: 100%;
 	color: $dark_black;
 	min-height: 90px;
 	display: flex;
