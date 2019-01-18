@@ -58,6 +58,11 @@
 		border: none;
 		color: $white;
 		width: 150px;
+		transform: translateX(15px);
+
+		@include min1200 {
+			transform: none; 
+		}
 
 		span {
 			position: relative;
@@ -127,7 +132,6 @@
 			align-self: flex-end;
 			font-weight: 500;
 		}
-
 	}
 
 	& .carousel {
@@ -167,6 +171,7 @@
 
 	.navbar {
 		font-family: $main_font;
+		justify-content: space-between;
 
 		&-brand {
 			font-size: 24px;
@@ -178,11 +183,25 @@
 			}
 		}
 
+		&-collapse {
+			justify-content: flex-end;
+		}
+
 		&-nav {
-			padding-right: 115px;
+			padding-right: 30px;
+
+			@include min1200 {
+				padding-right: 115px;
+			}
 
 			.nav-item {
-				margin-right: 55px;
+				&:not(:last-child) {
+					margin-right: 25px;	
+
+					@include min1200 {
+						margin-right: 55px;
+					}
+				}
 
 				.nav-link {
 					text-transform: uppercase;

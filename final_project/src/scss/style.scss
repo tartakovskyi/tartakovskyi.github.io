@@ -3,3 +3,11 @@
 @import "common";
 @import "header";
 @import "footer";
+
+
+/* header, */
+main,
+.offers,
+footer {
+	display: none;
+}

@@ -12,7 +12,9 @@ body {
 	max-width: 1200px;
 }
 
-.nopadding {
+.container-fluid--nopadding {
+	max-width: 100vw;
+	overflow: hidden;
 	padding: 0;
 }
 
