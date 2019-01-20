@@ -126,7 +126,6 @@
 		position: relative;
 		width: 100%;
 		height: calc(100vh - 45px);
-		/* display: flex; */
 		align-items: center;
 
 		& h1 {
@@ -139,9 +138,11 @@
 			display: flex;
 			justify-content: space-between;
 			align-self: center;
+			margin-bottom: 5vh;
 
 			@include min576 {
 				font-size: 200px;
+				margin-bottom: 0;
 			}
 
 			@include min768 {
@@ -171,6 +172,10 @@
 	}
 	& .carousel-item {
 		height: 100%;
+
+		&--white {
+			background-color: $white;
+		}
 
 		&__img {
 			height: 100%;
@@ -549,14 +554,23 @@
 .lookbook-block {
 	padding: 60px 0;
 
+	.col-lg-6 &__item {
+		margin-bottom: 30px;
+
+		@include min1200 {
+			margin-bottom: 0;
+		}
+	}
+
 	&__item {
 		display: block;
 		background-color: $light_gray;
 		background-position: 5% 100%;
 		background-repeat: no-repeat;
-		background-size: auto 92%;
+		background-size: auto 80%;
 		height: 100%;
-		padding: 100px 55px 140px;
+		/* padding: 100px 55px 140px; */
+		padding: 14% 8% 20%;
 		text-align: right;
 
 		&:hover {
@@ -576,9 +590,13 @@
 			background-image: url('../img/lookbook-your.png');
 		}
 
-		&-title {
+		@media (min-width: 1367px) {
+			background-size: auto 92%;
+		}
+
+		&-title h2 {
 			text-transform: uppercase;
-			font-size: 48px;
+			font-size: 36px;
 			font-weight: 500;
 			color: $dark_gray;
 			line-height: 1.5;
@@ -588,6 +606,10 @@
 			& span {
 				display: block;
 				font-weight: 700;
+			}
+
+			@media (min-width: 1680px) {
+				font-size: 48px;
 			}
 		}
 
