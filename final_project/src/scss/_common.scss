@@ -19,7 +19,11 @@ body {
 }
 
 .main {
-	padding: 60px 0 120px;
+	padding: 30px 0;
+
+	@include min768 {
+		padding: 60px 0 120px;
+	}
 }
 
 a, button, select {
