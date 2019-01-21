@@ -14,6 +14,10 @@
 
 		&-wrapper {
 			background-color: $black;
+
+			&.fixed-bottom {
+				position: fixed;
+			}
 		}
 
 		&-right {
@@ -63,6 +67,11 @@
 		width: 60px;
 		transform: translateX(15px);
 		position: relative;
+		transition: all .4s ease;
+
+		& .cart-open {
+				display: none;
+			}
 
 		@include min576 {
 			width: 150px;
@@ -118,6 +127,26 @@
 
 			@include min576 {
 				display: block;
+			}
+		}
+
+		&.expand {
+			position: absolute;
+			right: 0;
+			width: 280px;
+			height: 100px;
+			z-index: 15;
+
+			& .cart-static {
+				display: none;
+			}
+
+			& .cart-open {
+				display: block;
+			}
+
+			&::after {
+				content: url('../img/angle-up.svg');
 			}
 		}
 	}
@@ -203,12 +232,18 @@
 	display: flex;
 	align-items: center;
 
+	&.fixed-top {
+		position: fixed;
+		background-color: rgba($black, .1);
+		min-height: 50px;
+	}
+
 	.navbar {
 		font-family: $main_font;
 		justify-content: space-between;
 
 		&-brand {
-			font-size: 21px;
+			font-size: 24px;
 			text-transform: uppercase;
 			letter-spacing: 3px;
 
@@ -216,8 +251,17 @@
 				font-weight: 700;
 			}
 
-			@include min576 {
-				font-size: 24px;
+			&--mobile {
+				@include min768 {
+					display: none;
+				}
+			}
+
+			&:not(.navbar-brand--mobile) {
+				display: none;
+				@include min768 {
+					display: block;
+				}
 			}
 		}
 
@@ -527,9 +571,11 @@
 			justify-content: space-between;
 			padding: 0;
 			width: 33%;
-			margin-bottom: 0;
+			min-width: 115px;
 			max-width: 170px;
+			margin-bottom: 0;
 			margin: 0 auto;
+
 
 			&-btn {
 				display: block;
