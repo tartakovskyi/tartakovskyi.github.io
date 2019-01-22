@@ -5,13 +5,21 @@
 	&:-ms-input-placeholder      { @content; }  
 }
 
+@mixin frog {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+
 
 @mixin min415 {
 	@media all and (min-width: 415px)  {
 		@content;
 	}
 }
-
 
 @mixin min576 {
 	@media all and (min-width: 576px)  {

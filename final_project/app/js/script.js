@@ -1,3 +1,28 @@
+///Cart Widget///
+$('#cart').click(function() {
+	$(this).toggleClass('expand')
+});
+
+///Change currency///
+
+
+///Buy good///
+$('[data-action="offers__buy"]').click(function(e) {
+	e.preventDefault();
+	$prodNumber = $('.cart-static').text();
+	if ($prodNumber == 'empty') {
+		$('.cart-static').text('1');
+	} else {
+		$prodNumber = Number($prodNumber);
+		$newNumber = $prodNumber + 1;
+		console.log($newNumber);
+		$('.cart-static').text($newNumber);
+	};
+	$('.cart-static').addClass('cart-static--number');
+});
+
+
+///Fixed Menu (Sergey Chuprina)///
 document.addEventListener('scroll', () => {
 	setMenuFixed();
 });
@@ -10,9 +35,3 @@ const setMenuFixed = () => {
 		navbar.classList.remove('fixed-top');
 	}
 };
-
-$('#cart').click(function() {$(this).toggleClass('expand')});
-
-
-
-
