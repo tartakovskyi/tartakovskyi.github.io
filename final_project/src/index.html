@@ -39,7 +39,7 @@
 			</div>
 		</section>
 		<section class="header__content">
-			<div class="main-menu main-menu--inner-page">
+			<div class="main-menu">
 				<div class="container-fluid mw1810">
 					<div class="row">
 						<div class="col">
@@ -78,7 +78,7 @@
 										<li class="nav-item">
 											<a class="nav-link" href="#">the brand</a>
 										</li>
-										<li class="nav-item dropdown active">
+										<li class="nav-item dropdown">
 											<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">local stores</a>
 											<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 												<a class="dropdown-item" href="#">new york</a>
@@ -101,13 +101,1517 @@
 					</div>
 				</div>		
 			</div>
-			<div class="page-heading page-heading--stores" data-paroller-factor="0.3">
-				<h1><span class="bold">Local</span> Stores</h1>
-				<span class="page-heading__subtitle">find a store near you</span>				
+			<div id="mainHeaderCarusel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/main-header.jpg" class="d-block carousel-item__img" alt="men's collection">
+						<div class="container-fluid mw1810 carousel-item__heading">
+							<div class="row justify-content-center">
+								<div class="col-11">
+									<h1><span>A</span> <span>V</span> <span>E</span></h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-11 d-flex justify-content-end">
+									<button class="btn">shop men's collection</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item--white">
+						<img src="img/main-header-women-collection.jpg" class="d-block carousel-item__img" alt="men's collection">
+						<div class="container-fluid mw1810 carousel-item__heading">
+							<div class="row justify-content-center">
+								<div class="col-11">
+									<h1><span>A</span> <span>V</span> <span>E</span></h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-11 d-flex justify-content-end">
+									<button class="btn">shop women's collection</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</header>
-	<main class="main"></main>
+	<main class="main">
+		<section class="hr">
+			<div class="container-fluid mw1810">
+				<div class="row">
+					<div class="col">
+						<hr class="hr__line">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="offers">
+			<div class="container-fluid mw1810">
+				<div class="row">
+					<div class="col">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="true">popular</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="new-arrivals-tab" data-toggle="tab" href="#new-arrivals" role="tab" aria-controls="new-arrivals" aria-selected="false">new arrivals</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="best-sellers-tab" data-toggle="tab" href="#best-sellers" role="tab" aria-controls="best-sellers" aria-selected="false">best sellers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="special-offers-tab" data-toggle="tab" href="#special-offers" role="tab" aria-controls="special-offers" aria-selected="false">special offers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="coming-soon-tab" data-toggle="tab" href="#coming-soon" role="tab" aria-controls="coming-soon" aria-selected="false">coming soon</a>
+							</li>
+						</ul>
+						<div class="tab-content offers-grid" id="myTabContent">
+							<div class="tab-pane fade show active" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+								<div class="row">
+									<div class="col-12 col-lg-6">
+										<div class="row ptb15">
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-1">
+													<img src="img/prod-1.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">89.99</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-2">
+													<img src="img/prod-2.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">47.50</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row ptb15">
+											<div class="col">
+												<a href="#" class="offers-item offers-item--big" id="prod-3">
+													<img src="img/prod-3.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">69.95</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-6">
+										<div class="row ptb15">
+											<div class="col-12">
+												<a href="#" class="offers-item offers-item--big" id="prod-4">
+													<img src="img/prod-4.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">89.99</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row ptb15">
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-5">
+													<img src="img/prod-5.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">29.95</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-6">
+													<img src="img/prod-6.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">34.79</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>	
+									</div>
+
+								</div>
+							</div>
+							<div class="tab-pane fade" id="new-arrivals" role="tabpanel" aria-labelledby="new-arrivals-tab">
+								<div class="row">
+									<div class="col-12 col-lg-6">
+										<div class="row ptb15">
+											<div class="col-12">
+												<a href="#" class="offers-item offers-item--big">
+													<img src="img/prod-4.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">89.99</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row ptb15">
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-5">
+													<img src="img/prod-5.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">29.95</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-6.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">34.79</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon">
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon">
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon">
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>	
+									</div>
+									<div class="col-12 col-lg-6">
+										<div class="row ptb15">
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-1.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">89.99</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-2.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">47.50</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row ptb15">
+											<div class="col">
+												<a href="#" class="offers-item offers-item--big">
+													<img src="img/prod-3.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">69.95</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="best-sellers" role="tabpanel" aria-labelledby="best-sellers-tab">
+								<div class="row">
+									<div class="col-12 col-lg-6">
+										<div class="row ptb15">
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-5.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">29.95</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-6.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">34.79</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon">
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon">
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon">
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row ptb15">
+											<div class="col-12">
+												<a href="#" class="offers-item offers-item--big">
+													<img src="img/prod-4.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">89.99</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>		
+									</div>
+									<div class="col-12 col-lg-6">
+										<div class="row ptb15">
+											<div class="col">
+												<a href="#" class="offers-item offers-item--big">
+													<img src="img/prod-3.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">69.95</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row ptb15">
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-1.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">89.99</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-2.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">47.50</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="special-offers" role="tabpanel" aria-labelledby="special-offers-tab">
+								<div class="row">
+									<div class="col-12 col-lg-6">
+										<div class="row ptb15">
+											<div class="col-12">
+												<a href="#" class="offers-item offers-item--big">
+													<img src="img/prod-4.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">89.99</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row ptb15">
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-5.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">29.95</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-6.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">34.79</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon">
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon">
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon">
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>	
+									</div>
+									<div class="col-12 col-lg-6">
+										<div class="row ptb15">
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-1.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">89.99</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-2.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">47.50</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row ptb15">
+											<div class="col">
+												<a href="#" class="offers-item offers-item--big">
+													<img src="img/prod-3.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">69.95</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="coming-soon" role="tabpanel" aria-labelledby="coming-soon-tab">
+								<div class="row">
+									<div class="col-12 col-lg-6">
+										<div class="row ptb15">
+											<div class="col-12">
+												<a href="#" class="offers-item offers-item--big">
+													<img src="img/prod-4.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">89.99</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row ptb15">
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-5.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">29.95</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-6.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">34.79</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon">
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon">
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon">
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>	
+									</div>
+									<div class="col-12 col-lg-6">
+										<div class="row ptb15">
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-1.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">89.99</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-12 col-md-6">
+												<a href="#" class="offers-item" id="prod-">
+													<img src="img/prod-2.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">47.50</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="row ptb15">
+											<div class="col">
+												<a href="#" class="offers-item offers-item--big">
+													<img src="img/prod-3.jpg" alt="" class="offers-item__img">
+													<div class="offers-item__price">
+														<sup class="offers-item__price-currency">&#163</sup><span class="offers-item__price-value">69.95</span>
+													</div>
+													<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__info-icon"> 
+														<use xlink:href="img/icons.svg#info-circle"></use>
+													</svg>
+													<div class="offers-item__brief">
+														<div class="offers-item__brief-title">
+															<h3>Womens burnt orange casual tee</h3>
+															<sup class="offers-item__brief-currency">&#163</sup>
+															<span class="offers-item__brief-value">89.99</span>
+														</div>
+														<p class="offers-item__brief-descr">Classic casual t-shirt for women on the move.<br>100% cotton.</p>
+														<ul class="offers-item__buy">
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__buy">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#shopping-cart-solid"></use>
+																	</svg>
+																</button>
+
+															</li>
+															<li>
+																<button href="#" class="offers-item__buy-btn" data-action="offers__wish">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#heart"></use>
+																	</svg>
+																</button>
+															</li>
+
+															<li>
+																<button href="#" class="offers-item__buy-btn"  data-action="offers__compare">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="offers-item__buy-icon"> 
+																		<use xlink:href="img/icons.svg#compress-alt"></use>
+																	</svg>
+																</button>
+															</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="hr">
+			<div class="container-fluid mw1810">
+				<div class="row">
+					<div class="col">
+						<hr class="hr__line">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="lookbook-block">
+			<div class="container-fluid container-fluid--nopadding">
+				<div class="row">
+					<div class="col-12 col-lg-6 col-xl-4">
+						<a href="#" class="lookbook-block__item lookbook-block__item--men">
+							<div class="row justify-content-end">
+								<div class="col-12 col-sm-8 d-flex flex-column align-items-end">
+									<div class="lookbook-block__item-title">
+										<h2><span>men's</span> lookbook</h2>
+									</div>
+									<p class="lookbook-block__item-descr">Lorem ipsum dolor sit amet eras facilisis consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</p>
+									<button class="btn">view now</button>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-12 col-lg-6 col-xl-4">
+						<a href="#" class="lookbook-block__item lookbook-block__item--women">
+							<div class="row justify-content-end">
+								<div class="col-12 col-sm-8 d-flex flex-column align-items-end">
+									<div class="lookbook-block__item-title">
+										<h2><span>women's</span> lookbook</h2>
+									</div>
+									<p class="lookbook-block__item-descr">Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.</p>
+									<button class="btn">view now</button>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-12 col-xl-4">
+						<a href="#" class="lookbook-block__item lookbook-block__item--your">
+							<div class="row justify-content-end">
+								<div class="col-12 col-sm-8 d-flex flex-column align-items-end">
+									<div class="lookbook-block__item-title">
+										<h2><span>your</span> lookbook</h2>
+									</div>
+									<p class="lookbook-block__item-descr">See an item you like and click the <svg><use xlink:href="img/icons.svg#heart"></use></svg> button to add it to your lookbook where you can create your own perfect look. It’s like your own boutique!</p>
+									<button class="btn">view now</button>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>			
+		</section>
+	</main>
 	<footer class="footer">
 		<section class="footer-top">
 			<div class="container">
@@ -270,13 +1774,6 @@
 	</footer>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/jquery.paroller.min.js"></script>
 	<script src="js/script.js"></script>
-	<script>
-		$(function () {
-			$('[data-paroller-factor]').paroller();
-		});
-	</script>
-
 </body>
 </html>

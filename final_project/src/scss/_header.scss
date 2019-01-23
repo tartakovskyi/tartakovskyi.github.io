@@ -4,6 +4,10 @@
 	background-size: contain;
 	position: relative;
 
+	&--inner-page {
+		min-height: initial;
+	}
+
 	&__black-nav {
 		display: flex;
 		justify-content: space-between;
@@ -166,6 +170,10 @@
 		width: 100%;
 		height: calc(100vh - 45px);
 		align-items: center;
+
+		&--inner-page {
+			height: initial;
+		}
 
 		& h1 {
 			width: 100%;
