@@ -10,7 +10,7 @@ $('#cart').click(function() {
 $('[data-action="offers__buy"]').click(function(e) {
 	e.preventDefault();
 	const prodID = "#" + $(this).closest('.offers-item').attr('id');
-	const selector = prodID + ' ' + '.offers-item__price-value';
+	const selector = prodID + ' ' + '.offers-item__price-value'[0];
 	$prodPrice = $(selector).text();
 	$prodNumber = $('.cart-static').text();
 	if ($prodNumber == 'empty') {
@@ -37,10 +37,4 @@ const setMenuFixed = () => {
 		navbar.classList.remove('fixed-top');
 	}
 };
-
-///Local Stores Tabs///
-/*$('#myTab button').on('click', function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-});*/
 

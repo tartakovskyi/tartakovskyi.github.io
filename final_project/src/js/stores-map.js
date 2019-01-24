@@ -25,6 +25,22 @@ function initMap() {
 
 };
 
+///Local Stores Tabs///
+$('#myTab [href="#paris"]').on('click', function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});
+$('#myTab [href="#london"]').on('click', function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});
+$('#myTab [href="#ny"]').on('click', function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});
+
+
+
 
 
 /*$('[href="#london"]').on('click', initMap(london));
