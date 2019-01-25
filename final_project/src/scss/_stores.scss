@@ -4,6 +4,10 @@
 	}
 
 	.store {
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+
 		&__title {
 			margin-bottom: 25px;
 
@@ -37,7 +41,11 @@
 
 		&__contacts {
 			padding: 0;
-			margin-bottom: 60px;
+			margin-bottom: 20px; 
+
+			@include min576 {
+				margin-bottom: 60px;
+			}		
 
 			&-item {
 				display: block;
@@ -110,7 +118,11 @@
 	
 
 	.tab-pane {
-		padding: 40px 30px 90px;
+		padding: 40px 30px 40px;
+
+		@include min576 {
+			padding-bottom: 90px;
+		}	
 	}
 }
 

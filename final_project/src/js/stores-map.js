@@ -95,6 +95,12 @@ function initMap() {
 	var marker2 = new google.maps.Marker({position: paris, map: map, icon: markerImg});
 	var marker3 = new google.maps.Marker({position: ny, map: map, icon: markerImg});
 
+/*	$('#storesTab button').on('click', function (e) {
+		var target = $(this).attr('href').slice(1);
+		map.setCenter(target);
+	});*/
+
+
 	$('[href="#paris"]').on('click', function() {
 		map.setCenter(paris);
 	});
@@ -109,21 +115,13 @@ function initMap() {
 
 };
 
+
 ///Local Stores Tabs///
-$('#storesTab [href="#paris"]').on('click', function (e) {
+$('#storesTab button').on('click', function (e) {
 	e.preventDefault();
-	$('tab-pane.active.show').tab('hidden')
-	$(this).tab('show');
-});
-$('#storesTab [href="#london"]').on('click', function (e) {
-	e.preventDefault();
-	$(this).tab('show');
-	$(!this).tab('dispose');
-});
-$('#storesTab [href="#ny"]').on('click', function (e) {
-	e.preventDefault();
-	$(this).tab('show');
-	$(!this).tab('dispose');
+	$('#storesTabContent .tab-pane').removeClass('active show');
+	const tabID = $(this).attr('href');
+	$(tabID).addClass('active show');
 });
 
 

@@ -111,19 +111,19 @@
 		<section class="stores">
 			<div class="container">
 				<div class="row stores__tab" id="storesTab">
-					<div class="col-4 store">
+					<div class="col-12 col-sm-6 col-lg-4 store">
 						<div class="store__title"><h3>London</h3></div>
 						<div class="store__location">180-182 Regent Street, London, W1B 5BT</div>
 						<p class="store__descr">Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p>
 						<button class="btn" href="#london">view details</button>
 					</div>
-					<div class="col-4 store">
+					<div class="col-12 col-sm-6 col-lg-4 store">
 						<div class="store__title"><h3>New York</h3></div>
 						<div class="store__location">109 Columbus Circle, New York, NY 10023</div>
 						<p class="store__descr">Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.</p>
 						<button class="btn" href="#ny">view details</button>
 					</div>
-					<div class="col-4 store">
+					<div class="col-12 col-sm-6 col-lg-4 store">
 						<div class="store__title"><h3>Paris</h3></div>
 						<div class="store__location">2133 Rue Saint-Honoré, 75001 Paris</div>
 						<p class="store__descr">Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.</p>
@@ -133,11 +133,8 @@
 			</div>
 			<div class="container-fluid container-fluid--nopadding">
 				<div class="row">
-					<div class="col-9">
-						<div id="map"></div>
-					</div>
-					<div class="col-3 store-info">
-						<div class="tab-content" id="myTabContent">
+					<div class="col-12 col-lg-5 col-xl-3 order-lg-2 store-info">
+						<div class="tab-content" id="storesTabContent">
 							<div class="tab-pane fade show active" id="london" role="tabpanel" aria-labelledby="london-tab">
 								<div class="store__title"><h3>London</h3></div>
 								<div class="store__location">180-182 Regent Street, London, W1B 5BT</div>
@@ -150,6 +147,104 @@
 									<li class="store__contacts-item">
 										<svg class="store__contacts-icon"><use xlink:href="img/icons.svg#phone"/></svg>
 										<span><a href="tel:01234567890">01234-567-890</a></span>
+									</li>
+									<li class="store__contacts-item">
+										<svg class="store__contacts-icon"><use xlink:href="img/icons.svg#link"/></svg>
+										<span><a href="http://www.yourwebsite.uk" target="_blank">www.yourwebsite.uk</a></span>
+									</li>
+									<li class="store__contacts-item">
+										<svg class="store__contacts-icon"><use xlink:href="img/icons.svg#envelope"/></svg>
+										<span><a href="mailto:admin@yourwebsite.uk">admin@yourwebsite.uk</a></span>
+									</li>
+									<li class="store__contacts-item">
+										<svg class="store__contacts-icon"><use xlink:href="img/icons.svg#clock"/></svg>
+										<span>Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</span>
+									</li>
+								</ul>
+								<ul class="store__socials">
+									<li class="store__social-item">
+										<a href="">
+											<svg class="store__social-icon"><use xlink:href="img/icons.svg#facebook-f"/></svg>
+										</a>
+									</li>
+									<li class="store__social-item">
+										<a href="">
+											<svg class="store__social-icon"><use xlink:href="img/icons.svg#twitter"/></svg>
+										</a>
+									</li>
+									<li class="store__social-item">
+										<a href="">
+											<svg class="store__social-icon"><use xlink:href="img/icons.svg#instagram"/></svg>
+										</a>
+									</li>
+									<li class="store__social-item">
+										<a href="">
+											<svg class="store__social-icon"><use xlink:href="img/icons.svg#pinterest"/></svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-pane fade" id="paris" role="tabpanel" aria-labelledby="paris-tab">
+								<div class="store__title"><h3>Paris</h3></div>
+								<div class="store__location">2133 Rue Saint-Honoré, 75001 Paris</div>
+								<p class="store__descr">Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.</p>
+								<ul class="store__contacts">
+									<li class="store__contacts-item">
+										<svg class="store__contacts-icon"><use xlink:href="img/icons.svg#map-marker-alt"/></svg>
+										<span>2133 Rue Saint-Honoré, 75001 Paris</span>
+									</li>
+									<li class="store__contacts-item">
+										<svg class="store__contacts-icon"><use xlink:href="img/icons.svg#phone"/></svg>
+										<span><a href="tel:4321765098">4321-765-098</a></span>
+									</li>
+									<li class="store__contacts-item">
+										<svg class="store__contacts-icon"><use xlink:href="img/icons.svg#link"/></svg>
+										<span><a href="http://www.yourwebsite.fr" target="_blank">www.yourwebsite.fr</a></span>
+									</li>
+									<li class="store__contacts-item">
+										<svg class="store__contacts-icon"><use xlink:href="img/icons.svg#envelope"/></svg>
+										<span><a href="mailto:info@yourwebsite.fr">info@yourwebsite.fr</a></span>
+									</li>
+									<li class="store__contacts-item">
+										<svg class="store__contacts-icon"><use xlink:href="img/icons.svg#clock"/></svg>
+										<span>Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</span>
+									</li>
+								</ul>
+								<ul class="store__socials">
+									<li class="store__social-item">
+										<a href="">
+											<svg class="store__social-icon"><use xlink:href="img/icons.svg#facebook-f"/></svg>
+										</a>
+									</li>
+									<li class="store__social-item">
+										<a href="">
+											<svg class="store__social-icon"><use xlink:href="img/icons.svg#twitter"/></svg>
+										</a>
+									</li>
+									<li class="store__social-item">
+										<a href="">
+											<svg class="store__social-icon"><use xlink:href="img/icons.svg#instagram"/></svg>
+										</a>
+									</li>
+									<li class="store__social-item">
+										<a href="">
+											<svg class="store__social-icon"><use xlink:href="img/icons.svg#pinterest"/></svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-pane fade" id="ny" role="tabpanel" aria-labelledby="ny-tab">
+								<div class="store__title"><h3>New York</h3></div>
+								<div class="store__location">109 Columbus Circle, New York, NY 10023</div>
+								<p class="store__descr">Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.</p>
+								<ul class="store__contacts">
+									<li class="store__contacts-item">
+										<svg class="store__contacts-icon"><use xlink:href="img/icons.svg#map-marker-alt"/></svg>
+										<span>109 Columbus Circle, New York, NY 10023</span>
+									</li>
+									<li class="store__contacts-item">
+										<svg class="store__contacts-icon"><use xlink:href="img/icons.svg#phone"/></svg>
+										<span><a href="tel:01234567890">0987-654-321</a></span>
 									</li>
 									<li class="store__contacts-item">
 										<svg class="store__contacts-icon"><use xlink:href="img/icons.svg#link"/></svg>
@@ -187,14 +282,10 @@
 									</li>
 								</ul>
 							</div>
-							
-							<div class="tab-pane fade" id="paris" role="tabpanel" aria-labelledby="paris-tab">
-								Paris
-							</div>
-							<div class="tab-pane fade" id="ny" role="tabpanel" aria-labelledby="ny-tab">
-								New York
-							</div>
 						</div>
+					</div>
+					<div class="col-12 col-lg-7 col-xl-9 order-lg-1">
+						<div id="map"></div>
 					</div>
 				</div>
 			</div>
@@ -372,6 +463,7 @@
 			$('[data-paroller-factor]').paroller();
 		});
 	</script>
+	<<script>ComputeElemHeight ('.store__descr', 992);</script>
 
 </body>
 </html>

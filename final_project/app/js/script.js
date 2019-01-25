@@ -38,3 +38,20 @@ const setMenuFixed = () => {
 	}
 };
 
+
+///Calculation of the elements height///
+const ComputeElemHeight = (el, mw) => {
+	$mw = mw;
+	
+
+	let $elHeight = 0;
+
+	if ($(window).width() >= $mw) {
+		console.log($mw);
+		$(el).each(function() {    
+			if ($(this).height() > $elHeight) {$elHeight = $(this).height()}
+		});
+
+		$(el).height($elHeight);
+	}
+}
