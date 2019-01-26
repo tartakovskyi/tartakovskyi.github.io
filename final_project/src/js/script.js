@@ -38,31 +38,33 @@ $('[name=currency-list]').change (function () {
 				else if ($newCurr == 'eur') {$(el).html('&#8364')}
 			}
 
-		function changePriceValue (el) {
+	function changePriceValue (el) {
 
-			if ($oldCurr == 'gbp' & $newCurr == 'usd') {PriceValueCalc(1.33333)} 
-				else if ($oldCurr == 'usd' & $newCurr == 'gbp') {PriceValueCalc(0.75)}
-					else if ($oldCurr == 'gbp' & $newCurr == 'eur') {PriceValueCalc(1.15)}
-						else if ($oldCurr == 'gbp' & $newCurr == 'eur') {PriceValueCalc(0.8696)}
-							else if ($oldCurr == 'eur' & $newCurr == 'usd') {PriceValueCalc(1.14)}
-								else if ($oldCurr == 'usd' & $newCurr == 'eur') {PriceValueCalc(0.8772)}
-							}
+		if ($oldCurr == 'gbp' & $newCurr == 'usd') {PriceValueCalc(1.33333)} 
+			else if ($oldCurr == 'usd' & $newCurr == 'gbp') {PriceValueCalc(0.75)}
+				else if ($oldCurr == 'gbp' & $newCurr == 'eur') {PriceValueCalc(1.15)}
+					else if ($oldCurr == 'gbp' & $newCurr == 'eur') {PriceValueCalc(0.8696)}
+						else if ($oldCurr == 'eur' & $newCurr == 'usd') {PriceValueCalc(1.14)}
+							else if ($oldCurr == 'usd' & $newCurr == 'eur') {PriceValueCalc(0.8772)}
 
-			function PriceValueCalc (coefficient) {
-				$(el).each( function() {
-					$oldValue = $(this).text();
-					$newValue = Number($oldValue) * coefficient;
-					$newValue = $newValue.toFixed(2).toString();
-					$(this).text($newValue);
-				})
-			}
+		function PriceValueCalc (coefficient) {
+			$(el).each( function() {
+				$oldValue = $(this).text();
+				$newValue = Number($oldValue) * coefficient;
+				$newValue = $newValue.toFixed(2).toString();
+				$(this).text($newValue);
+			});						
+		}			
+	};
 
-						changePriceValue('.offers-item__price-value');
-						changePriceValue('.offers-item__brief-value');
+	changePriceValue('.offers-item__price-value');
+	changePriceValue('.offers-item__brief-value');
 
-						changeCurrency('.offers-item__price-currency');
-						changeCurrency('.offers-item__brief-currency');	
-					});
+	changeCurrency('.offers-item__price-currency');
+	changeCurrency('.offers-item__brief-currency');
+
+	$oldCurr = $newCurr;
+});
 
 
 ///Fixed Menu (Sergey Chuprina)///
