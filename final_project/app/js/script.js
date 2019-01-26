@@ -7,12 +7,18 @@ $('#cart').click(function() {
 
 
 ///Buy good///
+$sum = 0;
+
 $('[data-action="offers__buy"]').click(function(e) {
 	e.preventDefault();
 	const prodID = "#" + $(this).closest('.offers-item').attr('id');
 	const selector = prodID + ' ' + '.offers-item__price-value';
 	$prodPrice = $(selector).text();
-	console.log($prodPrice);
+	$sum = $sum + Number($prodPrice);
+	$sum.toFixed(2);
+	console.log($sum);
+	$('.cart-sum').css('display', 'inline-block');
+	$('.cart-sum-value').text($sum);
 
 
 	$prodNumber = $('.cart-static').text();
@@ -22,6 +28,7 @@ $('[data-action="offers__buy"]').click(function(e) {
 		$prodNumber = Number($prodNumber);
 		$newNumber = $prodNumber + 1;
 		$('.cart-static').text($newNumber);
+		$('.cart-open').text($newNumber + ' good(s)');
 	};
 	$('.cart-static').addClass('cart-static--number');
 });
@@ -59,11 +66,17 @@ $('[name=currency-list]').change (function () {
 		}			
 	};
 
-	changePriceValue('.offers-item__price-value');
+	changePriceValue('[data-role=price-value]');
+	changeCurrency('[data-role=price-currency]');
+
+
+
+
+	/*changePriceValue('.offers-item__price-value');
 	changePriceValue('.offers-item__brief-value');
 
 	changeCurrency('.offers-item__price-currency');
-	changeCurrency('.offers-item__brief-currency');
+	changeCurrency('.offers-item__brief-currency');*/
 
 	$oldCurr = $newCurr;
 });
