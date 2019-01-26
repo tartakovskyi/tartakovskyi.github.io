@@ -10,8 +10,11 @@ $('#cart').click(function() {
 $('[data-action="offers__buy"]').click(function(e) {
 	e.preventDefault();
 	const prodID = "#" + $(this).closest('.offers-item').attr('id');
-	const selector = prodID + ' ' + '.offers-item__price-value'[0];
+	const selector = prodID + ' ' + '.offers-item__price-value';
 	$prodPrice = $(selector).text();
+	console.log($prodPrice);
+
+
 	$prodNumber = $('.cart-static').text();
 	if ($prodNumber == 'empty') {
 		$('.cart-static').text('1');
@@ -28,7 +31,6 @@ $oldCurr = 'gbp';
 
 $('[name=currency-list]').change (function () {
 	$newCurr = $(this).val();
-	/*$oldCurr = $('.offers-item__price-currency').html();*/
 	console.log(('$oldCurr ') + $oldCurr);
 	console.log(('$newCurr ') + $newCurr);
 
