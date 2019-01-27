@@ -89,7 +89,7 @@ function initMap() {
 		]
 	});
 
-	var markerImg = 'map-marker.svg'
+	var markerImg = 'img/map-marker.svg'
 
 	var marker1 = new google.maps.Marker({position: london, map: map, icon: markerImg});
 	var marker2 = new google.maps.Marker({position: paris, map: map, icon: markerImg});
