@@ -69,15 +69,6 @@ $('[name=currency-list]').change (function () {
 	changePriceValue('[data-role=price-value]');
 	changeCurrency('[data-role=price-currency]');
 
-
-
-
-	/*changePriceValue('.offers-item__price-value');
-	changePriceValue('.offers-item__brief-value');
-
-	changeCurrency('.offers-item__price-currency');
-	changeCurrency('.offers-item__brief-currency');*/
-
 	$oldCurr = $newCurr;
 });
 

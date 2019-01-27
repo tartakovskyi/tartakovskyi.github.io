@@ -11,26 +11,31 @@
 @import 'footer';
 
 
-/////////////// REMOVE BEFORE PRODUCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// #style {
+// 	$size: 100px;
+// 	width: $size;
+// 	height: $size;
+// 	background-color: red;
+// 	position: relative;
+// 	z-index: 100000000;
+// 	transition: transform .4s ease;
 
-@media all and (max-width: 319px) {
+// 	&::after {
+// 		content: "";
+// 		position: absolute;
+// 		top: 0;
+// 		right: 0;
+// 		bottom: 0;
+// 		left: 0;
+// 		background-color: blue;
+// 		opacity: 0;
+// 		transition: opacity .4s ease;
+// 	}
 
-	* {
-		display: none!important;	
-	}
-}
-
-.bad {
-	font-size: 2rem;
-}
-
-// .first-screen,	
-// .about,
-// .services,
-.works,
-.speech,
-.partners,
-.contact,
-.footer {
-	display: none!important;
-}
+// 	&:hover {
+// 		transform: scale(1.2);
+// 		&::after {
+// 			opacity: 1;
+// 		}
+// 	}
+// }
