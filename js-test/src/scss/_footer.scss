@@ -1,0 +1,168 @@
+.footer {
+	&-top {
+		background-color: $light_gray;
+		padding: 30px 0;
+
+		@include min576 {
+			padding: 60px 0 55px;
+		}
+
+		&__col {
+			padding-bottom: 30px;
+		}
+
+		&__nav {
+
+			&-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			&-item:not(:last-child) {
+				margin-bottom: 15px;
+			}
+
+			&-contact {
+				font-size: 14px;
+				color: $gray_2;
+				line-height: 1;
+
+				a:hover {
+					color: $cyan;
+					text-decoration: none;
+				}
+			}
+
+			&-link {
+				@extend .footer-top__nav-contact;
+
+				&:hover {
+					color: $cyan;
+					text-decoration: none;
+				}
+			}
+		}
+
+		&__col-title {
+			display: block;
+			font-size: 13px;
+			font-weight: 500;
+			text-transform: uppercase;
+			color: $dark_gray;
+			margin-bottom: 30px;
+		}
+
+		&__banner,
+		&__socials {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			min-height: 200px;
+			color: $white;
+		}
+
+		&__banner {
+			flex-direction: column;
+			background-color: $black;
+			text-transform: uppercase;
+			font-size: 24px;
+			font-weight: 300;
+			margin-bottom: 30px;
+
+			@include min415 {
+				font-size: 28px;
+			}
+
+			@include min576 {
+				font-size: 36px;
+			}
+
+			@include min992 {
+				margin-bottom: 0;
+			}
+
+			& span {
+				font-weight: 700;
+			}
+
+			&:hover {
+				text-decoration: none;
+				color: $white;
+				background-color: $cyan;
+			}
+		}
+
+		&__socials {
+			background-color: $cyan;
+
+			&-list {
+				display: flex;
+				justify-content: space-around;
+				list-style: none;
+				width: 70%;
+				max-width: 290px;
+				padding: 0;
+				margin: 0;
+			}
+
+			&-item {
+				display: block;
+			}
+
+			&-link {
+				display: block;
+				color: $white;
+
+				&:hover {
+					color: $gray;
+				}
+			}
+
+			&-icon {
+				height: 32px;
+
+				&--facebook {
+					width: 17px;
+				}
+
+				&--twitter {
+					width: 32px;
+				}
+
+				&--instagram {
+					width: 28px;
+				}
+
+				&--pinterest {
+					width: 31px;
+				}
+			}
+		}
+	}
+}
+
+.copyrights {
+	min-height: 45px;
+	background-color: $black;
+	display: flex;
+	align-items: center;
+	padding: 5px 0;
+
+	&__info {
+		color: $gray;
+		margin-bottom: 0;
+		font-size: 13px;
+
+		&:not(:last-child) {
+			margin-right: 35px;
+		}
+	}
+
+	&__link {
+		&:hover {
+			color: $white;
+		}
+	}
+}

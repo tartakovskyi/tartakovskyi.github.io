@@ -1,13 +1,15 @@
-.test {
-	&-item {
-		border: 2px solid black;
-		padding: 2px;
-	}
+@import "variables";
+@import "mixins";
+@import "common";
+@import "header";
+@import "main";
+@import "stores";
+@import "footer";
 
-	&-question {
-		font-size: 2em;
-		display: block;
-		background-color: #fefefe;
-		padding: .5em;
-	}
-}
+
+/* header,
+main,
+.offers,
+footer {
+	display: none;
+} */

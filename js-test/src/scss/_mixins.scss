@@ -1,0 +1,59 @@
+@mixin placeholder {
+	&::-webkit-input-placeholder { @content; }
+	&:-moz-placeholder           { @content; }
+	&::-moz-placeholder          { @content; }
+	&:-ms-input-placeholder      { @content; }  
+}
+
+@mixin frog {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+
+
+@mixin min415 {
+	@media all and (min-width: 415px)  {
+		@content;
+	}
+}
+
+@mixin min576 {
+	@media all and (min-width: 576px)  {
+		@content;
+	}
+}
+
+@mixin min768 {
+	@media all and (min-width: 768px)  {
+		@content;
+	}
+}
+
+@mixin min992 {
+	@media all and (min-width: 992px)  {
+		@content;
+	}
+}
+
+@mixin min1200 {
+	@media all and (min-width: 1200px)  {
+		@content;
+	}
+}
+
+@mixin min1367 {
+	@media all and (min-width: 1367px)  {
+		@content;
+	}
+}
+
+
+@mixin min1680 {
+	@media all and (min-width: 1680px)  {
+		@content;
+	}
+}
