@@ -35,7 +35,7 @@ console.log(length);
 
 for (let i=0; i<length; i++) {
 	const product = document.createElement('div');
-	$(product).addClass('col-3 offers-item-wrapper').load("product.tpl.html").appendTo('#special-offers .row');
+	$(product).addClass('col-3 offers-item-wrapper').appendTo('#special-offers .row').load("product.tpl.html").find('.offers-item').attr('id', 'prod');
 }
 
 
