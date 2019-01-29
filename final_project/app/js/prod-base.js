@@ -31,12 +31,28 @@ const prodBase = {
 
 const length = Object.keys(prodBase).length;
 
-console.log(length);
 
 for (let i=0; i<length; i++) {
 	const product = document.createElement('div');
-	$(product).addClass('col-3 offers-item-wrapper').appendTo('#special-offers .row').load("product.tpl.html").find('.offers-item').attr('id', 'prod');
-}
+	/*$(product).addClass('col-3 offers-item-wrapper').appendTo('#special-offers .row').load("product.tpl.html");*/
+	$(product).addClass('col-3 offers-item-wrapper').appendTo('#special-offers .row');
+
+	const prodID = () => {
+		const num = i + 101;
+		return 'prod-' + num.toString();
+	}
+
+	const productLink = document.createElement('a');
+	$(productLink).addClass('offers-item').attr('id', prodID).appendTo(product).load("product.tpl.html", function() {
+		const selector = $(this).find('.offers-item__price-value')[0];
+   $(selector).val('100'); 
+});
+
+
+	$(prodID() + ' .offers-item__price-value').val('100');
+
+};
+
 
 
 
