@@ -29,4 +29,18 @@ const prodBase = {
 
 }
 
-$('#special-offers .offers-item-wrapper').clone().appendTo('#special-offers');
+const length = Object.keys(prodBase).length;
+
+console.log(length);
+
+for (let i=0; i<length; i++) {
+	const product = document.createElement('div');
+	$(product).addClass('col-3 offers-item-wrapper').load("product.tpl.html").appendTo('#special-offers .row');
+}
+
+
+
+
+/*$('#special-offers .offers-item-wrapper').clone().appendTo('#special-offers');*/
+
+
