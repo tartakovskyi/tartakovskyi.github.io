@@ -22,42 +22,34 @@ const prodBase = {
 
 	104 : {
 		name: 'mens cyan t-shirt',
-		price: '174.99',
+		price: '124.99',
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, ex!',
 		img: 'prod-1.jpg'
 	}
 
 }
 
-const length = Object.keys(prodBase).length;
-
+const prodBaseKeys = Object.keys(prodBase);
+const length = prodBaseKeys.length;
 
 for (let i=0; i<length; i++) {
 	const product = document.createElement('div');
-	/*$(product).addClass('col-3 offers-item-wrapper').appendTo('#special-offers .row').load("product.tpl.html");*/
 	$(product).addClass('col-3 offers-item-wrapper').appendTo('#special-offers .row');
 
 	const prodID = () => {
-		const num = i + 101;
-		return 'prod-' + num.toString();
-	}
+		return 'prod-' + prodBaseKeys[i];
+	};
+
+	const prodKey = prodBaseKeys[i];
+
+	const prodImg = 'img/' + prodBase[prodKey]['img'];
 
 	const productLink = document.createElement('a');
 	$(productLink).addClass('offers-item').attr('id', prodID).appendTo(product).load("product.tpl.html", function() {
-		//const id = 
-		$("#"+prodID()).find('.offers-item__price-value').text("100");
- /*  $(selector).val('100'); */
-});
-
-/*
-	$(prodID() + ' .offers-item__price-value').val('100');*/
-
+		$("#"+prodID()).find('[data-role=price-value]').text(prodBase[prodKey]['price']);
+		$("#"+prodID()).find('.offers-item__brief-title h3').text(prodBase[prodKey]['name']);
+		$("#"+prodID()).find('.offers-item__brief-descr').text(prodBase[prodKey]['description']);
+		$("#"+prodID()).find('.offers-item__img').attr('src', prodImg);
+	});
 };
-
-
-
-
-
-/*$('#special-offers .offers-item-wrapper').clone().appendTo('#special-offers');*/
-
 
