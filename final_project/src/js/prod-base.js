@@ -44,12 +44,13 @@ for (let i=0; i<length; i++) {
 
 	const productLink = document.createElement('a');
 	$(productLink).addClass('offers-item').attr('id', prodID).appendTo(product).load("product.tpl.html", function() {
-		const selector = $(this).find('.offers-item__price-value')[0];
-   $(selector).val('100'); 
+		//const id = 
+		$("#"+prodID()).find('.offers-item__price-value').text("100");
+ /*  $(selector).val('100'); */
 });
 
-
-	$(prodID() + ' .offers-item__price-value').val('100');
+/*
+	$(prodID() + ' .offers-item__price-value').val('100');*/
 
 };
 
