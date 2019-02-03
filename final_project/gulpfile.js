@@ -9,6 +9,28 @@ clean = require('gulp-clean'),
 babel = require('gulp-babel'),
 uglify = require('gulp-uglify'),
 browserSync = require('browser-sync').create();
+/*gutil = require('gulp-util')
+*//*ftp = require('vinyl-ftp')*/
+
+/** Configuration **/
+//var user = vvt
+//var password = vvt741852963
+//var host = 'vvt.vitrina.pl.ua'
+//var port = 21
+//var localFilesGlob = ['./**/*']
+//var remoteFolder = '/vvt.vitrina.pl.ua'
+
+// helper function to build an FTP connection based on our configuration
+//function getFtpConnection() {
+//  return ftp.create({
+//    host: host,
+//    port: port,
+//    user: user,
+//    password: password,
+//    parallel: 5,
+//    log: gutil.log,
+//  })
+//}
 
 
 gulp.task('sass', () => {
@@ -73,6 +95,30 @@ gulp.task('connect', function() {
    }
  });
 });
+
+/*gulp.task('ftp-deploy', function() {
+  var conn = getFtpConnection()
+
+  return gulp
+    .src(localFilesGlob, { base: '.', buffer: false })
+    .pipe(conn.newer(remoteFolder)) // only upload newer files
+    .pipe(conn.dest(remoteFolder))
+})
+
+gulp.task('ftp-deploy-watch', function() {
+  var conn = getFtpConnection()
+
+  gulp.watch(localFilesGlob).on('change', function(event) {
+    console.log(
+      'Changes detected! Uploading file "' + event.path + '", ' + event.type
+    )
+
+    return gulp
+      .src([event.path], { base: '.', buffer: false })
+      .pipe(conn.newer(remoteFolder)) // only upload newer files
+      .pipe(conn.dest(remoteFolder))
+  })
+})*/
 
 gulp.task('clean', function () {
   return gulp.src('app')
