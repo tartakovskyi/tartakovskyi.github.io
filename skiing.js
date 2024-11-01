@@ -34,8 +34,8 @@ for (let btn of btns) {
 
 renderGates()
 
-const letsStart = confirm('Стартуємо?')
-if (letsStart) race() 
+//const letsStart = confirm('Стартуємо?')
+ race() 
 
 
 
