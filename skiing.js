@@ -82,7 +82,7 @@ async function race () {
     let skierVertPos
     while (document.body.scrollTop <= finish) {
         await new Promise((resolve, reject) => setTimeout(resolve, 30));
-   console.log(document.body.scrollBy(0, 1))
+   
         window.scrollBy(0, 1)
         
         skierVertPos = Math.round(document.body.scrollTop) + skierBottom
