@@ -59,6 +59,8 @@ function renderGates () {
         if (i == numberOfGates) {
             finish = vPos + 60
             document.getElementById('finish').style.top = finish + 'px'
+
+            skier.style.left = canvasWidth - skierWidth / 2
         }
     }
 }
