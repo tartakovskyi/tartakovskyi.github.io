@@ -34,7 +34,7 @@ body {
 
 .gate {
     position: absolute;
-    height: 50px;
+    height: 90px;
     background-image: url('red-flag.svg'), url('blue-flag.svg');
     background-position: 0 50%, 100% 50%;
     background-size: contain;
