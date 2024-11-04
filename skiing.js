@@ -2,12 +2,12 @@ const canvas = document.getElementById('canvas')
 const canvasWidth = canvas.clientWidth
 
 const skier = document.getElementById('skier')
-const skierBottom = skier.offsetTop + skier.clientHeight
+const skierBottom = skier.offsetTop+ skier.clientHeight
 const skierWidth = skier.clientWidth
 
 const gateWidth = 150
 
-const numberOfGates = 15
+const numberOfGates = 10
 
 let finish
 
@@ -45,7 +45,7 @@ function renderGates () {
     let hPos = canvasWidth / 2 - gateWidth / 2
 
     for (let i = 1; i <= numberOfGates; i++) {
-        vPos += 200
+        vPos += 70
 
         const hPosMin = (hPos <= gateWidth + 10) ? 10: (hPos - gateWidth)
         const hPosMax = (hPos >= canvasWidth - gateWidth*2) ? (canvasWidth - gateWidth - 10): (hPos + gateWidth)
@@ -80,18 +80,18 @@ function randomInteger(min, max) {
 
 async function race () {
     let skierVertPos
-    while (document.body.scrollTop <= finish) {
+    while (window.scrollY <= finish) {
         await new Promise((resolve, reject) => setTimeout(resolve, 30));
-   
+
         window.scrollBy(0, 1)
-        console.log(document.body.scrollTop);console.log(finish)
-        skierVertPos = Math.round(document.body.scrollTop) + skierBottom
+        
+        skierVertPos = Math.round(window.scrollY) + skierBottom
         
         if (gatesObj[skierVertPos]) {
             checkHorizon(gatesObj[skierVertPos])
         }
     }
-    if (document.body.scrollTop >= finish) {
+    if (window.scrollY >= finish) {
         const winSound = document.getElementById('winSound')
         winSound.play()
         alert('Перемога!')
