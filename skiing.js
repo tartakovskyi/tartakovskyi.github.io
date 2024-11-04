@@ -5,7 +5,7 @@ const skier = document.getElementById('skier')
 const skierBottom = skier.offsetTop+ skier.clientHeight
 const skierWidth = skier.clientWidth
 
-const gateWidth = 220
+const gateWidth = 250
 
 const numberOfGates = 15
 
@@ -57,10 +57,10 @@ function renderGates () {
         gatesObj[vPos] = hPos
         
         if (i == numberOfGates) {
-            finish = vPos + 60
+            finish = vPos + 100
             document.getElementById('finish').style.top = finish + 'px'
 
-            skier.style.left = canvasWidth - skierWidth / 2
+            skier.style.left = canvasWidth / 2 - skierWidth / 2
         }
     }
 }
