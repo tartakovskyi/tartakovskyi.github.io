@@ -5,9 +5,9 @@ const skier = document.getElementById('skier')
 const skierBottom = skier.offsetTop+ skier.clientHeight
 const skierWidth = skier.clientWidth
 
-const gateWidth = 150
+const gateWidth = 220
 
-const numberOfGates = 10
+const numberOfGates = 15
 
 let finish
 
@@ -45,7 +45,7 @@ function renderGates () {
     let hPos = canvasWidth / 2 - gateWidth / 2
 
     for (let i = 1; i <= numberOfGates; i++) {
-        vPos += 120
+        vPos += 200
 
         const hPosMin = (hPos <= gateWidth + 10) ? 10: (hPos - gateWidth)
         const hPosMax = (hPos >= canvasWidth - gateWidth*2) ? (canvasWidth - gateWidth - 10): (hPos + gateWidth)
