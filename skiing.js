@@ -45,7 +45,7 @@ function renderGates () {
     let hPos = canvasWidth / 2 - gateWidth / 2
 
     for (let i = 1; i <= numberOfGates; i++) {
-        vPos += 70
+        vPos += 120
 
         const hPosMin = (hPos <= gateWidth + 10) ? 10: (hPos - gateWidth)
         const hPosMax = (hPos >= canvasWidth - gateWidth*2) ? (canvasWidth - gateWidth - 10): (hPos + gateWidth)
