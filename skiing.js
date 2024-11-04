@@ -83,7 +83,7 @@ function randomInteger(min, max) {
 async function race () {
     let skierVertPos
     while (window.scrollY <= finish) {
-        await new Promise((resolve, reject) => setTimeout(resolve, 30));
+        await new Promise((resolve, reject) => setTimeout(resolve, 20));
 
         window.scrollBy(0, 1)
         
