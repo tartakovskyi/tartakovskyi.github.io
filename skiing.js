@@ -5,9 +5,9 @@ const skier = document.getElementById('skier')
 const skierBottom = skier.offsetTop+ skier.clientHeight
 const skierWidth = skier.clientWidth
 
-const gateWidth = 80
+const gateWidth = 150
 
-const numberOfGates = 10
+const numberOfGates = 15
 
 let finish
 
