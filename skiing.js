@@ -2,7 +2,7 @@ const canvas = document.getElementById('canvas')
 const canvasWidth = canvas.clientWidth
 
 const skier = document.getElementById('skier')
-const skierBottom = skier.offsetTop+ skier.clientHeight
+const skierBottom = skier.offsetTop + skier.clientHeight
 const skierWidth = skier.clientWidth
 
 const gateWidth = 150
@@ -84,7 +84,7 @@ async function race () {
         await new Promise((resolve, reject) => setTimeout(resolve, 30));
    
         window.scrollBy(0, 1)
-        
+        console.log(document.body.scrollTop);console.log(finish)
         skierVertPos = Math.round(document.body.scrollTop) + skierBottom
         
         if (gatesObj[skierVertPos]) {
